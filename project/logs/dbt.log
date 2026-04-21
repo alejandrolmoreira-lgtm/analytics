@@ -1172,3 +1172,254 @@ from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.LINEITEM
 Finished 'run' successfully for target 'dev' [9.1s]
 Processed: 8 models
 Summary: 8 total | 8 success
+==================== 2026-04-21T10:47:12.282736Z | 019dafa6-b897-7c63-b2d6-09e0a58a19b6 ====================
+10:47:12.282857 [info ]: dbt-fusion 2.0.0-preview.171
+10:47:12.283304 [info ]: Started loading project
+10:47:12.287245 [info ]: Loading ~/.dbt/profiles.yml
+10:47:12.292781 [debug]:    Started loading packages
+10:47:12.294850 [debug]:     Loaded [  0.00s] packages
+10:47:12.295631 [info ]: Finished loading project [  0.01s]
+10:47:12.311044 [info ]: Started parsing
+10:47:12.337983 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:47:12.338279 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:47:12.338490 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:47:12.338673 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:47:12.338893 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:47:12.339063 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:47:12.339224 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:47:12.339336 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:47:12.345931 [info ]: Finished parsing [  0.03s]
+10:47:12.346561 [error]: dbt1013: YAML error: invalid type: map, expected a sequence
+  --> models\s1_staging\_scr_tpch.yml:6:7
+10:47:13.474453 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+10:47:13.527692 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+10:47:13.527692 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 8 errors for target 'dev' [1.2s]
+==================== 2026-04-21T10:48:20.876417Z | 019dafa7-c48a-7f31-b380-696b675ac7d2 ====================
+10:48:20.876517 [info ]: dbt-fusion 2.0.0-preview.171
+10:48:20.876889 [info ]: Started loading project
+10:48:20.879640 [info ]: Loading ~/.dbt/profiles.yml
+10:48:20.884650 [debug]:    Started loading packages
+10:48:20.886578 [debug]:     Loaded [  0.00s] packages
+10:48:20.887231 [info ]: Finished loading project [  0.01s]
+10:48:20.887670 [info ]: Started parsing
+10:48:20.911087 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:48:20.913123 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+10:48:20.913564 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+10:48:20.914033 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+10:48:20.914710 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+10:48:20.915296 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+10:48:20.915975 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+10:48:20.916892 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+10:48:20.917553 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+10:48:20.920730 [info ]: Finished parsing [  0.03s]
+10:48:20.922185 [info ]: Started scheduling
+10:48:20.922369 [info ]: Finished scheduling [  0.00s]
+10:48:20.925883 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+10:48:20.925974 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+10:48:20.925994 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+10:48:20.926009 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+10:48:20.926024 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+10:48:20.926038 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+10:48:21.038738 [info ]: Started building task graph
+10:48:21.039124 [info ]: Finished building task graph [  0.00s]
+10:48:24.798767 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:24.799656 [info ]: Started rendering (8 nodes)
+10:48:24.799849 [info ]: Started model analytics_prod.stg_supplier
+10:48:24.799866 [debug]: Started rendering model analytics_prod.stg_supplier
+10:48:24.799900 [info ]: Started model analytics_prod.stg_region
+10:48:24.799910 [debug]: Started rendering model analytics_prod.stg_region
+10:48:24.799920 [info ]: Started model analytics_prod.stg_partsupp
+10:48:24.799924 [debug]: Started rendering model analytics_prod.stg_partsupp
+10:48:24.799931 [info ]: Started model analytics_prod.stg_part
+10:48:24.799935 [debug]: Started rendering model analytics_prod.stg_part
+10:48:24.799941 [info ]: Started model analytics_prod.stg_orders
+10:48:24.799945 [debug]: Started rendering model analytics_prod.stg_orders
+10:48:24.799986 [info ]: Started model analytics_prod.stg_nation
+10:48:24.799991 [debug]: Started rendering model analytics_prod.stg_nation
+10:48:24.799997 [info ]: Started model analytics_prod.stg_lineitem
+10:48:24.800000 [debug]: Started rendering model analytics_prod.stg_lineitem
+10:48:24.800006 [info ]: Started model analytics_prod.stg_customer
+10:48:24.800009 [debug]: Started rendering model analytics_prod.stg_customer
+10:48:24.802021 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+10:48:24.802455 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+10:48:24.802274 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_partsupp [success]
+10:48:24.802821 [info ]: Started analyzing (8 nodes)
+10:48:24.802980 [debug]: Started analyzing model analytics_prod.stg_partsupp
+10:48:24.803041 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+10:48:24.803766 [debug]: Started analyzing model analytics_prod.stg_supplier
+10:48:24.806313 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+10:48:24.806294 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+10:48:24.806431 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+10:48:24.806696 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+10:48:24.806711 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+10:48:24.806376 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+10:48:24.806794 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+10:48:24.806874 [info ]: Started running (8 nodes)
+10:48:24.807126 [info ]: Started running model analytics_prod.stg_supplier
+10:48:24.807185 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+10:48:24.807512 [info ]: Started running model analytics_prod.stg_partsupp
+10:48:24.807549 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+10:48:24.807832 [debug]: Started analyzing model analytics_prod.stg_region
+10:48:24.807875 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+10:48:24.808151 [debug]: Started analyzing model analytics_prod.stg_lineitem
+10:48:24.808169 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+10:48:24.808554 [debug]: Started analyzing model analytics_prod.stg_customer
+10:48:24.808574 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+10:48:24.808716 [debug]: Started analyzing model analytics_prod.stg_orders
+10:48:24.808729 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+10:48:24.809233 [debug]: Started analyzing model analytics_prod.stg_nation
+10:48:24.809281 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+10:48:24.809522 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+10:48:24.810276 [debug]: Started analyzing model analytics_prod.stg_part
+10:48:24.810374 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+10:48:24.810752 [info ]: Started running model analytics_prod.stg_region
+10:48:24.810790 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+10:48:24.811218 [info ]: Started running model analytics_prod.stg_lineitem
+10:48:24.811239 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+10:48:24.811636 [info ]: Started running model analytics_prod.stg_customer
+10:48:24.811675 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+10:48:24.811961 [info ]: Started running model analytics_prod.stg_orders
+10:48:24.812007 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+10:48:24.812359 [info ]: Started running model analytics_prod.stg_nation
+10:48:24.812398 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+10:48:24.812657 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+10:48:24.812954 [info ]: Started running model analytics_prod.stg_part
+10:48:25.267005 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:25.268829 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+10:48:26.320241 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:26.322262 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+10:48:27.107475 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.PARTSUPP
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:27.108581 [info ]:  Succeeded [  2.31s] model analytics_prod.stg_partsupp (table)
+10:48:27.109025 [info ]: Finished running [  2.30s] model analytics_prod.stg_partsupp [success]
+10:48:27.115137 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:27.116588 [info ]:  Succeeded [  2.31s] model analytics_prod.stg_supplier (table)
+10:48:27.116967 [info ]: Finished running [  2.31s] model analytics_prod.stg_supplier [success]
+10:48:33.451500 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:33.452899 [debug]: Writing runtime sql for node "model.project.stg_region"
+10:48:33.736760 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:33.737971 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+10:48:34.186913 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:34.188026 [info ]:  Succeeded [  9.39s] model analytics_prod.stg_region (table)
+10:48:34.188500 [info ]: Finished running [  9.38s] model analytics_prod.stg_region [success]
+10:48:34.752333 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:34.753585 [debug]: Writing runtime sql for node "model.project.stg_customer"
+10:48:35.074253 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:35.075626 [debug]: Writing runtime sql for node "model.project.stg_orders"
+10:48:35.361236 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:35.363327 [debug]: Writing runtime sql for node "model.project.stg_nation"
+10:48:35.592781 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+10:48:35.594113 [debug]: Writing runtime sql for node "model.project.stg_part"
+10:48:35.724674 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:35.725705 [info ]:  Succeeded [ 10.92s] model analytics_prod.stg_customer (table)
+10:48:35.725978 [info ]: Finished running [ 10.91s] model analytics_prod.stg_customer [success]
+10:48:35.946350 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:35.947834 [info ]:  Succeeded [ 11.14s] model analytics_prod.stg_nation (table)
+10:48:35.948220 [info ]: Finished running [ 11.14s] model analytics_prod.stg_nation [success]
+10:48:36.734942 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.PART
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:36.736406 [info ]:  Succeeded [ 11.93s] model analytics_prod.stg_part (table)
+10:48:36.736700 [info ]: Finished running [ 11.92s] model analytics_prod.stg_part [success]
+10:48:36.756460 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:36.757518 [info ]:  Succeeded [ 11.96s] model analytics_prod.stg_orders (table)
+10:48:36.758176 [info ]: Finished running [ 11.95s] model analytics_prod.stg_orders [success]
+10:48:38.958252 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+10:48:38.959333 [info ]:  Succeeded [ 14.16s] model analytics_prod.stg_lineitem (table)
+10:48:38.959734 [info ]: Finished running [ 14.15s] model analytics_prod.stg_lineitem [success]
+10:48:38.960015 [info ]: Finished running [ 14.15s] (8 nodes, 0 skipped, 0 errors)
+10:48:38.980288 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+10:48:39.037709 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [18.2s]
+Processed: 8 models
+Summary: 8 total | 8 success
