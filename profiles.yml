@@ -1,4 +1,4 @@
-jaffle_shop:
+mi_proyecto_dbt:
   target: dev
   outputs:
     dev:
@@ -11,3 +11,4 @@ jaffle_shop:
       schema: analytics_prod
       password: Building_1981!
       role: ACCOUNTADMIN
+

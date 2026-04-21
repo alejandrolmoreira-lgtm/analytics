@@ -1,0 +1,16 @@
+name: 'project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'mi_proyecto_dbt'
+
+model-paths: ["models"]
+
+models:
+  project:
+    staging:
+      +materialized: table
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

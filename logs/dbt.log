@@ -51,3 +51,54 @@ Finished 'init' successfully for target 'dev' [2m 8s]
 {"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019daf32-126a-72c0-8456-6bd6ec77e336","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":7776,"thread":"tokio-rt-worker","ts":"2026-04-21T08:39:47.572503Z"}}
 {"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019daf32-126a-72c0-8456-6bd6ec77e336","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":7776,"thread":"tokio-rt-worker","ts":"2026-04-21T08:39:47.573208Z"}}
 {"data":{"completed_at":"2026-04-21T08:39:47.808184Z","elapsed":0.2430097907781601,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019daf32-126a-72c0-8456-6bd6ec77e336","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [243ms]","name":"CommandCompleted","pid":7776,"thread":"tokio-rt-worker","ts":"2026-04-21T08:39:47.808356Z"}}
+==================== 2026-04-21T08:55:38.155821Z | 019daf40-93a9-75f3-a094-7527b1b6290a ====================
+08:55:38.155943 [info ]: Installing dbt project and profile setup
+08:55:38.158476 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+08:55:38.215906 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+08:55:38.216595 [info ]: Success Project created successfully!
+08:55:38.216837 [info ]: Info Project name: jaffle_shop_1
+08:55:38.217165 [info ]: Info Project directory: jaffle_shop_1
+08:55:38.217490 [info ]: Info Setting up your profile...
+08:55:38.218202 [info ]: Loading ~/.dbt/profiles.yml
+08:55:38.229068 [info ]: Info Creating new profile...
+08:55:39.248729 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+08:57:30.285895 [info ]: Success Profile written to C:\Users\alejandro.lmoreira\.dbt\profiles.yml
+08:57:30.286268 [info ]: Validating profile inputs, adapters, and connection
+
+08:57:30.286617 [info ]: dbt-fusion 2.0.0-preview.171
+08:57:30.286858 [info ]: Started loading project
+08:57:30.288334 [info ]: Loading ~/.dbt/profiles.yml
+08:57:30.308106 [info ]: Finished loading project [  0.02s]
+08:57:30.308261 [info ]: Started debugging
+08:57:30.308353 [info ]: Debugging profile: dev
+08:57:30.308542 [info ]: Debugging dbt version: 2.0.0-preview.171
+08:57:30.308727 [info ]: Debugging platform: windows x86_64 (windows)
+08:57:30.308841 [info ]: Debugging adapter type: snowflake (remote)
+08:57:30.356560 [info ]: Debugging dependencies:
+  git: OK
+08:57:30.356973 [info ]: Debugging connection:
+  "account": "IURJGBG-HU17824",
+  "user": "TRIALALM1989",
+  "database": "snowflake_sample_data",
+  "warehouse": "compute_wh",
+  "schema": "TCPH_SF1",
+  "role": "ACCOUNTADMIN"
+08:57:31.621967 [debug]: Query executed on node unknown:
+select 1 as id
+08:57:31.622181 [info ]: Debugging connection test: OK
+08:57:31.622497 [info ]: Debugged All checks passed!
+08:57:31.622751 [info ]: Finished debugging [  1.31s]
+08:57:32.121619 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+08:57:32.177433 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [1m 54s]
+==================== 2026-04-21T09:29:16.756943Z | 019daf5f-60d2-7731-a8f1-706e165a60f0 ====================
+09:29:16.757038 [info ]: Installing dbt project and profile setup
+09:29:16.759476 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+09:29:16.818972 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+09:29:16.819825 [info ]: Success Project created successfully!
+09:29:16.820115 [info ]: Info Project name: jaffle_shop_1
+09:29:16.820258 [info ]: Info Project directory: jaffle_shop_1
+09:29:16.820481 [info ]: Info Setting up your profile...
+09:29:16.821193 [info ]: Loading ~/.dbt/profiles.yml
+09:29:16.834228 [info ]: Info Creating new profile...
