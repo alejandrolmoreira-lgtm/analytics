@@ -8,9 +8,9 @@ model-paths: ["models"]
 
 models:
   project:
-    staging:
+    s1_staging:
       +materialized: table
-    intermediate:
+    s2_intermediate:
       +materialized: view
-    marts:
+    s3_marts:
       +materialized: table

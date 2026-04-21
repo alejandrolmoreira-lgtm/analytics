@@ -5,3 +5,940 @@
 09:31:28.497434 [info ]: Creating LSP service...
 09:31:28.565626 [info ]: Creating LSP server...
 09:31:28.565650 [info ]: Starting LSP server...
+09:31:41.523049 [info ]: Loading ~/.dbt/profiles.yml
+09:31:41.545679 [info ]: Started loading project
+09:31:41.546369 [info ]: Loading ~/.dbt/profiles.yml
+09:31:41.546729 [info ]: Finished loading project [  0.00s]
+09:31:41.840803 [info ]: Waiting for lease on 'target' directory
+09:31:42.054461 [info ]: Loading ~/.dbt/profiles.yml
+09:31:42.066498 [info ]: Started loading project
+09:31:42.067281 [info ]: Loading ~/.dbt/profiles.yml
+09:31:42.067594 [info ]: Finished loading project [  0.00s]
+09:31:42.457362 [info ]: Loading ~/.dbt/profiles.yml
+09:31:42.959632 [info ]: Loading ~/.dbt/profiles.yml
+09:31:58.233247 [info ]: Loading ~/.dbt/profiles.yml
+09:32:03.642145 [info ]: Loading ~/.dbt/profiles.yml
+09:32:03.925070 [info ]: Loading ~/.dbt/profiles.yml
+09:32:07.396094 [info ]: Loading ~/.dbt/profiles.yml
+09:32:12.086172 [info ]: Loading ~/.dbt/profiles.yml
+09:32:48.435339 [info ]: Loading ~/.dbt/profiles.yml
+09:32:48.452858 [info ]: Started loading project
+09:32:48.453487 [info ]: Loading ~/.dbt/profiles.yml
+09:32:48.453869 [info ]: Finished loading project [  0.00s]
+09:32:48.824179 [info ]: Loading ~/.dbt/profiles.yml
+09:32:49.345028 [info ]: Loading ~/.dbt/profiles.yml
+09:34:48.355705 [info ]: Loading ~/.dbt/profiles.yml
+09:34:48.395887 [info ]: Started loading project
+09:34:48.396687 [info ]: Loading ~/.dbt/profiles.yml
+09:34:48.402694 [debug]:    Started loading packages
+09:34:48.404580 [debug]:     Loaded [  0.00s] packages
+09:34:48.405235 [info ]: Started parsing
+09:34:48.425991 [info ]: Finished loading project [  0.03s]
+09:34:48.443154 [debug]: Finished parsing models\stagging\stg.part.sql [  0.01s]
+09:34:48.458156 [debug]: Finished parsing models\stagging\stg.partsupp.sql [  0.02s]
+09:34:48.472239 [debug]: Finished parsing models\stagging\stg_customer.sql [  0.01s]
+09:34:48.485587 [debug]: Finished parsing models\stagging\stg_lineitem.sql [  0.01s]
+09:34:48.498610 [debug]: Finished parsing models\stagging\stg_nation.sql [  0.01s]
+09:34:48.511757 [debug]: Finished parsing models\stagging\stg_orders.sql [  0.01s]
+09:34:48.523729 [debug]: Finished parsing models\stagging\stg_region.sql [  0.01s]
+09:34:48.536399 [debug]: Finished parsing models\stagging\stg_supplier.sql [  0.01s]
+09:34:48.537150 [info ]: Finished parsing [  0.13s]
+09:34:48.537601 [info ]: Cached model count updated: 8 models (estimate)
+09:34:48.537612 [info ]: Cached model count updated: 8 models (accurate)
+09:34:48.537637 [info ]: Started scheduling
+09:34:48.537675 [info ]: Finished scheduling [  0.00s]
+09:34:48.537685 [debug]: Compilation - 0 nodes selected: {}
+09:34:48.537700 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:34:48.537707 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:34:48.537715 [info ]: Started scheduling
+09:34:48.537752 [info ]: Finished scheduling [  0.00s]
+09:34:48.648298 [info ]: Started building task graph
+09:34:48.648340 [info ]: Finished building task graph [  0.00s]
+09:34:48.651378 [info ]: Started scheduling
+09:34:48.651415 [info ]: Finished scheduling [  0.00s]
+09:34:48.651746 [info ]: Cached model count updated: 8 models (accurate)
+09:34:49.788969 [info ]: Loading ~/.dbt/profiles.yml
+09:34:49.810429 [info ]: Started loading project
+09:34:49.811572 [info ]: Loading ~/.dbt/profiles.yml
+09:34:49.814516 [info ]: Started loading project
+09:34:49.815070 [info ]: Loading ~/.dbt/profiles.yml
+09:34:49.815133 [info ]: Finished loading project [  0.00s]
+09:34:49.817948 [debug]:    Started loading packages
+09:34:49.819432 [debug]:     Loaded [  0.00s] packages
+09:34:49.820002 [info ]: Started parsing
+09:34:49.839897 [info ]: Finished loading project [  0.03s]
+09:34:49.842375 [debug]: Finished parsing models\stagging\stg.part.sql [  0.00s]
+09:34:49.843043 [debug]: Finished parsing models\stagging\stg.partsupp.sql [  0.00s]
+09:34:49.843606 [debug]: Finished parsing models\stagging\stg_customer.sql [  0.00s]
+09:34:49.844085 [debug]: Finished parsing models\stagging\stg_lineitem.sql [  0.00s]
+09:34:49.844557 [debug]: Finished parsing models\stagging\stg_nation.sql [  0.00s]
+09:34:49.845017 [debug]: Finished parsing models\stagging\stg_orders.sql [  0.00s]
+09:34:49.845360 [debug]: Finished parsing models\stagging\stg_region.sql [  0.00s]
+09:34:49.847801 [debug]: Finished parsing models\stagging\stg_supplier.sql [  0.00s]
+09:34:49.848550 [info ]: Finished parsing [  0.03s]
+09:34:49.848975 [info ]: Cached model count updated: 8 models (estimate)
+09:34:49.848985 [info ]: Cached model count updated: 8 models (accurate)
+09:34:49.849005 [info ]: Started scheduling
+09:34:49.849037 [info ]: Finished scheduling [  0.00s]
+09:34:49.849046 [debug]: Compilation - 0 nodes selected: {}
+09:34:49.849056 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:34:49.849062 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:34:49.849067 [info ]: Started scheduling
+09:34:49.849098 [info ]: Finished scheduling [  0.00s]
+09:34:49.962496 [info ]: Started building task graph
+09:34:49.962531 [info ]: Finished building task graph [  0.00s]
+09:34:49.965401 [info ]: Started scheduling
+09:34:49.965442 [info ]: Finished scheduling [  0.00s]
+09:34:49.966935 [info ]: Cached model count updated: 8 models (accurate)
+09:34:51.530681 [info ]: Started loading project
+09:34:51.531334 [info ]: Loading ~/.dbt/profiles.yml
+09:34:51.550957 [info ]: Cached model count updated: 8 models (estimate)
+09:34:51.550984 [info ]: Cached model count updated: 8 models (accurate)
+09:34:51.551009 [info ]: Started scheduling
+09:34:51.551063 [info ]: Finished scheduling [  0.00s]
+09:34:51.551078 [debug]: Compilation - 8 nodes selected: {"model.project.stg.part", "model.project.stg.partsupp", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_region", "model.project.stg_supplier"}
+09:34:51.663598 [info ]: Started building task graph
+09:34:51.663677 [info ]: Finished building task graph [  0.00s]
+09:34:51.663821 [info ]: Started rendering (8 nodes)
+09:34:51.663841 [info ]: Started model tpch_sf1.stg_supplier
+09:34:51.663854 [debug]: Started rendering model tpch_sf1.stg_supplier
+09:34:51.663879 [info ]: Started model tpch_sf1.stg_region
+09:34:51.663887 [debug]: Started rendering model tpch_sf1.stg_region
+09:34:51.663894 [info ]: Started model tpch_sf1.stg_orders
+09:34:51.663898 [debug]: Started rendering model tpch_sf1.stg_orders
+09:34:51.663904 [info ]: Started model tpch_sf1.stg_nation
+09:34:51.663909 [debug]: Started rendering model tpch_sf1.stg_nation
+09:34:51.663914 [info ]: Started model tpch_sf1.stg_lineitem
+09:34:51.663918 [debug]: Started rendering model tpch_sf1.stg_lineitem
+09:34:51.663922 [info ]: Started model tpch_sf1.stg_customer
+09:34:51.663929 [info ]: Finished loading project [  0.13s]
+09:34:51.663927 [debug]: Started rendering model tpch_sf1.stg_customer
+09:34:51.663995 [info ]: Started model tpch_sf1.stg.partsupp
+09:34:51.664006 [debug]: Started rendering model tpch_sf1.stg.partsupp
+09:34:51.664014 [info ]: Started model tpch_sf1.stg.part
+09:34:51.664019 [debug]: Started rendering model tpch_sf1.stg.part
+09:34:51.681445 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\stagging\stg_nation.sql
+09:34:51.681656 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_nation [success]
+09:34:51.681709 [info ]: Started analyzing (8 nodes)
+09:34:51.681722 [debug]: Started analyzing model tpch_sf1.stg_nation
+09:34:51.682531 [debug]: Compiled SQL for node model.project.stg.part at target\.lsp\compiled\models\stagging\stg.part.sql
+09:34:51.682722 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg.part [success]
+09:34:51.682771 [debug]: Started analyzing model tpch_sf1.stg.part
+09:34:51.683502 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\stagging\stg_supplier.sql
+09:34:51.683497 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\stagging\stg_region.sql
+09:34:51.683611 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\stagging\stg_orders.sql
+09:34:51.683751 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_supplier [success]
+09:34:51.683792 [debug]: Started analyzing model tpch_sf1.stg_supplier
+09:34:51.684072 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_orders [success]
+09:34:51.684253 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\stagging\stg_lineitem.sql
+09:34:51.684259 [debug]: Compiled SQL for node model.project.stg.partsupp at target\.lsp\compiled\models\stagging\stg.partsupp.sql
+09:34:51.684152 [debug]: Started analyzing model tpch_sf1.stg_orders
+09:34:51.684373 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_region [success]
+09:34:51.684415 [debug]: Started analyzing model tpch_sf1.stg_region
+09:34:51.684439 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_lineitem [success]
+09:34:51.684469 [debug]: Started analyzing model tpch_sf1.stg_lineitem
+09:34:51.684485 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg.partsupp [success]
+09:34:51.684496 [debug]: Started analyzing model tpch_sf1.stg.partsupp
+09:34:51.685430 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\stagging\stg_customer.sql
+09:34:51.685641 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_customer [success]
+09:34:51.685663 [info ]: Finished rendering [  0.02s] (8 nodes, 0 skipped, 0 errors)
+09:34:51.685692 [debug]: Started analyzing model tpch_sf1.stg_customer
+09:34:51.687856 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg.partsupp (view)
+09:34:51.687900 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg.partsupp [success]
+09:34:51.687919 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_region (view)
+09:34:51.687930 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_region [success]
+09:34:51.687940 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_orders (view)
+09:34:51.687949 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_orders [success]
+09:34:51.687958 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg.part (view)
+09:34:51.687970 [debug]: Finished analyzing [  0.01s] model tpch_sf1.stg.part [success]
+09:34:51.687986 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_supplier (view)
+09:34:51.687996 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_supplier [success]
+09:34:51.688006 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_lineitem (view)
+09:34:51.688014 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_lineitem [success]
+09:34:51.688024 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_customer (view)
+09:34:51.688032 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_customer [success]
+09:34:51.688043 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_nation (view)
+09:34:51.688054 [debug]: Finished analyzing [  0.01s] model tpch_sf1.stg_nation [success]
+09:34:51.688060 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:34:51.693609 [info ]: Started scheduling
+09:34:51.693677 [info ]: Finished scheduling [  0.00s]
+09:34:51.695240 [info ]: Cached model count updated: 8 models (accurate)
+09:36:19.841384 [info ]: Started loading project
+09:36:19.842241 [info ]: Loading ~/.dbt/profiles.yml
+09:36:19.845037 [info ]: Started loading project
+09:36:19.845533 [info ]: Loading ~/.dbt/profiles.yml
+09:36:19.845560 [info ]: Finished loading project [  0.00s]
+09:36:19.848359 [debug]:    Started loading packages
+09:36:19.849875 [debug]:     Loaded [  0.00s] packages
+09:36:19.850436 [info ]: Started parsing
+09:36:19.871779 [info ]: Finished loading project [  0.03s]
+09:36:19.874500 [debug]: Finished parsing models\staging\stg.part.sql [  0.00s]
+09:36:19.875287 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:36:19.875793 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:36:19.876175 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:36:19.876464 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:36:19.876731 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:36:19.877043 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:36:19.879408 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:36:19.880171 [info ]: Finished parsing [  0.03s]
+09:36:19.880641 [info ]: Cached model count updated: 8 models (estimate)
+09:36:19.880651 [info ]: Cached model count updated: 8 models (accurate)
+09:36:19.880672 [info ]: Started scheduling
+09:36:19.880699 [info ]: Finished scheduling [  0.00s]
+09:36:19.880708 [debug]: Compilation - 0 nodes selected: {}
+09:36:19.880722 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:36:19.880726 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:36:19.880731 [info ]: Started scheduling
+09:36:19.880763 [info ]: Finished scheduling [  0.00s]
+09:36:19.987223 [info ]: Started building task graph
+09:36:19.987259 [info ]: Finished building task graph [  0.00s]
+09:36:19.990918 [info ]: Started scheduling
+09:36:19.990969 [info ]: Finished scheduling [  0.00s]
+09:36:19.992655 [info ]: Cached model count updated: 8 models (accurate)
+09:36:21.557952 [info ]: Started loading project
+09:36:21.558982 [info ]: Loading ~/.dbt/profiles.yml
+09:36:21.583163 [info ]: Cached model count updated: 8 models (estimate)
+09:36:21.583187 [info ]: Cached model count updated: 8 models (accurate)
+09:36:21.583214 [info ]: Started scheduling
+09:36:21.583270 [info ]: Finished scheduling [  0.00s]
+09:36:21.583285 [debug]: Compilation - 8 nodes selected: {"model.project.stg.part", "model.project.stg.partsupp", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_region", "model.project.stg_supplier"}
+09:36:21.729010 [info ]: Started building task graph
+09:36:21.729079 [info ]: Finished building task graph [  0.00s]
+09:36:21.729202 [info ]: Started rendering (8 nodes)
+09:36:21.729217 [info ]: Started model tpch_sf1.stg_supplier
+09:36:21.729228 [debug]: Started rendering model tpch_sf1.stg_supplier
+09:36:21.729249 [info ]: Started model tpch_sf1.stg_region
+09:36:21.729255 [debug]: Started rendering model tpch_sf1.stg_region
+09:36:21.729261 [info ]: Started model tpch_sf1.stg_orders
+09:36:21.729265 [debug]: Started rendering model tpch_sf1.stg_orders
+09:36:21.729270 [info ]: Started model tpch_sf1.stg_nation
+09:36:21.729273 [debug]: Started rendering model tpch_sf1.stg_nation
+09:36:21.729278 [info ]: Started model tpch_sf1.stg_lineitem
+09:36:21.729285 [info ]: Finished loading project [  0.17s]
+09:36:21.729330 [debug]: Started rendering model tpch_sf1.stg_lineitem
+09:36:21.729389 [info ]: Started model tpch_sf1.stg_customer
+09:36:21.729414 [debug]: Started rendering model tpch_sf1.stg_customer
+09:36:21.729428 [info ]: Started model tpch_sf1.stg.partsupp
+09:36:21.729435 [debug]: Started rendering model tpch_sf1.stg.partsupp
+09:36:21.729447 [info ]: Started model tpch_sf1.stg.part
+09:36:21.729468 [debug]: Started rendering model tpch_sf1.stg.part
+09:36:21.731809 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+09:36:21.731929 [debug]: Finished rendering [  0.00s] model tpch_sf1.stg_orders [success]
+09:36:21.731976 [info ]: Started analyzing (8 nodes)
+09:36:21.731990 [debug]: Started analyzing model tpch_sf1.stg_orders
+09:36:21.732215 [info ]:  Succeeded [  0.00s] model tpch_sf1.stg_orders (table)
+09:36:21.732231 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_orders [success]
+09:36:21.746457 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\staging\stg_supplier.sql
+09:36:21.746639 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_supplier [success]
+09:36:21.746691 [debug]: Started analyzing model tpch_sf1.stg_supplier
+09:36:21.747017 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_supplier (table)
+09:36:21.747056 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_supplier [success]
+09:36:21.747890 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\staging\stg_region.sql
+09:36:21.748044 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\staging\stg_lineitem.sql
+09:36:21.748045 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_region [success]
+09:36:21.748082 [debug]: Started analyzing model tpch_sf1.stg_region
+09:36:21.748236 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_lineitem [success]
+09:36:21.748266 [debug]: Started analyzing model tpch_sf1.stg_lineitem
+09:36:21.748304 [debug]: Compiled SQL for node model.project.stg.part at target\.lsp\compiled\models\staging\stg.part.sql
+09:36:21.748358 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\staging\stg_nation.sql
+09:36:21.748401 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_region (table)
+09:36:21.748431 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_region [success]
+09:36:21.748447 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg.part [success]
+09:36:21.748479 [debug]: Started analyzing model tpch_sf1.stg.part
+09:36:21.748503 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_lineitem (table)
+09:36:21.748527 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_lineitem [success]
+09:36:21.748543 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_nation [success]
+09:36:21.748554 [debug]: Started analyzing model tpch_sf1.stg_nation
+09:36:21.748595 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\staging\stg_customer.sql
+09:36:21.748679 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg.part (table)
+09:36:21.748698 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg.part [success]
+09:36:21.748710 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg_customer [success]
+09:36:21.748719 [debug]: Started analyzing model tpch_sf1.stg_customer
+09:36:21.748734 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_nation (table)
+09:36:21.748740 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_nation [success]
+09:36:21.748791 [debug]: Compiled SQL for node model.project.stg.partsupp at target\.lsp\compiled\models\staging\stg.partsupp.sql
+09:36:21.748886 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg_customer (table)
+09:36:21.748897 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_customer [success]
+09:36:21.748909 [debug]: Finished rendering [  0.02s] model tpch_sf1.stg.partsupp [success]
+09:36:21.748914 [info ]: Finished rendering [  0.02s] (8 nodes, 0 skipped, 0 errors)
+09:36:21.748921 [debug]: Started analyzing model tpch_sf1.stg.partsupp
+09:36:21.749019 [info ]:  Succeeded [  0.02s] model tpch_sf1.stg.partsupp (table)
+09:36:21.749036 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg.partsupp [success]
+09:36:21.749041 [info ]: Finished analyzing [  0.02s] (8 nodes, 0 skipped, 0 errors)
+09:36:21.752110 [info ]: Started scheduling
+09:36:21.752152 [info ]: Finished scheduling [  0.00s]
+09:36:21.752917 [info ]: Cached model count updated: 8 models (accurate)
+09:36:52.302282 [info ]: Loading ~/.dbt/profiles.yml
+09:36:52.326655 [info ]: Started loading project
+09:36:52.327276 [info ]: Loading ~/.dbt/profiles.yml
+09:36:52.329773 [info ]: Started loading project
+09:36:52.330198 [info ]: Loading ~/.dbt/profiles.yml
+09:36:52.330266 [info ]: Finished loading project [  0.00s]
+09:36:52.332959 [debug]:    Started loading packages
+09:36:52.334321 [debug]:     Loaded [  0.00s] packages
+09:36:52.334857 [info ]: Started parsing
+09:36:52.354275 [info ]: Finished loading project [  0.02s]
+09:36:52.357082 [debug]: Finished parsing models\staging\stg.part.sql [  0.00s]
+09:36:52.357631 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:36:52.358051 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:36:52.358406 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:36:52.358818 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:36:52.359111 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:36:52.359487 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:36:52.361970 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:36:52.362705 [info ]: Finished parsing [  0.03s]
+09:36:52.363126 [info ]: Cached model count updated: 8 models (estimate)
+09:36:52.363137 [info ]: Cached model count updated: 8 models (accurate)
+09:36:52.363156 [info ]: Started scheduling
+09:36:52.363180 [info ]: Finished scheduling [  0.00s]
+09:36:52.363187 [debug]: Compilation - 0 nodes selected: {}
+09:36:52.363196 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:36:52.363201 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:36:52.363206 [info ]: Started scheduling
+09:36:52.363237 [info ]: Finished scheduling [  0.00s]
+09:36:52.476050 [info ]: Started building task graph
+09:36:52.476092 [info ]: Finished building task graph [  0.00s]
+09:36:52.481421 [info ]: Started scheduling
+09:36:52.481486 [info ]: Finished scheduling [  0.00s]
+09:36:52.483948 [info ]: Cached model count updated: 8 models (accurate)
+09:36:52.730555 [info ]: Waiting for lease on 'target' directory
+09:36:52.836489 [info ]: Loading ~/.dbt/profiles.yml
+09:36:52.845385 [info ]: Started loading project
+09:36:52.846038 [info ]: Loading ~/.dbt/profiles.yml
+09:36:52.865578 [info ]: Finished loading project [  0.02s]
+09:36:52.865750 [info ]: Cached model count updated: 8 models (accurate)
+09:36:53.268283 [info ]: Waiting for lease on 'target' directory
+09:36:53.380145 [info ]: Loading ~/.dbt/profiles.yml
+09:36:53.388267 [info ]: Started loading project
+09:36:53.389558 [info ]: Loading ~/.dbt/profiles.yml
+09:36:53.392795 [info ]: Started loading project
+09:36:53.393401 [info ]: Loading ~/.dbt/profiles.yml
+09:36:53.393456 [info ]: Finished loading project [  0.01s]
+09:36:53.396895 [debug]:    Started loading packages
+09:36:53.398306 [debug]:     Loaded [  0.00s] packages
+09:36:53.398902 [info ]: Started parsing
+09:36:53.418190 [info ]: Finished loading project [  0.03s]
+09:36:53.420706 [debug]: Finished parsing models\staging\stg.part.sql [  0.00s]
+09:36:53.421658 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:36:53.422538 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:36:53.423580 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:36:53.424204 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:36:53.424705 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:36:53.425233 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:36:53.427907 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:36:53.428751 [info ]: Finished parsing [  0.03s]
+09:36:53.429193 [info ]: Cached model count updated: 8 models (estimate)
+09:36:53.429203 [info ]: Cached model count updated: 8 models (accurate)
+09:36:53.429222 [info ]: Started scheduling
+09:36:53.429246 [info ]: Finished scheduling [  0.00s]
+09:36:53.429253 [debug]: Compilation - 0 nodes selected: {}
+09:36:53.429263 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:36:53.429269 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:36:53.429274 [info ]: Started scheduling
+09:36:53.429305 [info ]: Finished scheduling [  0.00s]
+09:36:53.538302 [info ]: Started building task graph
+09:36:53.538348 [info ]: Finished building task graph [  0.00s]
+09:36:53.542308 [info ]: Started scheduling
+09:36:53.542354 [info ]: Finished scheduling [  0.00s]
+09:36:53.543922 [info ]: Cached model count updated: 8 models (accurate)
+09:36:53.814047 [info ]: Waiting for lease on 'target' directory
+09:36:53.925554 [info ]: Loading ~/.dbt/profiles.yml
+09:36:53.934018 [info ]: Started loading project
+09:36:53.934785 [info ]: Loading ~/.dbt/profiles.yml
+09:36:53.952566 [info ]: Finished loading project [  0.02s]
+09:36:53.952715 [info ]: Cached model count updated: 8 models (accurate)
+09:36:55.515203 [info ]: Started loading project
+09:36:55.515954 [info ]: Loading ~/.dbt/profiles.yml
+09:36:55.536825 [info ]: Cached model count updated: 8 models (estimate)
+09:36:55.536846 [info ]: Cached model count updated: 8 models (accurate)
+09:36:55.536874 [info ]: Started scheduling
+09:36:55.536931 [info ]: Finished scheduling [  0.00s]
+09:36:55.536946 [debug]: Compilation - 8 nodes selected: {"model.project.stg.part", "model.project.stg.partsupp", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_region", "model.project.stg_supplier"}
+09:36:55.682659 [info ]: Started building task graph
+09:36:55.682731 [info ]: Finished building task graph [  0.00s]
+09:36:55.682878 [info ]: Started rendering (8 nodes)
+09:36:55.682895 [info ]: Started model tpch_sf1.stg_supplier
+09:36:55.682908 [debug]: Started rendering model tpch_sf1.stg_supplier
+09:36:55.682931 [info ]: Started model tpch_sf1.stg_region
+09:36:55.682938 [debug]: Started rendering model tpch_sf1.stg_region
+09:36:55.682945 [info ]: Started model tpch_sf1.stg_orders
+09:36:55.682949 [debug]: Started rendering model tpch_sf1.stg_orders
+09:36:55.682956 [info ]: Started model tpch_sf1.stg_nation
+09:36:55.682960 [debug]: Started rendering model tpch_sf1.stg_nation
+09:36:55.682966 [info ]: Started model tpch_sf1.stg_lineitem
+09:36:55.682973 [debug]: Started rendering model tpch_sf1.stg_lineitem
+09:36:55.682973 [info ]: Finished loading project [  0.17s]
+09:36:55.682979 [info ]: Started model tpch_sf1.stg_customer
+09:36:55.682984 [debug]: Started rendering model tpch_sf1.stg_customer
+09:36:55.682992 [info ]: Started model tpch_sf1.stg.partsupp
+09:36:55.682996 [debug]: Started rendering model tpch_sf1.stg.partsupp
+09:36:55.683003 [info ]: Started model tpch_sf1.stg.part
+09:36:55.683010 [debug]: Started rendering model tpch_sf1.stg.part
+09:36:55.685016 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\staging\stg_region.sql
+09:36:55.685165 [debug]: Finished rendering [  0.00s] model tpch_sf1.stg_region [success]
+09:36:55.685215 [info ]: Started analyzing (8 nodes)
+09:36:55.685235 [debug]: Started analyzing model tpch_sf1.stg_region
+09:36:55.685663 [info ]:  Succeeded [  0.00s] model tpch_sf1.stg_region (table)
+09:36:55.685700 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_region [success]
+09:36:55.685936 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\staging\stg_supplier.sql
+09:36:55.686076 [debug]: Finished rendering [  0.00s] model tpch_sf1.stg_supplier [success]
+09:36:55.686129 [debug]: Started analyzing model tpch_sf1.stg_supplier
+09:36:55.686399 [info ]:  Succeeded [  0.00s] model tpch_sf1.stg_supplier (table)
+09:36:55.686424 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_supplier [success]
+09:36:55.686466 [debug]: Compiled SQL for node model.project.stg.partsupp at target\.lsp\compiled\models\staging\stg.partsupp.sql
+09:36:55.686673 [debug]: Finished rendering [  0.00s] model tpch_sf1.stg.partsupp [success]
+09:36:55.686708 [debug]: Started analyzing model tpch_sf1.stg.partsupp
+09:36:55.686932 [info ]:  Succeeded [  0.00s] model tpch_sf1.stg.partsupp (table)
+09:36:55.686956 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg.partsupp [success]
+09:36:55.687800 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+09:36:55.687975 [debug]: Finished rendering [  0.01s] model tpch_sf1.stg_orders [success]
+09:36:55.688025 [debug]: Started analyzing model tpch_sf1.stg_orders
+09:36:55.688044 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\staging\stg_lineitem.sql
+09:36:55.688090 [debug]: Compiled SQL for node model.project.stg.part at target\.lsp\compiled\models\staging\stg.part.sql
+09:36:55.688090 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\staging\stg_customer.sql
+09:36:55.688138 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\staging\stg_nation.sql
+09:36:55.688162 [debug]: Finished rendering [  0.01s] model tpch_sf1.stg_lineitem [success]
+09:36:55.688200 [debug]: Started analyzing model tpch_sf1.stg_lineitem
+09:36:55.688231 [debug]: Finished rendering [  0.01s] model tpch_sf1.stg_customer [success]
+09:36:55.688250 [debug]: Started analyzing model tpch_sf1.stg_customer
+09:36:55.688270 [debug]: Finished rendering [  0.01s] model tpch_sf1.stg.part [success]
+09:36:55.688285 [debug]: Started analyzing model tpch_sf1.stg.part
+09:36:55.688310 [debug]: Finished rendering [  0.01s] model tpch_sf1.stg_nation [success]
+09:36:55.688322 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:36:55.688335 [debug]: Started analyzing model tpch_sf1.stg_nation
+09:36:55.688360 [info ]:  Succeeded [  0.01s] model tpch_sf1.stg_orders (table)
+09:36:55.688382 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_orders [success]
+09:36:55.688466 [info ]:  Succeeded [  0.01s] model tpch_sf1.stg_lineitem (table)
+09:36:55.688497 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_lineitem [success]
+09:36:55.688537 [info ]:  Succeeded [  0.01s] model tpch_sf1.stg_customer (table)
+09:36:55.688565 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_customer [success]
+09:36:55.688587 [info ]:  Succeeded [  0.01s] model tpch_sf1.stg.part (table)
+09:36:55.688599 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg.part [success]
+09:36:55.688757 [info ]:  Succeeded [  0.01s] model tpch_sf1.stg_nation (table)
+09:36:55.688792 [debug]: Finished analyzing [  0.00s] model tpch_sf1.stg_nation [success]
+09:36:55.688804 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+09:36:55.695122 [info ]: Started scheduling
+09:36:55.695177 [info ]: Finished scheduling [  0.00s]
+09:36:55.696120 [info ]: Cached model count updated: 8 models (accurate)
+09:39:09.309951 [info ]: Loading ~/.dbt/profiles.yml
+09:39:09.359173 [info ]: Started loading project
+09:39:09.360044 [info ]: Loading ~/.dbt/profiles.yml
+09:39:09.363225 [info ]: Started loading project
+09:39:09.364248 [info ]: Loading ~/.dbt/profiles.yml
+09:39:09.364302 [info ]: Finished loading project [  0.01s]
+09:39:09.368878 [debug]:    Started loading packages
+09:39:09.372329 [debug]:     Loaded [  0.00s] packages
+09:39:09.373475 [info ]: Started parsing
+09:39:09.401663 [info ]: Finished loading project [  0.04s]
+09:39:09.404005 [debug]: Finished parsing models\staging\stg.part.sql [  0.00s]
+09:39:09.405047 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:39:09.405988 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:39:09.406579 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:39:09.407048 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:39:09.407472 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:39:09.407871 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:39:09.410930 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:39:09.411708 [info ]: Finished parsing [  0.04s]
+09:39:09.412145 [info ]: Cached model count updated: 8 models (estimate)
+09:39:09.412157 [info ]: Cached model count updated: 8 models (accurate)
+09:39:09.412177 [info ]: Started scheduling
+09:39:09.412203 [info ]: Finished scheduling [  0.00s]
+09:39:09.412212 [debug]: Compilation - 0 nodes selected: {}
+09:39:09.412223 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:39:09.412228 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:39:09.412234 [info ]: Started scheduling
+09:39:09.412267 [info ]: Finished scheduling [  0.00s]
+09:39:09.577561 [info ]: Started building task graph
+09:39:09.577596 [info ]: Finished building task graph [  0.00s]
+09:39:09.580822 [info ]: Started scheduling
+09:39:09.580872 [info ]: Finished scheduling [  0.00s]
+09:39:09.582693 [info ]: Cached model count updated: 8 models (accurate)
+09:39:11.129207 [info ]: Started loading project
+09:39:11.130140 [info ]: Loading ~/.dbt/profiles.yml
+09:39:11.161108 [info ]: Cached model count updated: 8 models (estimate)
+09:39:11.161148 [info ]: Cached model count updated: 8 models (accurate)
+09:39:11.161186 [info ]: Started scheduling
+09:39:11.161272 [info ]: Finished scheduling [  0.00s]
+09:39:11.161297 [debug]: Compilation - 8 nodes selected: {"model.project.stg.part", "model.project.stg.partsupp", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_region", "model.project.stg_supplier"}
+09:39:11.308081 [info ]: Started building task graph
+09:39:11.308161 [info ]: Finished building task graph [  0.00s]
+09:39:11.308326 [info ]: Started rendering (8 nodes)
+09:39:11.308344 [info ]: Started model analytics_prod.stg_supplier
+09:39:11.308358 [debug]: Started rendering model analytics_prod.stg_supplier
+09:39:11.308394 [info ]: Started model analytics_prod.stg_region
+09:39:11.308402 [debug]: Started rendering model analytics_prod.stg_region
+09:39:11.308410 [info ]: Started model analytics_prod.stg_orders
+09:39:11.308415 [debug]: Started rendering model analytics_prod.stg_orders
+09:39:11.308422 [info ]: Started model analytics_prod.stg_nation
+09:39:11.308426 [debug]: Started rendering model analytics_prod.stg_nation
+09:39:11.308432 [info ]: Started model analytics_prod.stg_lineitem
+09:39:11.308437 [debug]: Started rendering model analytics_prod.stg_lineitem
+09:39:11.308445 [info ]: Started model analytics_prod.stg_customer
+09:39:11.308442 [info ]: Finished loading project [  0.18s]
+09:39:11.308452 [debug]: Started rendering model analytics_prod.stg_customer
+09:39:11.308461 [info ]: Started model analytics_prod.stg.partsupp
+09:39:11.308493 [debug]: Started rendering model analytics_prod.stg.partsupp
+09:39:11.308505 [info ]: Started model analytics_prod.stg.part
+09:39:11.308541 [debug]: Started rendering model analytics_prod.stg.part
+09:39:11.312090 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\staging\stg_supplier.sql
+09:39:11.312269 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+09:39:11.312323 [info ]: Started analyzing (8 nodes)
+09:39:11.312473 [debug]: Started analyzing model analytics_prod.stg_supplier
+09:39:11.312862 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_supplier (table)
+09:39:11.312898 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+09:39:11.314196 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\staging\stg_nation.sql
+09:39:11.314391 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+09:39:11.314447 [debug]: Started analyzing model analytics_prod.stg_nation
+09:39:11.314476 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+09:39:11.314510 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\staging\stg_lineitem.sql
+09:39:11.314523 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\staging\stg_region.sql
+09:39:11.314572 [debug]: Compiled SQL for node model.project.stg.partsupp at target\.lsp\compiled\models\staging\stg.partsupp.sql
+09:39:11.314574 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\staging\stg_customer.sql
+09:39:11.314678 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+09:39:11.314715 [debug]: Compiled SQL for node model.project.stg.part at target\.lsp\compiled\models\staging\stg.part.sql
+09:39:11.314715 [debug]: Started analyzing model analytics_prod.stg_orders
+09:39:11.314750 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+09:39:11.314766 [debug]: Started analyzing model analytics_prod.stg_lineitem
+09:39:11.314791 [debug]: Finished rendering [  0.01s] model analytics_prod.stg.partsupp [success]
+09:39:11.314803 [debug]: Started analyzing model analytics_prod.stg.partsupp
+09:39:11.314825 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+09:39:11.314838 [debug]: Started analyzing model analytics_prod.stg_region
+09:39:11.314858 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+09:39:11.314868 [debug]: Started analyzing model analytics_prod.stg_customer
+09:39:11.314890 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_nation (table)
+09:39:11.314914 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+09:39:11.314956 [debug]: Finished rendering [  0.01s] model analytics_prod.stg.part [success]
+09:39:11.314969 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:39:11.314983 [debug]: Started analyzing model analytics_prod.stg.part
+09:39:11.315009 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_orders (table)
+09:39:11.315025 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+09:39:11.315037 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_lineitem (table)
+09:39:11.315050 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+09:39:11.315063 [info ]:  Succeeded [  0.01s] model analytics_prod.stg.partsupp (table)
+09:39:11.315078 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg.partsupp [success]
+09:39:11.315093 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_customer (table)
+09:39:11.315105 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+09:39:11.315118 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_region (table)
+09:39:11.315130 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+09:39:11.315160 [info ]:  Succeeded [  0.01s] model analytics_prod.stg.part (table)
+09:39:11.315176 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg.part [success]
+09:39:11.315185 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+09:39:11.318408 [info ]: Started scheduling
+09:39:11.318457 [info ]: Finished scheduling [  0.00s]
+09:39:11.319285 [info ]: Cached model count updated: 8 models (accurate)
+09:39:38.114256 [info ]: Loading ~/.dbt/profiles.yml
+09:39:38.163796 [info ]: Started loading project
+09:39:38.164843 [info ]: Loading ~/.dbt/profiles.yml
+09:39:38.168725 [info ]: Started loading project
+09:39:38.169452 [info ]: Loading ~/.dbt/profiles.yml
+09:39:38.169513 [info ]: Finished loading project [  0.01s]
+09:39:38.174801 [debug]:    Started loading packages
+09:39:38.176775 [debug]:     Loaded [  0.00s] packages
+09:39:38.177371 [info ]: Started parsing
+09:39:38.198252 [info ]: Finished loading project [  0.03s]
+09:39:38.200250 [debug]: Finished parsing models\staging\stg.part.sql [  0.00s]
+09:39:38.200856 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:39:38.201257 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:39:38.201646 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:39:38.201949 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:39:38.202285 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:39:38.202625 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:39:38.205088 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:39:38.205876 [info ]: Finished parsing [  0.03s]
+09:39:38.206311 [info ]: Cached model count updated: 8 models (estimate)
+09:39:38.206322 [info ]: Cached model count updated: 8 models (accurate)
+09:39:38.206345 [info ]: Started scheduling
+09:39:38.206369 [info ]: Finished scheduling [  0.00s]
+09:39:38.206377 [debug]: Compilation - 0 nodes selected: {}
+09:39:38.206387 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:39:38.206393 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:39:38.206400 [info ]: Started scheduling
+09:39:38.206432 [info ]: Finished scheduling [  0.00s]
+09:39:38.318622 [info ]: Started building task graph
+09:39:38.318658 [info ]: Finished building task graph [  0.00s]
+09:39:38.321919 [info ]: Started scheduling
+09:39:38.321968 [info ]: Finished scheduling [  0.00s]
+09:39:38.323616 [info ]: Cached model count updated: 8 models (accurate)
+09:39:39.447599 [info ]: Loading ~/.dbt/profiles.yml
+09:39:39.468914 [info ]: Started loading project
+09:39:39.469757 [info ]: Loading ~/.dbt/profiles.yml
+09:39:39.472946 [info ]: Started loading project
+09:39:39.473665 [info ]: Loading ~/.dbt/profiles.yml
+09:39:39.473723 [info ]: Finished loading project [  0.00s]
+09:39:39.477724 [debug]:    Started loading packages
+09:39:39.480354 [debug]:     Loaded [  0.00s] packages
+09:39:39.481398 [info ]: Started parsing
+09:39:39.505528 [info ]: Finished loading project [  0.03s]
+09:39:39.507685 [debug]: Finished parsing models\staging\stg.part.sql [  0.00s]
+09:39:39.508770 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:39:39.509388 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:39:39.509942 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:39:39.510373 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:39:39.510860 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:39:39.511354 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:39:39.514202 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:39:39.515020 [info ]: Finished parsing [  0.03s]
+09:39:39.515474 [info ]: Cached model count updated: 8 models (estimate)
+09:39:39.515486 [info ]: Cached model count updated: 8 models (accurate)
+09:39:39.515510 [info ]: Started scheduling
+09:39:39.515535 [info ]: Finished scheduling [  0.00s]
+09:39:39.515541 [debug]: Compilation - 0 nodes selected: {}
+09:39:39.515550 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:39:39.515555 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:39:39.515560 [info ]: Started scheduling
+09:39:39.515591 [info ]: Finished scheduling [  0.00s]
+09:39:39.637715 [info ]: Started building task graph
+09:39:39.637766 [info ]: Finished building task graph [  0.00s]
+09:39:39.643032 [info ]: Started scheduling
+09:39:39.643078 [info ]: Finished scheduling [  0.00s]
+09:39:39.644692 [info ]: Cached model count updated: 8 models (accurate)
+09:39:41.217106 [info ]: Started loading project
+09:39:41.217848 [info ]: Loading ~/.dbt/profiles.yml
+09:39:41.248007 [info ]: Cached model count updated: 8 models (estimate)
+09:39:41.248043 [info ]: Cached model count updated: 8 models (accurate)
+09:39:41.248086 [info ]: Started scheduling
+09:39:41.248176 [info ]: Finished scheduling [  0.00s]
+09:39:41.248202 [debug]: Compilation - 8 nodes selected: {"model.project.stg.part", "model.project.stg.partsupp", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_region", "model.project.stg_supplier"}
+09:39:41.391751 [info ]: Started building task graph
+09:39:41.391851 [info ]: Finished building task graph [  0.00s]
+09:39:41.392053 [info ]: Started rendering (8 nodes)
+09:39:41.392073 [info ]: Started model analytics_prod.stg_supplier
+09:39:41.392085 [debug]: Started rendering model analytics_prod.stg_supplier
+09:39:41.392115 [info ]: Started model analytics_prod.stg_region
+09:39:41.392124 [debug]: Started rendering model analytics_prod.stg_region
+09:39:41.392135 [info ]: Started model analytics_prod.stg_orders
+09:39:41.392141 [debug]: Started rendering model analytics_prod.stg_orders
+09:39:41.392150 [info ]: Started model analytics_prod.stg_nation
+09:39:41.392157 [debug]: Started rendering model analytics_prod.stg_nation
+09:39:41.392167 [info ]: Started model analytics_prod.stg_lineitem
+09:39:41.392177 [debug]: Started rendering model analytics_prod.stg_lineitem
+09:39:41.392186 [info ]: Started model analytics_prod.stg_customer
+09:39:41.392196 [debug]: Started rendering model analytics_prod.stg_customer
+09:39:41.392208 [info ]: Started model analytics_prod.stg.partsupp
+09:39:41.392215 [debug]: Started rendering model analytics_prod.stg.partsupp
+09:39:41.392252 [info ]: Finished loading project [  0.18s]
+09:39:41.392317 [info ]: Started model analytics_prod.stg.part
+09:39:41.392360 [debug]: Started rendering model analytics_prod.stg.part
+09:39:41.395324 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\staging\stg_nation.sql
+09:39:41.395500 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_nation [success]
+09:39:41.395552 [info ]: Started analyzing (8 nodes)
+09:39:41.395569 [debug]: Started analyzing model analytics_prod.stg_nation
+09:39:41.395911 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_nation (table)
+09:39:41.395946 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+09:39:41.396302 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\staging\stg_supplier.sql
+09:39:41.396397 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\staging\stg_lineitem.sql
+09:39:41.396416 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+09:39:41.396443 [debug]: Started analyzing model analytics_prod.stg_supplier
+09:39:41.396507 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_lineitem [success]
+09:39:41.396531 [debug]: Started analyzing model analytics_prod.stg_lineitem
+09:39:41.396598 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_supplier (table)
+09:39:41.396609 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+09:39:41.396671 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_lineitem (table)
+09:39:41.396683 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+09:39:41.397937 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\staging\stg_region.sql
+09:39:41.397966 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+09:39:41.398102 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+09:39:41.398143 [debug]: Started analyzing model analytics_prod.stg_region
+09:39:41.398168 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+09:39:41.398179 [debug]: Started analyzing model analytics_prod.stg_orders
+09:39:41.398404 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_orders (table)
+09:39:41.398425 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+09:39:41.398436 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_region (table)
+09:39:41.398443 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+09:39:41.398780 [debug]: Compiled SQL for node model.project.stg.part at target\.lsp\compiled\models\staging\stg.part.sql
+09:39:41.398794 [debug]: Compiled SQL for node model.project.stg.partsupp at target\.lsp\compiled\models\staging\stg.partsupp.sql
+09:39:41.398823 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\staging\stg_customer.sql
+09:39:41.398925 [debug]: Finished rendering [  0.01s] model analytics_prod.stg.part [success]
+09:39:41.398955 [debug]: Started analyzing model analytics_prod.stg.part
+09:39:41.398986 [debug]: Finished rendering [  0.01s] model analytics_prod.stg.partsupp [success]
+09:39:41.399000 [debug]: Started analyzing model analytics_prod.stg.partsupp
+09:39:41.399024 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+09:39:41.399035 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:39:41.399045 [debug]: Started analyzing model analytics_prod.stg_customer
+09:39:41.399125 [info ]:  Succeeded [  0.01s] model analytics_prod.stg.partsupp (table)
+09:39:41.399140 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg.partsupp [success]
+09:39:41.399149 [info ]:  Succeeded [  0.01s] model analytics_prod.stg.part (table)
+09:39:41.399155 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg.part [success]
+09:39:41.399193 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_customer (table)
+09:39:41.399215 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+09:39:41.399225 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+09:39:41.404587 [info ]: Started scheduling
+09:39:41.404652 [info ]: Finished scheduling [  0.00s]
+09:39:41.406133 [info ]: Cached model count updated: 8 models (accurate)
+09:41:13.377434 [info ]: Started loading project
+09:41:13.378407 [info ]: Loading ~/.dbt/profiles.yml
+09:41:13.406804 [info ]: Finished loading project [  0.03s]
+09:41:13.406981 [info ]: Cached model count updated: 8 models (accurate)
+09:41:14.989995 [info ]: Cached model count updated: 8 models (accurate)
+09:42:05.534637 [info ]: Started loading project
+09:42:05.535845 [info ]: Loading ~/.dbt/profiles.yml
+09:42:05.538962 [info ]: Started loading project
+09:42:05.539479 [info ]: Loading ~/.dbt/profiles.yml
+09:42:05.539517 [info ]: Finished loading project [  0.00s]
+09:42:05.542532 [debug]:    Started loading packages
+09:42:05.545313 [debug]:     Loaded [  0.00s] packages
+09:42:05.546049 [info ]: Started parsing
+09:42:05.577384 [info ]: Finished loading project [  0.04s]
+09:42:05.579729 [debug]: Finished parsing models\staging\stg.partsupp.sql [  0.00s]
+09:42:05.580450 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:42:05.581066 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:42:05.581673 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:42:05.582162 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:42:05.582508 [debug]: Finished parsing models\staging\stg_part.sql [  0.00s]
+09:42:05.582966 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:42:05.586774 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:42:05.587793 [info ]: Finished parsing [  0.04s]
+09:42:05.588260 [info ]: Cached model count updated: 8 models (estimate)
+09:42:05.588272 [info ]: Cached model count updated: 8 models (accurate)
+09:42:05.588297 [info ]: Started scheduling
+09:42:05.588331 [info ]: Finished scheduling [  0.00s]
+09:42:05.588342 [debug]: Compilation - 0 nodes selected: {}
+09:42:05.588355 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:42:05.588363 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:42:05.588370 [info ]: Started scheduling
+09:42:05.588407 [info ]: Finished scheduling [  0.00s]
+09:42:05.722958 [info ]: Started building task graph
+09:42:05.723003 [info ]: Finished building task graph [  0.00s]
+09:42:05.728227 [info ]: Started scheduling
+09:42:05.728281 [info ]: Finished scheduling [  0.00s]
+09:42:05.731621 [info ]: Cached model count updated: 8 models (accurate)
+09:42:06.549889 [info ]: Started loading project
+09:42:06.550597 [info ]: Loading ~/.dbt/profiles.yml
+09:42:06.554262 [info ]: Started parsing
+09:42:06.567839 [info ]: Finished loading project [  0.02s]
+09:42:06.571315 [debug]: Finished parsing models\staging\stg_part.sql [  0.00s]
+09:42:06.572126 [info ]: Finished parsing [  0.02s]
+09:42:06.573142 [info ]: Cached model count updated: 8 models (estimate)
+09:42:06.573154 [info ]: Cached model count updated: 8 models (accurate)
+09:42:06.573178 [info ]: Started scheduling
+09:42:06.573224 [info ]: Finished scheduling [  0.00s]
+09:42:06.573233 [debug]: Compilation - 1 nodes selected: {"model.project.stg_part"}
+09:42:06.676924 [info ]: Started building task graph
+09:42:06.676976 [info ]: Finished building task graph [  0.00s]
+09:42:06.677091 [info ]: Started rendering (1 nodes)
+09:42:06.677106 [info ]: Started model analytics_prod.stg_part
+09:42:06.677119 [debug]: Started rendering model analytics_prod.stg_part
+09:42:06.680328 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\staging\stg_part.sql
+09:42:06.680519 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+09:42:06.680532 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+09:42:06.680550 [info ]: Started analyzing (1 nodes)
+09:42:06.680556 [debug]: Started analyzing model analytics_prod.stg_part
+09:42:06.680792 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+09:42:06.680807 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+09:42:06.680810 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+09:42:06.684203 [info ]: Started scheduling
+09:42:06.684473 [info ]: Finished scheduling [  0.00s]
+09:42:06.685580 [info ]: Cached model count updated: 8 models (accurate)
+09:42:07.110697 [info ]: Started loading project
+09:42:07.111372 [info ]: Loading ~/.dbt/profiles.yml
+09:42:07.130926 [info ]: Finished loading project [  0.02s]
+09:42:07.131025 [info ]: Cached model count updated: 8 models (accurate)
+09:42:08.680603 [info ]: Started loading project
+09:42:08.681423 [info ]: Loading ~/.dbt/profiles.yml
+09:42:08.700217 [info ]: Cached model count updated: 8 models (estimate)
+09:42:08.700239 [info ]: Cached model count updated: 8 models (accurate)
+09:42:08.700264 [info ]: Started scheduling
+09:42:08.700319 [info ]: Finished scheduling [  0.00s]
+09:42:08.700334 [debug]: Compilation - 8 nodes selected: {"model.project.stg.partsupp", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_region", "model.project.stg_supplier"}
+09:42:08.829459 [info ]: Started building task graph
+09:42:08.829538 [info ]: Finished building task graph [  0.00s]
+09:42:08.829687 [info ]: Started rendering (8 nodes)
+09:42:08.829703 [info ]: Started model analytics_prod.stg_supplier
+09:42:08.829712 [debug]: Started rendering model analytics_prod.stg_supplier
+09:42:08.829736 [info ]: Started model analytics_prod.stg_region
+09:42:08.829744 [debug]: Started rendering model analytics_prod.stg_region
+09:42:08.829751 [info ]: Started model analytics_prod.stg_part
+09:42:08.829755 [debug]: Started rendering model analytics_prod.stg_part
+09:42:08.829761 [info ]: Started model analytics_prod.stg_orders
+09:42:08.829816 [info ]: Finished loading project [  0.15s]
+09:42:08.829829 [debug]: Started rendering model analytics_prod.stg_orders
+09:42:08.829878 [info ]: Started model analytics_prod.stg_nation
+09:42:08.829915 [debug]: Started rendering model analytics_prod.stg_nation
+09:42:08.829964 [info ]: Started model analytics_prod.stg_lineitem
+09:42:08.830052 [debug]: Started rendering model analytics_prod.stg_lineitem
+09:42:08.830168 [info ]: Started model analytics_prod.stg_customer
+09:42:08.830224 [debug]: Started rendering model analytics_prod.stg_customer
+09:42:08.830258 [info ]: Started model analytics_prod.stg.partsupp
+09:42:08.830303 [debug]: Started rendering model analytics_prod.stg.partsupp
+09:42:08.830896 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\staging\stg_part.sql
+09:42:08.831002 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+09:42:08.831044 [info ]: Started analyzing (8 nodes)
+09:42:08.831059 [debug]: Started analyzing model analytics_prod.stg_part
+09:42:08.831443 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+09:42:08.831473 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+09:42:08.833095 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\staging\stg_supplier.sql
+09:42:08.833095 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\staging\stg_region.sql
+09:42:08.833305 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+09:42:08.833350 [debug]: Started analyzing model analytics_prod.stg_supplier
+09:42:08.833523 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_region [success]
+09:42:08.833561 [debug]: Started analyzing model analytics_prod.stg_region
+09:42:08.833734 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_supplier (table)
+09:42:08.833765 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+09:42:08.833781 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_region (table)
+09:42:08.833791 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+09:42:08.834360 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+09:42:08.834368 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\staging\stg_nation.sql
+09:42:08.835065 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+09:42:08.835119 [debug]: Started analyzing model analytics_prod.stg_nation
+09:42:08.835143 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+09:42:08.835153 [debug]: Started analyzing model analytics_prod.stg_orders
+09:42:08.835499 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_nation (table)
+09:42:08.835528 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+09:42:08.835545 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_orders (table)
+09:42:08.835545 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\staging\stg_lineitem.sql
+09:42:08.835557 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+09:42:08.835676 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+09:42:08.835706 [debug]: Started analyzing model analytics_prod.stg_lineitem
+09:42:08.835851 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\staging\stg_customer.sql
+09:42:08.835902 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_lineitem (table)
+09:42:08.835926 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+09:42:08.835958 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+09:42:08.835985 [debug]: Started analyzing model analytics_prod.stg_customer
+09:42:08.835995 [debug]: Compiled SQL for node model.project.stg.partsupp at target\.lsp\compiled\models\staging\stg.partsupp.sql
+09:42:08.836115 [debug]: Finished rendering [  0.01s] model analytics_prod.stg.partsupp [success]
+09:42:08.836136 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:42:08.836158 [debug]: Started analyzing model analytics_prod.stg.partsupp
+09:42:08.836190 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_customer (table)
+09:42:08.836210 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+09:42:08.836312 [info ]:  Succeeded [  0.01s] model analytics_prod.stg.partsupp (table)
+09:42:08.836338 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg.partsupp [success]
+09:42:08.836348 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:42:08.839857 [info ]: Started scheduling
+09:42:08.839909 [info ]: Finished scheduling [  0.00s]
+09:42:08.840898 [info ]: Cached model count updated: 8 models (accurate)
+09:42:15.072944 [info ]: Started loading project
+09:42:15.073859 [info ]: Loading ~/.dbt/profiles.yml
+09:42:15.078765 [info ]: Started loading project
+09:42:15.079542 [info ]: Loading ~/.dbt/profiles.yml
+09:42:15.079595 [info ]: Finished loading project [  0.01s]
+09:42:15.085197 [debug]:    Started loading packages
+09:42:15.088207 [debug]:     Loaded [  0.00s] packages
+09:42:15.089267 [info ]: Started parsing
+09:42:15.120354 [info ]: Finished loading project [  0.04s]
+09:42:15.122553 [debug]: Finished parsing models\staging\stg_customer.sql [  0.00s]
+09:42:15.123173 [debug]: Finished parsing models\staging\stg_lineitem.sql [  0.00s]
+09:42:15.123622 [debug]: Finished parsing models\staging\stg_nation.sql [  0.00s]
+09:42:15.124081 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+09:42:15.124576 [debug]: Finished parsing models\staging\stg_part.sql [  0.00s]
+09:42:15.125116 [debug]: Finished parsing models\staging\stg_partsupp.sql [  0.00s]
+09:42:15.125789 [debug]: Finished parsing models\staging\stg_region.sql [  0.00s]
+09:42:15.128446 [debug]: Finished parsing models\staging\stg_supplier.sql [  0.00s]
+09:42:15.129159 [info ]: Finished parsing [  0.04s]
+09:42:15.129587 [info ]: Cached model count updated: 8 models (estimate)
+09:42:15.129597 [info ]: Cached model count updated: 8 models (accurate)
+09:42:15.129616 [info ]: Started scheduling
+09:42:15.129641 [info ]: Finished scheduling [  0.00s]
+09:42:15.129650 [debug]: Compilation - 0 nodes selected: {}
+09:42:15.129660 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+09:42:15.129665 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+09:42:15.129670 [info ]: Started scheduling
+09:42:15.129702 [info ]: Finished scheduling [  0.00s]
+09:42:15.259029 [info ]: Started building task graph
+09:42:15.259068 [info ]: Finished building task graph [  0.00s]
+09:42:15.262905 [info ]: Started scheduling
+09:42:15.262956 [info ]: Finished scheduling [  0.00s]
+09:42:15.264760 [info ]: Cached model count updated: 8 models (accurate)
+09:42:15.791163 [info ]: Started loading project
+09:42:15.792085 [info ]: Loading ~/.dbt/profiles.yml
+09:42:15.796816 [info ]: Started parsing
+09:42:15.811640 [info ]: Finished loading project [  0.02s]
+09:42:15.816404 [debug]: Finished parsing models\staging\stg_partsupp.sql [  0.00s]
+09:42:15.817658 [info ]: Finished parsing [  0.02s]
+09:42:15.818829 [info ]: Cached model count updated: 8 models (estimate)
+09:42:15.818842 [info ]: Cached model count updated: 8 models (accurate)
+09:42:15.818869 [info ]: Started scheduling
+09:42:15.818920 [info ]: Finished scheduling [  0.00s]
+09:42:15.818931 [debug]: Compilation - 1 nodes selected: {"model.project.stg_partsupp"}
+09:42:15.939199 [info ]: Started building task graph
+09:42:15.939250 [info ]: Finished building task graph [  0.00s]
+09:42:15.939363 [info ]: Started rendering (1 nodes)
+09:42:15.939379 [info ]: Started model analytics_prod.stg_partsupp
+09:42:15.939390 [debug]: Started rendering model analytics_prod.stg_partsupp
+09:42:15.941292 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\staging\stg_partsupp.sql
+09:42:15.941381 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_partsupp [success]
+09:42:15.941394 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+09:42:15.941408 [info ]: Started analyzing (1 nodes)
+09:42:15.941412 [debug]: Started analyzing model analytics_prod.stg_partsupp
+09:42:15.941642 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_partsupp (table)
+09:42:15.941658 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+09:42:15.941662 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+09:42:15.944291 [info ]: Started scheduling
+09:42:15.944357 [info ]: Finished scheduling [  0.00s]
+09:42:15.945219 [info ]: Cached model count updated: 8 models (accurate)
+09:42:16.376852 [info ]: Started loading project
+09:42:16.377555 [info ]: Loading ~/.dbt/profiles.yml
+09:42:16.395097 [info ]: Finished loading project [  0.02s]
+09:42:16.395247 [info ]: Cached model count updated: 8 models (accurate)
+09:42:17.940379 [info ]: Started loading project
+09:42:17.941135 [info ]: Loading ~/.dbt/profiles.yml
+09:42:17.957875 [info ]: Cached model count updated: 8 models (estimate)
+09:42:17.957898 [info ]: Cached model count updated: 8 models (accurate)
+09:42:17.957925 [info ]: Started scheduling
+09:42:17.957980 [info ]: Finished scheduling [  0.00s]
+09:42:17.957994 [debug]: Compilation - 8 nodes selected: {"model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+09:42:18.079682 [info ]: Started building task graph
+09:42:18.079758 [info ]: Finished building task graph [  0.00s]
+09:42:18.079896 [info ]: Started rendering (8 nodes)
+09:42:18.079913 [info ]: Started model analytics_prod.stg_supplier
+09:42:18.079927 [debug]: Started rendering model analytics_prod.stg_supplier
+09:42:18.079948 [info ]: Started model analytics_prod.stg_region
+09:42:18.079953 [debug]: Started rendering model analytics_prod.stg_region
+09:42:18.079959 [info ]: Started model analytics_prod.stg_partsupp
+09:42:18.079963 [debug]: Started rendering model analytics_prod.stg_partsupp
+09:42:18.079968 [info ]: Started model analytics_prod.stg_part
+09:42:18.079972 [debug]: Started rendering model analytics_prod.stg_part
+09:42:18.079978 [info ]: Started model analytics_prod.stg_orders
+09:42:18.079983 [debug]: Started rendering model analytics_prod.stg_orders
+09:42:18.079988 [info ]: Started model analytics_prod.stg_nation
+09:42:18.079992 [debug]: Started rendering model analytics_prod.stg_nation
+09:42:18.079998 [info ]: Started model analytics_prod.stg_lineitem
+09:42:18.080004 [debug]: Started rendering model analytics_prod.stg_lineitem
+09:42:18.080009 [info ]: Started model analytics_prod.stg_customer
+09:42:18.080014 [debug]: Started rendering model analytics_prod.stg_customer
+09:42:18.080119 [info ]: Finished loading project [  0.14s]
+09:42:18.081593 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\staging\stg_partsupp.sql
+09:42:18.081814 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_partsupp [success]
+09:42:18.081846 [info ]: Started analyzing (8 nodes)
+09:42:18.081854 [debug]: Started analyzing model analytics_prod.stg_partsupp
+09:42:18.082060 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_partsupp (table)
+09:42:18.082076 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+09:42:18.084764 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\staging\stg_nation.sql
+09:42:18.085111 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+09:42:18.085176 [debug]: Started analyzing model analytics_prod.stg_nation
+09:42:18.085528 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_nation (table)
+09:42:18.085560 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+09:42:18.087294 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+09:42:18.087432 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\staging\stg_customer.sql
+09:42:18.087438 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\staging\stg_region.sql
+09:42:18.087441 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\staging\stg_supplier.sql
+09:42:18.087494 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\staging\stg_lineitem.sql
+09:42:18.087488 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+09:42:18.087531 [debug]: Started analyzing model analytics_prod.stg_orders
+09:42:18.087564 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+09:42:18.087588 [debug]: Started analyzing model analytics_prod.stg_supplier
+09:42:18.087625 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+09:42:18.087640 [debug]: Started analyzing model analytics_prod.stg_customer
+09:42:18.087660 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+09:42:18.087704 [debug]: Started analyzing model analytics_prod.stg_region
+09:42:18.087755 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+09:42:18.087777 [debug]: Started analyzing model analytics_prod.stg_lineitem
+09:42:18.087834 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_customer (table)
+09:42:18.087857 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+09:42:18.087877 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_supplier (table)
+09:42:18.087883 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+09:42:18.087889 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_orders (table)
+09:42:18.087894 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+09:42:18.087951 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_lineitem (table)
+09:42:18.087973 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+09:42:18.087970 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\staging\stg_part.sql
+09:42:18.087988 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_region (table)
+09:42:18.088005 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+09:42:18.088088 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+09:42:18.088106 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:42:18.088127 [debug]: Started analyzing model analytics_prod.stg_part
+09:42:18.088284 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_part (table)
+09:42:18.088308 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+09:42:18.088317 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+09:42:18.093530 [info ]: Started scheduling
+09:42:18.093585 [info ]: Finished scheduling [  0.00s]
+09:42:18.094788 [info ]: Cached model count updated: 8 models (accurate)
