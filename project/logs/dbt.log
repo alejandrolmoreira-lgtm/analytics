@@ -1423,3 +1423,1259 @@ from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
 Finished 'run' successfully for target 'dev' [18.2s]
 Processed: 8 models
 Summary: 8 total | 8 success
+==================== 2026-04-21T11:10:22.720593Z | 019dafbb-effd-75f1-a084-3e58b0d8a068 ====================
+11:10:22.720733 [info ]: dbt-fusion 2.0.0-preview.171
+11:10:22.721167 [info ]: Started loading project
+11:10:22.724511 [info ]: Loading ~/.dbt/profiles.yml
+11:10:22.729460 [info ]: Finished loading project [  0.01s]
+11:10:23.292166 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:10:23.484000 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully for target 'dev' [763ms]
+==================== 2026-04-21T11:11:04.688569Z | 019dafbc-93ee-7481-b97c-1fdfff450e2d ====================
+11:11:04.688664 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:04.689018 [info ]: Started loading project
+11:11:04.691854 [info ]: Loading ~/.dbt/profiles.yml
+11:11:04.696583 [debug]:    Started loading packages
+11:11:04.698500 [debug]:     Loaded [  0.00s] packages
+11:11:04.699087 [info ]: Finished loading project [  0.01s]
+11:11:04.699577 [info ]: Started parsing
+11:11:04.722999 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:04.723050 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:04.723431 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:04.725090 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:04.725560 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:04.725928 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:04.726344 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:04.726738 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:04.727152 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:04.727524 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:04.727906 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:04.731992 [info ]: Finished parsing [  0.03s]
+11:11:05.187224 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:05.338064 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:05.338064 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [649ms]
+==================== 2026-04-21T11:11:06.442322Z | 019dafbc-9ac6-72c1-ade4-332fd77d31a7 ====================
+11:11:06.442628 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:06.443033 [info ]: Started loading project
+11:11:06.447537 [info ]: Loading ~/.dbt/profiles.yml
+11:11:06.454962 [debug]:    Started loading packages
+11:11:06.459051 [debug]:     Loaded [  0.00s] packages
+11:11:06.460119 [info ]: Finished loading project [  0.02s]
+11:11:06.460965 [info ]: Started parsing
+11:11:06.489250 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:06.489314 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:06.489838 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:06.492698 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:06.493655 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:06.494331 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:06.495018 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:06.495756 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:06.496477 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:06.497259 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:06.498058 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:06.504009 [info ]: Finished parsing [  0.04s]
+11:11:06.958333 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:07.152108 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:07.152108 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [709ms]
+==================== 2026-04-21T11:11:08.254260Z | 019dafbc-a1db-71d3-a66a-81097a25782b ====================
+11:11:08.254397 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:08.254874 [info ]: Started loading project
+11:11:08.258008 [info ]: Loading ~/.dbt/profiles.yml
+11:11:08.264000 [debug]:    Started loading packages
+11:11:08.266001 [debug]:     Loaded [  0.00s] packages
+11:11:08.266551 [info ]: Finished loading project [  0.01s]
+11:11:08.266981 [info ]: Started parsing
+11:11:08.291840 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:08.291901 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:08.292341 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:08.294521 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:08.295173 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:08.295924 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:08.296606 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:08.297058 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:08.298016 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:08.298589 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:08.299079 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:08.302679 [info ]: Finished parsing [  0.04s]
+11:11:08.530582 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:08.687607 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:08.687607 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [433ms]
+==================== 2026-04-21T11:11:09.786701Z | 019dafbc-a7d7-70a2-b852-79417bc3d86f ====================
+11:11:09.786825 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:09.787422 [info ]: Started loading project
+11:11:09.790942 [info ]: Loading ~/.dbt/profiles.yml
+11:11:09.797778 [debug]:    Started loading packages
+11:11:09.799870 [debug]:     Loaded [  0.00s] packages
+11:11:09.800441 [info ]: Finished loading project [  0.01s]
+11:11:09.800944 [info ]: Started parsing
+11:11:09.826054 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:09.826131 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:09.826654 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:09.828682 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:09.829598 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:09.830257 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:09.830964 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:09.831851 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:09.832380 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:09.832924 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:09.833503 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:09.836869 [info ]: Finished parsing [  0.04s]
+11:11:10.070982 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:10.218431 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:10.218431 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [431ms]
+==================== 2026-04-21T11:11:11.280306Z | 019dafbc-adae-7543-97d6-885df9caba4e ====================
+11:11:11.280464 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:11.280851 [info ]: Started loading project
+11:11:11.283586 [info ]: Loading ~/.dbt/profiles.yml
+11:11:11.287546 [debug]:    Started loading packages
+11:11:11.289258 [debug]:     Loaded [  0.00s] packages
+11:11:11.289800 [info ]: Finished loading project [  0.01s]
+11:11:11.290212 [info ]: Started parsing
+11:11:11.312523 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:11.312595 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:11.313148 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:11.315642 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:11.316427 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:11.316932 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:11.317354 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:11.317731 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:11.318105 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:11.318534 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:11.318945 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:11.322045 [info ]: Finished parsing [  0.03s]
+11:11:11.768683 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:11.921662 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:11.921662 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [641ms]
+==================== 2026-04-21T11:11:13.115897Z | 019dafbc-b4d8-7723-b7eb-09bad12e32d2 ====================
+11:11:13.116005 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:13.116452 [info ]: Started loading project
+11:11:13.121662 [info ]: Loading ~/.dbt/profiles.yml
+11:11:13.128825 [debug]:    Started loading packages
+11:11:13.132155 [debug]:     Loaded [  0.00s] packages
+11:11:13.132799 [info ]: Finished loading project [  0.02s]
+11:11:13.133548 [info ]: Started parsing
+11:11:13.160490 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:13.160540 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:13.160852 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:13.163153 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:13.163951 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:13.164565 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:13.165159 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:13.165768 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:13.166300 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:13.166711 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:13.167209 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:13.170890 [info ]: Finished parsing [  0.04s]
+11:11:13.405487 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:13.559261 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:13.559261 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [443ms]
+==================== 2026-04-21T11:11:14.681007Z | 019dafbc-baf6-7653-9c6e-def1af42e596 ====================
+11:11:14.681142 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:14.681512 [info ]: Started loading project
+11:11:14.684875 [info ]: Loading ~/.dbt/profiles.yml
+11:11:14.689677 [debug]:    Started loading packages
+11:11:14.691507 [debug]:     Loaded [  0.00s] packages
+11:11:14.692091 [info ]: Finished loading project [  0.01s]
+11:11:14.692541 [info ]: Started parsing
+11:11:14.718237 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:14.718296 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:14.718685 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:14.721270 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:14.722101 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:14.722712 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:14.723279 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:14.723868 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:14.724497 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:14.725029 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:14.725817 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:14.729921 [info ]: Finished parsing [  0.04s]
+11:11:14.962681 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:15.107873 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:15.107873 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [426ms]
+==================== 2026-04-21T11:11:16.180682Z | 019dafbc-c0d2-7710-9b5b-444407fb45fc ====================
+11:11:16.180778 [info ]: dbt-fusion 2.0.0-preview.171
+11:11:16.181317 [info ]: Started loading project
+11:11:16.184414 [info ]: Loading ~/.dbt/profiles.yml
+11:11:16.188811 [debug]:    Started loading packages
+11:11:16.190688 [debug]:     Loaded [  0.00s] packages
+11:11:16.191271 [info ]: Finished loading project [  0.01s]
+11:11:16.191699 [info ]: Started parsing
+11:11:16.218386 [error]: dbt1060: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> models\packages.yml:1:1
+11:11:16.218442 [debug]: Finished parsing models\packages.yml [  0.00s]
+11:11:16.218909 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:11:16.221047 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:11:16.221664 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:11:16.222237 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:11:16.222797 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:11:16.223257 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:11:16.223645 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:11:16.224197 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:11:16.224667 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:11:16.228499 [info ]: Finished parsing [  0.04s]
+11:11:16.687049 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:11:16.849843 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+11:11:16.849843 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [669ms]
+==================== 2026-04-21T11:12:54.615424Z | 019dafbe-4154-7b31-9c2e-e8f9ebdf7398 ====================
+11:12:54.615550 [info ]: dbt-fusion 2.0.0-preview.171
+11:12:54.615923 [info ]: Started loading project
+11:12:54.619145 [info ]: Loading ~/.dbt/profiles.yml
+11:12:54.624022 [info ]: Loading packages.yml
+11:12:54.624420 [debug]:    Started loading packages
+11:12:54.635550 [debug]:     Loaded [  0.01s] packages
+11:12:54.636138 [info ]: Finished loading project [  0.02s]
+11:12:54.636732 [info ]: Started parsing
+11:12:54.676075 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:12:54.678799 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:12:54.679460 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:12:54.680026 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:12:54.680556 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:12:54.681135 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:12:54.681611 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:12:54.682115 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:12:54.682705 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:12:54.685651 [info ]: Finished parsing [  0.05s]
+11:12:54.686905 [info ]: Started scheduling
+11:12:54.687107 [info ]: Finished scheduling [  0.00s]
+11:12:54.690611 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:12:54.690696 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:12:54.690713 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:12:54.690726 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:12:54.690740 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:12:54.690755 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:12:54.690769 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:12:54.690786 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:12:57.507453 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:12:57.508392 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'customer') }}
+
+),
+
+renamed as (
+
+    select
+        c_custkey,
+        c_name,
+        c_address,
+        c_nationkey,
+        c_phone,
+        c_acctbal,
+        c_mktsegment,
+        c_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:12:57.520744 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:12:57.574311 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [3.0s]
+==================== 2026-04-21T11:12:58.672677Z | 019dafbe-512d-7983-b392-9e0583be3feb ====================
+11:12:58.672786 [info ]: dbt-fusion 2.0.0-preview.171
+11:12:58.673165 [info ]: Started loading project
+11:12:58.676732 [info ]: Loading ~/.dbt/profiles.yml
+11:12:58.682934 [info ]: Loading packages.yml
+11:12:58.683363 [debug]:    Started loading packages
+11:12:58.696288 [debug]:     Loaded [  0.01s] packages
+11:12:58.696946 [info ]: Finished loading project [  0.02s]
+11:12:58.697792 [info ]: Started parsing
+11:12:58.744566 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:12:58.746190 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:12:58.746953 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:12:58.747496 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:12:58.748200 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:12:58.748602 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:12:58.749044 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:12:58.749441 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:12:58.749813 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:12:58.755054 [info ]: Finished parsing [  0.06s]
+11:12:58.757011 [info ]: Started scheduling
+11:12:58.757305 [info ]: Finished scheduling [  0.00s]
+11:12:58.760840 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:12:58.760981 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:12:58.761035 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:12:58.761057 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:12:58.761075 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:12:58.761094 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:12:58.761115 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:12:58.761140 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:01.368468 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:01.369456 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'lineitem') }}
+
+),
+
+renamed as (
+
+    select
+        l_orderkey,
+        l_partkey,
+        l_suppkey,
+        l_linenumber,
+        l_quantity,
+        l_extendedprice,
+        l_discount,
+        l_tax,
+        l_returnflag,
+        l_linestatus,
+        l_shipdate,
+        l_commitdate,
+        l_receiptdate,
+        l_shipinstruct,
+        l_shipmode,
+        l_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:01.382076 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:01.436539 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [2.8s]
+==================== 2026-04-21T11:13:02.538982Z | 019dafbe-6048-7bf0-bcb2-5df040204155 ====================
+11:13:02.539080 [info ]: dbt-fusion 2.0.0-preview.171
+11:13:02.539456 [info ]: Started loading project
+11:13:02.543876 [info ]: Loading ~/.dbt/profiles.yml
+11:13:02.551859 [info ]: Loading packages.yml
+11:13:02.552348 [debug]:    Started loading packages
+11:13:02.562846 [debug]:     Loaded [  0.01s] packages
+11:13:02.563748 [info ]: Finished loading project [  0.02s]
+11:13:02.564367 [info ]: Started parsing
+11:13:02.606989 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:13:02.609138 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:13:02.609589 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:13:02.610330 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:13:02.611060 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:13:02.611667 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:13:02.612219 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:13:02.612701 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:13:02.613249 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:13:02.616851 [info ]: Finished parsing [  0.05s]
+11:13:02.618215 [info ]: Started scheduling
+11:13:02.618387 [info ]: Finished scheduling [  0.00s]
+11:13:02.621153 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:02.621239 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:13:02.621257 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:13:02.621272 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:13:02.621289 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:13:02.621303 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:13:02.621317 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:13:02.621331 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:13:03.432461 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:03.433271 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'nation') }}
+
+),
+
+renamed as (
+
+    select
+        n_nationkey,
+        n_name,
+        n_regionkey,
+        n_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:03.446566 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:03.501386 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [962ms]
+==================== 2026-04-21T11:13:04.621319Z | 019dafbe-686a-7260-9f9b-4c8d9da099c8 ====================
+11:13:04.621422 [info ]: dbt-fusion 2.0.0-preview.171
+11:13:04.621758 [info ]: Started loading project
+11:13:04.624595 [info ]: Loading ~/.dbt/profiles.yml
+11:13:04.629493 [info ]: Loading packages.yml
+11:13:04.629782 [debug]:    Started loading packages
+11:13:04.636666 [debug]:     Loaded [  0.01s] packages
+11:13:04.637267 [info ]: Finished loading project [  0.02s]
+11:13:04.637796 [info ]: Started parsing
+11:13:04.678429 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:13:04.680805 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:13:04.681536 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:13:04.682151 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:13:04.682709 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:13:04.683261 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:13:04.683757 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:13:04.684315 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:13:04.684804 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:13:04.688154 [info ]: Finished parsing [  0.05s]
+11:13:04.689544 [info ]: Started scheduling
+11:13:04.689709 [info ]: Finished scheduling [  0.00s]
+11:13:04.692106 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:13:04.692200 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:13:04.692218 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:13:04.692234 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:13:04.692249 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:13:04.692265 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:04.692279 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:13:04.692293 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:13:05.819075 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:05.820041 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'orders') }}
+
+),
+
+renamed as (
+
+    select
+        o_orderkey,
+        o_custkey,
+        o_orderstatus,
+        o_totalprice,
+        o_orderdate,
+        o_orderpriority,
+        o_clerk,
+        o_shippriority,
+        o_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:05.837633 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:05.890255 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [1.3s]
+==================== 2026-04-21T11:13:07.001376Z | 019dafbe-71b6-74d1-ac92-f45e6ed5ff0c ====================
+11:13:07.001483 [info ]: dbt-fusion 2.0.0-preview.171
+11:13:07.001918 [info ]: Started loading project
+11:13:07.005173 [info ]: Loading ~/.dbt/profiles.yml
+11:13:07.010946 [info ]: Loading packages.yml
+11:13:07.011255 [debug]:    Started loading packages
+11:13:07.020802 [debug]:     Loaded [  0.01s] packages
+11:13:07.021447 [info ]: Finished loading project [  0.02s]
+11:13:07.022162 [info ]: Started parsing
+11:13:07.066603 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:13:07.069211 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:13:07.069937 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:13:07.070345 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:13:07.070898 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:13:07.071655 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:13:07.072128 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:13:07.072500 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:13:07.072852 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:13:07.076317 [info ]: Finished parsing [  0.05s]
+11:13:07.077910 [info ]: Started scheduling
+11:13:07.078197 [info ]: Finished scheduling [  0.00s]
+11:13:07.081197 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:13:07.081307 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:13:07.081324 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:13:07.081338 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:13:07.081352 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:13:07.081365 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:13:07.081381 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:07.081396 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:13:09.063619 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:09.064892 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'part') }}
+
+),
+
+renamed as (
+
+    select
+        p_partkey,
+        p_name,
+        p_mfgr,
+        p_brand,
+        p_type,
+        p_size,
+        p_container,
+        p_retailprice,
+        p_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:09.082943 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:09.133295 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [2.1s]
+==================== 2026-04-21T11:13:10.269510Z | 019dafbe-7e7a-7883-8642-a9ebca103add ====================
+11:13:10.269638 [info ]: dbt-fusion 2.0.0-preview.171
+11:13:10.270037 [info ]: Started loading project
+11:13:10.272873 [info ]: Loading ~/.dbt/profiles.yml
+11:13:10.278622 [info ]: Loading packages.yml
+11:13:10.279010 [debug]:    Started loading packages
+11:13:10.284754 [debug]:     Loaded [  0.01s] packages
+11:13:10.285399 [info ]: Finished loading project [  0.02s]
+11:13:10.285860 [info ]: Started parsing
+11:13:10.321666 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:13:10.323466 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:13:10.323949 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:13:10.324462 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:13:10.324922 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:13:10.325375 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:13:10.325791 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:13:10.326270 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:13:10.326668 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:13:10.330304 [info ]: Finished parsing [  0.04s]
+11:13:10.331571 [info ]: Started scheduling
+11:13:10.331764 [info ]: Finished scheduling [  0.00s]
+11:13:10.334488 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:13:10.334576 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:13:10.334595 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:13:10.334610 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:13:10.334625 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:13:10.334639 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:13:10.334652 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:13:10.334665 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:11.252887 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:11.253676 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'partsupp') }}
+
+),
+
+renamed as (
+
+    select
+        ps_partkey,
+        ps_suppkey,
+        ps_availqty,
+        ps_supplycost,
+        ps_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:11.266967 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:11.319114 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [1.0s]
+==================== 2026-04-21T11:13:12.405030Z | 019dafbe-86d2-7ec0-a856-e6647ec574c6 ====================
+11:13:12.405131 [info ]: dbt-fusion 2.0.0-preview.171
+11:13:12.405474 [info ]: Started loading project
+11:13:12.409059 [info ]: Loading ~/.dbt/profiles.yml
+11:13:12.416542 [info ]: Loading packages.yml
+11:13:12.416984 [debug]:    Started loading packages
+11:13:12.423258 [debug]:     Loaded [  0.01s] packages
+11:13:12.423915 [info ]: Finished loading project [  0.02s]
+11:13:12.424441 [info ]: Started parsing
+11:13:12.467939 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:13:12.470077 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:13:12.470896 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:13:12.471827 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:13:12.472582 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:13:12.473661 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:13:12.474500 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:13:12.475244 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:13:12.475904 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:13:12.482381 [info ]: Finished parsing [  0.06s]
+11:13:12.483916 [info ]: Started scheduling
+11:13:12.484152 [info ]: Finished scheduling [  0.00s]
+11:13:12.488112 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:13:12.488279 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:13:12.488352 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:13:12.488418 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:13:12.488450 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:12.488476 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:13:12.488502 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:13:12.488528 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:13:13.299381 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:13.300524 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'region') }}
+
+),
+
+renamed as (
+
+    select
+        r_regionkey,
+        r_name,
+        r_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:13.322069 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:13.377606 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [972ms]
+==================== 2026-04-21T11:13:14.642875Z | 019dafbe-8f8f-7303-bfed-4da438aa3fcf ====================
+11:13:14.643028 [info ]: dbt-fusion 2.0.0-preview.171
+11:13:14.643475 [info ]: Started loading project
+11:13:14.648608 [info ]: Loading ~/.dbt/profiles.yml
+11:13:14.656476 [info ]: Loading packages.yml
+11:13:14.656836 [debug]:    Started loading packages
+11:13:14.669545 [debug]:     Loaded [  0.01s] packages
+11:13:14.670446 [info ]: Finished loading project [  0.03s]
+11:13:14.671657 [info ]: Started parsing
+11:13:14.724636 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+11:13:14.727657 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+11:13:14.729063 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+11:13:14.730104 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+11:13:14.731056 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+11:13:14.731764 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+11:13:14.732224 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+11:13:14.732802 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+11:13:14.733359 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+11:13:14.740290 [info ]: Finished parsing [  0.07s]
+11:13:14.742274 [info ]: Started scheduling
+11:13:14.742544 [info ]: Finished scheduling [  0.00s]
+11:13:14.746158 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+11:13:14.746311 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+11:13:14.746378 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+11:13:14.746414 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+11:13:14.746443 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+11:13:14.746473 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+11:13:14.746500 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+11:13:14.746526 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+11:13:16.363060 [debug]: Query executed on node unknown:
+describe table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+11:13:16.364295 [info ]: 
+
+with source as (
+
+    select * from {{ source('tpch', 'supplier') }}
+
+),
+
+renamed as (
+
+    select
+        s_suppkey,
+        s_name,
+        s_address,
+        s_nationkey,
+        s_phone,
+        s_acctbal,
+        s_comment
+
+    from source
+
+)
+
+select * from renamed
+
+11:13:16.377056 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+11:13:16.428054 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' successfully for target 'dev' [1.8s]
+==================== 2026-04-21T15:35:31.384916Z | 019db0ae-af36-7c91-ae9a-e3418581850f ====================
+15:35:31.385016 [info ]: dbt-fusion 2.0.0-preview.171
+15:35:31.385304 [info ]: Started loading project
+15:35:31.388285 [info ]: Loading ~/.dbt/profiles.yml
+15:35:31.393573 [info ]: Loading packages.yml
+15:35:31.393912 [debug]:    Started loading packages
+15:35:31.402614 [debug]:     Loaded [  0.01s] packages
+15:35:31.403225 [info ]: Finished loading project [  0.02s]
+15:35:31.416129 [info ]: Started parsing
+15:35:31.456128 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:35:31.456362 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:35:31.458301 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:35:31.458770 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:35:31.459089 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:35:31.459388 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:35:31.459656 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:35:31.459939 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:35:31.460207 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:35:31.460458 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:35:31.463446 [info ]: Finished parsing [  0.05s]
+15:35:31.464616 [info ]: Started scheduling
+15:35:31.464784 [info ]: Finished scheduling [  0.00s]
+15:35:31.468406 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+15:35:31.468510 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+15:35:31.468527 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+15:35:31.468540 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+15:35:31.468553 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+15:35:31.468573 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:35:31.468587 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+15:35:31.468599 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+15:35:31.620599 [info ]: Started building task graph
+15:35:31.621088 [info ]: Finished building task graph [  0.00s]
+15:35:35.666310 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:35.666823 [info ]: Started rendering (8 nodes)
+15:35:35.667204 [info ]: Started model analytics_prod.stg_supplier
+15:35:35.667240 [debug]: Started rendering model analytics_prod.stg_supplier
+15:35:35.667276 [info ]: Started model analytics_prod.stg_region
+15:35:35.667284 [debug]: Started rendering model analytics_prod.stg_region
+15:35:35.667293 [info ]: Started model analytics_prod.stg_partsupp
+15:35:35.667301 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:35:35.667308 [info ]: Started model analytics_prod.stg_part
+15:35:35.667311 [debug]: Started rendering model analytics_prod.stg_part
+15:35:35.667318 [info ]: Started model analytics_prod.stg_orders
+15:35:35.667322 [debug]: Started rendering model analytics_prod.stg_orders
+15:35:35.667328 [info ]: Started model analytics_prod.stg_nation
+15:35:35.667333 [debug]: Started rendering model analytics_prod.stg_nation
+15:35:35.667339 [info ]: Started model analytics_prod.stg_lineitem
+15:35:35.667343 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:35:35.667350 [info ]: Started model analytics_prod.stg_customer
+15:35:35.667354 [debug]: Started rendering model analytics_prod.stg_customer
+15:35:35.673090 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+15:35:35.673582 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+15:35:35.674174 [info ]: Started analyzing (8 nodes)
+15:35:35.674444 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:35:35.677777 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+15:35:35.677975 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+15:35:35.678013 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+15:35:35.678278 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+15:35:35.678441 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:35:35.678466 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+15:35:35.678620 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+15:35:35.678021 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+15:35:35.678974 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:35:35.679017 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+15:35:35.679291 [info ]: Started running (8 nodes)
+15:35:35.679548 [info ]: Started running model analytics_prod.stg_supplier
+15:35:35.679583 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+15:35:35.679743 [debug]: Started analyzing model analytics_prod.stg_part
+15:35:35.679778 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+15:35:35.679938 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:35:35.679959 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:35:35.680119 [debug]: Started analyzing model analytics_prod.stg_region
+15:35:35.680181 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+15:35:35.680485 [debug]: Started analyzing model analytics_prod.stg_customer
+15:35:35.680515 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+15:35:35.680938 [debug]: Started analyzing model analytics_prod.stg_orders
+15:35:35.680965 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:35:35.681236 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+15:35:35.681390 [debug]: Started analyzing model analytics_prod.stg_nation
+15:35:35.681445 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+15:35:35.681564 [info ]: Started running model analytics_prod.stg_lineitem
+15:35:35.681588 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+15:35:35.681883 [info ]: Started running model analytics_prod.stg_part
+15:35:35.681898 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+15:35:35.682071 [info ]: Started running model analytics_prod.stg_partsupp
+15:35:35.682092 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+15:35:35.682327 [info ]: Started running model analytics_prod.stg_region
+15:35:35.682355 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+15:35:35.682527 [info ]: Started running model analytics_prod.stg_orders
+15:35:35.682555 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+15:35:35.682793 [info ]: Started running model analytics_prod.stg_nation
+15:35:35.687579 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+15:35:35.687795 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+15:35:35.688088 [info ]: Started running model analytics_prod.stg_customer
+15:35:37.075529 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:37.077146 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+15:35:37.326881 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:37.328927 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+15:35:38.247514 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:38.249091 [debug]: Writing runtime sql for node "model.project.stg_part"
+15:35:38.597742 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:38.599317 [info ]:  Succeeded [  2.93s] model analytics_prod.stg_supplier (table)
+15:35:38.599833 [info ]: Finished running [  2.92s] model analytics_prod.stg_supplier [success]
+15:35:39.152734 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:39.154565 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+15:35:39.417571 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:39.419920 [debug]: Writing runtime sql for node "model.project.stg_orders"
+15:35:39.647461 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:39.648652 [info ]:  Succeeded [  3.98s] model analytics_prod.stg_part (table)
+15:35:39.649018 [info ]: Finished running [  3.97s] model analytics_prod.stg_part [success]
+15:35:39.778428 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:39.779725 [debug]: Writing runtime sql for node "model.project.stg_region"
+15:35:40.035909 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:40.038172 [debug]: Writing runtime sql for node "model.project.stg_nation"
+15:35:40.578921 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:40.580027 [info ]:  Succeeded [  4.91s] model analytics_prod.stg_region (table)
+15:35:40.580553 [info ]: Finished running [  4.90s] model analytics_prod.stg_region [success]
+15:35:40.877832 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:40.879101 [info ]:  Succeeded [  5.21s] model analytics_prod.stg_nation (table)
+15:35:40.879513 [info ]: Finished running [  5.20s] model analytics_prod.stg_nation [success]
+15:35:40.996355 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:35:40.998474 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:35:41.062457 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:41.062990 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:41.063931 [info ]:  Succeeded [  5.39s] model analytics_prod.stg_partsupp (table)
+15:35:41.064290 [info ]: Finished running [  5.38s] model analytics_prod.stg_partsupp [success]
+15:35:41.064371 [info ]:  Succeeded [  5.39s] model analytics_prod.stg_orders (table)
+15:35:41.064577 [info ]: Finished running [  5.38s] model analytics_prod.stg_orders [success]
+15:35:42.093726 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as c_custkey
+        , c_name as c_name
+        , c_address as c_address
+        , c_nationkey as c_nationkey
+        , c_phone as c_phone
+        , c_acctbal as c_acctbal
+        , c_mktsegment as c_mktsegment
+        , c_comment as c_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:42.095185 [info ]:  Succeeded [  6.43s] model analytics_prod.stg_customer (table)
+15:35:42.095737 [info ]: Finished running [  6.41s] model analytics_prod.stg_customer [success]
+15:35:43.242809 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (select *
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:35:43.243825 [info ]:  Succeeded [  7.57s] model analytics_prod.stg_lineitem (table)
+15:35:43.244255 [info ]: Finished running [  7.56s] model analytics_prod.stg_lineitem [success]
+15:35:43.244463 [info ]: Finished running [  7.57s] (8 nodes, 0 skipped, 0 errors)
+15:35:43.268973 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:35:43.329546 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [11.9s]
+Processed: 8 models
+Summary: 8 total | 8 success
+==================== 2026-04-21T15:35:58.768699Z | 019db0af-1a2e-75c0-99b4-341ec428c4fa ====================
+15:35:58.768802 [info ]: dbt-fusion 2.0.0-preview.171
+15:35:58.769202 [info ]: Started loading project
+15:35:58.772489 [info ]: Loading ~/.dbt/profiles.yml
+15:35:58.773342 [info ]: Finished loading project [  0.00s]
+15:35:58.773560 [info ]: Started debugging
+15:35:58.773640 [info ]: Debugging profile: dev
+15:35:58.773792 [info ]: Debugging dbt version: 2.0.0-preview.171
+15:35:58.773928 [info ]: Debugging platform: windows x86_64 (windows)
+15:35:58.774046 [info ]: Debugging adapter type: snowflake (remote)
+15:35:58.828849 [info ]: Debugging dependencies:
+  git: OK
+15:35:58.829110 [info ]: Debugging connection:
+  "account": "IURJGBG-HU17824",
+  "user": "TRIALALM1989",
+  "database": "analytics",
+  "warehouse": "compute_wh",
+  "schema": "analytics_prod",
+  "role": "ACCOUNTADMIN"
+15:35:59.959889 [debug]: Query executed on node unknown:
+select 1 as id
+15:35:59.960075 [info ]: Debugging connection test: OK
+15:35:59.960533 [info ]: Debugged All checks passed!
+15:35:59.961099 [info ]: Finished debugging [  1.19s]
+15:36:00.421248 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:36:00.477845 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [1.7s]
+==================== 2026-04-21T15:36:30.344395Z | 019db0af-9586-7613-a6bc-be6079a0f2a1 ====================
+15:36:30.344484 [info ]: dbt-fusion 2.0.0-preview.171
+15:36:30.344846 [info ]: Started loading project
+15:36:30.347740 [info ]: Loading ~/.dbt/profiles.yml
+15:36:30.354409 [info ]: Loading packages.yml
+15:36:30.355127 [debug]:    Started loading packages
+15:36:30.362330 [debug]:     Loaded [  0.01s] packages
+15:36:30.362971 [info ]: Finished loading project [  0.02s]
+15:36:30.363493 [info ]: Started parsing
+15:36:30.408379 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:36:30.408668 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:36:30.411368 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:36:30.412463 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:36:30.413283 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:36:30.414102 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:36:30.414895 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:36:30.415594 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:36:30.416458 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:36:30.417324 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:36:30.421409 [info ]: Finished parsing [  0.06s]
+15:36:30.422738 [info ]: Started scheduling
+15:36:30.422912 [info ]: Finished scheduling [  0.00s]
+15:36:30.426001 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:36:30.576683 [info ]: Started building task graph
+15:36:30.577397 [info ]: Finished building task graph [  0.00s]
+15:36:31.770493 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:36:31.770830 [info ]: Started rendering (1 nodes)
+15:36:31.770963 [info ]: Started model analytics_prod.stg_customer
+15:36:31.770979 [debug]: Started rendering model analytics_prod.stg_customer
+15:36:31.773283 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:36:31.773435 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_customer [success]
+15:36:31.773640 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:36:31.773871 [info ]: Started analyzing (1 nodes)
+15:36:31.774049 [debug]: Started analyzing model analytics_prod.stg_customer
+15:36:31.780182 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+15:36:31.780398 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+15:36:31.780740 [info ]: Started running (1 nodes)
+15:36:31.780862 [info ]: Started running model analytics_prod.stg_customer
+15:36:33.616856 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:36:33.618256 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:36:34.542422 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as c_custkey
+        , c_name as c_name
+        , c_address as c_address
+        , c_nationkey as c_nationkey
+        , c_phone as c_phone
+        , c_acctbal as c_acctbal
+        , c_mktsegment as c_mktsegment
+        , c_comment as c_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:36:34.543712 [info ]:  Succeeded [  2.77s] model analytics_prod.stg_customer (table)
+15:36:34.544622 [info ]: Finished running [  2.76s] model analytics_prod.stg_customer [success]
+15:36:34.544826 [info ]: Finished running [  2.76s] (1 nodes, 0 skipped, 0 errors)
+15:36:34.561680 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:36:34.649487 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [4.3s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2026-04-21T15:36:59.560365Z | 019db0b0-07a5-72b3-9ed9-4792fd706324 ====================
+15:36:59.560467 [info ]: dbt-fusion 2.0.0-preview.171
+15:36:59.560838 [info ]: Started loading project
+15:36:59.563821 [info ]: Loading ~/.dbt/profiles.yml
+15:36:59.568743 [info ]: Loading packages.yml
+15:36:59.569102 [debug]:    Started loading packages
+15:36:59.575514 [debug]:     Loaded [  0.01s] packages
+15:36:59.576150 [info ]: Finished loading project [  0.02s]
+15:36:59.576732 [info ]: Started parsing
+15:36:59.616993 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:36:59.617240 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:36:59.619237 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:36:59.619754 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:36:59.620262 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:36:59.620752 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:36:59.621281 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:36:59.621734 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:36:59.622090 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:36:59.622447 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:36:59.625414 [info ]: Finished parsing [  0.05s]
+15:36:59.626768 [info ]: Started scheduling
+15:36:59.626917 [info ]: Finished scheduling [  0.00s]
+15:36:59.626988 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:37:01.020689 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:37:01.076474 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 warning for target 'dev' [1.5s]
+==================== 2026-04-21T15:37:17.934529Z | 019db0b0-4f6a-7601-9111-3e1098a30c28 ====================
+15:37:17.934635 [info ]: dbt-fusion 2.0.0-preview.171
+15:37:17.935011 [info ]: Started loading project
+15:37:17.937905 [info ]: Loading ~/.dbt/profiles.yml
+15:37:17.942366 [info ]: Loading packages.yml
+15:37:17.942688 [debug]:    Started loading packages
+15:37:17.948587 [debug]:     Loaded [  0.01s] packages
+15:37:17.949351 [info ]: Finished loading project [  0.01s]
+15:37:17.949930 [info ]: Started parsing
+15:37:17.987807 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:37:17.987988 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:37:17.989889 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:37:17.990372 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:37:17.990778 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:37:17.991113 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:37:17.991422 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:37:17.991819 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:37:17.992129 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:37:17.992406 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:37:17.994175 [warn ]: dbt1005: Unused schema.yml entry for model 'stg_customers'
+  --> models\s1_staging\_stg_tpch.yml
+15:37:17.995624 [info ]: Finished parsing [  0.05s]
+15:37:17.996757 [info ]: Started scheduling
+15:37:17.996920 [info ]: Finished scheduling [  0.00s]
+15:37:17.996992 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:37:18.425149 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:37:18.573303 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 2 warnings for target 'dev' [638ms]
+==================== 2026-04-21T15:38:30.542943Z | 019db0b1-6b0c-7f60-9a1b-ddf6308aa624 ====================
+15:38:30.543041 [info ]: dbt-fusion 2.0.0-preview.171
+15:38:30.543432 [info ]: Started loading project
+15:38:30.546546 [info ]: Loading ~/.dbt/profiles.yml
+15:38:30.552395 [info ]: Loading packages.yml
+15:38:30.552725 [debug]:    Started loading packages
+15:38:30.562223 [debug]:     Loaded [  0.01s] packages
+15:38:30.563032 [info ]: Finished loading project [  0.02s]
+15:38:30.563551 [info ]: Started parsing
+15:38:30.606047 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:38:30.606323 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:38:30.608787 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:38:30.609586 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:38:30.610157 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:38:30.610727 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:38:30.611245 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:38:30.611796 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:38:30.612380 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:38:30.612861 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:38:30.625621 [debug]: Finished parsing target\generic_tests\unique_stg_customer_c_custkey.sql [  0.01s]
+15:38:30.628400 [error]: dbt1501: Failed to render SQL unknown function: Jinja macro or function `test_not` is unknown
+(in target\generic_tests\not_stg_customer_c_custkey.sql:1:1)
+  --> target\generic_tests\not_stg_customer_c_custkey.sql:1:1
+15:38:30.628471 [debug]: Finished parsing target\generic_tests\not_stg_customer_c_custkey.sql [  0.00s]
+15:38:30.630424 [info ]: Finished parsing [  0.07s]
+15:38:32.010310 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:38:32.062376 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error for target 'dev' [1.5s]
+==================== 2026-04-21T15:39:22.492927Z | 019db0b2-35fa-7322-899e-024562eab2d7 ====================
+15:39:22.493027 [info ]: dbt-fusion 2.0.0-preview.171
+15:39:22.493394 [info ]: Started loading project
+15:39:22.496343 [info ]: Loading ~/.dbt/profiles.yml
+15:39:22.501392 [info ]: Loading packages.yml
+15:39:22.501798 [debug]:    Started loading packages
+15:39:22.510097 [debug]:     Loaded [  0.01s] packages
+15:39:22.510736 [info ]: Finished loading project [  0.02s]
+15:39:22.511335 [info ]: Started parsing
+15:39:22.551535 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:39:22.551798 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:39:22.554277 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:39:22.554825 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:39:22.555295 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:39:22.555662 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:39:22.556241 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:39:22.556581 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:39:22.556953 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:39:22.557259 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:39:22.562128 [debug]: Finished parsing target\generic_tests\unique_stg_customer_c_custkey.sql [  0.00s]
+15:39:22.572646 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_c_custkey.sql [  0.01s]
+15:39:22.574220 [info ]: Finished parsing [  0.06s]
+15:39:22.575601 [info ]: Started scheduling
+15:39:22.575771 [info ]: Finished scheduling [  0.00s]
+15:39:22.578612 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "ANALYTICS_PROD", table: "STG_CUSTOMER" }) and interval: None
+15:39:22.739186 [info ]: Started building task graph
+15:39:22.739496 [info ]: Finished building task graph [  0.00s]
+15:39:22.739741 [info ]: Started rendering (2 nodes)
+15:39:22.739939 [info ]: Started test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey
+15:39:22.739954 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey
+15:39:22.739988 [info ]: Started test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey
+15:39:22.739994 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey
+15:39:22.744102 [debug]: Compiled SQL for node test.project.unique_stg_customer_c_custkey.281eb92577 at target\compiled\generic_tests\unique_stg_customer_c_custkey.sql
+15:39:22.744589 [debug]: Compiled SQL for node test.project.not_null_stg_customer_c_custkey.0cb4d30172 at target\compiled\generic_tests\not_null_stg_customer_c_custkey.sql
+15:39:22.744377 [debug]: Finished rendering [  0.00s] test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey [success]
+15:39:22.744806 [info ]: Started analyzing (2 nodes)
+15:39:22.744864 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey
+15:39:22.744888 [debug]: Finished rendering [  0.00s] test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey [success]
+15:39:22.745269 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 0 errors)
+15:39:22.745696 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey
+15:39:22.751416 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey [success]
+15:39:22.751655 [info ]: Started running (2 nodes)
+15:39:22.751963 [info ]: Started running test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey
+15:39:22.754886 [debug]: Writing runtime sql for node "test.project.not_null_stg_customer_c_custkey.0cb4d30172"
+15:39:22.757155 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey [success]
+15:39:22.757639 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+15:39:22.758184 [info ]: Started running test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey
+15:39:22.761791 [debug]: Writing runtime sql for node "test.project.unique_stg_customer_c_custkey.281eb92577"
+15:39:24.144904 [debug]: Query executed on node test.project.not_null_stg_customer_c_custkey.0cb4d30172:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select c_custkey
+from analytics.analytics_prod.stg_customer
+where c_custkey is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.project.not_null_stg_customer_c_custkey.0cb4d30172", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:39:24.146246 [info ]:     Passed [  1.40s] test  analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey
+15:39:24.146543 [info ]: Finished running [  1.39s] test analytics_prod_dbt_test__audit.not_null_stg_customer_c_custkey [pass]
+15:39:25.167823 [debug]: Query executed on node test.project.unique_stg_customer_c_custkey.281eb92577:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    c_custkey as unique_field,
+    count(*) as n_records
+
+from analytics.analytics_prod.stg_customer
+where c_custkey is not null
+group by c_custkey
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.project.unique_stg_customer_c_custkey.281eb92577", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:39:25.168806 [info ]:     Passed [  2.43s] test  analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey
+15:39:25.169135 [info ]: Finished running [  2.41s] test analytics_prod_dbt_test__audit.unique_stg_customer_c_custkey [pass]
+15:39:25.169294 [info ]: Finished running [  2.42s] (2 nodes, 0 skipped, 0 errors)
+15:39:25.187749 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:39:25.239477 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' successfully for target 'dev' [2.7s]
+Processed: 2 tests
+Summary: 2 total | 2 success

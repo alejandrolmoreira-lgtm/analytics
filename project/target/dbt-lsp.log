@@ -1169,3 +1169,1465 @@
 09:48:41.794752 [info ]: Started scheduling
 09:48:41.794820 [info ]: Finished scheduling [  0.00s]
 09:48:41.797355 [info ]: Cached model count updated: 8 models (accurate)
+10:35:52.493888 [info ]: Started loading project
+10:35:52.507461 [info ]: Loading ~/.dbt/profiles.yml
+10:35:52.536872 [info ]: Finished loading project [  0.04s]
+10:35:52.537007 [info ]: Cached model count updated: 8 models (accurate)
+10:35:54.179836 [info ]: Cached model count updated: 8 models (accurate)
+10:38:55.125262 [info ]: Started loading project
+10:38:55.126273 [info ]: Loading ~/.dbt/profiles.yml
+10:38:55.131614 [info ]: Started loading project
+10:38:55.132367 [info ]: Loading ~/.dbt/profiles.yml
+10:38:55.132423 [info ]: Finished loading project [  0.01s]
+10:38:55.137051 [debug]:    Started loading packages
+10:38:55.141087 [debug]:     Loaded [  0.00s] packages
+10:38:55.142263 [info ]: Started parsing
+10:38:55.163278 [info ]: Finished loading project [  0.03s]
+10:38:55.163988 [debug]: Finished parsing models\s1_staging\_scr_project.yml [  0.00s]
+10:38:55.177556 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.01s]
+10:38:55.189043 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.01s]
+10:38:55.200972 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.01s]
+10:38:55.212512 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.01s]
+10:38:55.228132 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.02s]
+10:38:55.243563 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.02s]
+10:38:55.253583 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.01s]
+10:38:55.270247 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.02s]
+10:38:55.271172 [info ]: Finished parsing [  0.13s]
+10:38:55.271749 [info ]: Cached model count updated: 8 models (estimate)
+10:38:55.271773 [info ]: Cached model count updated: 8 models (accurate)
+10:38:55.271808 [info ]: Started scheduling
+10:38:55.271854 [info ]: Finished scheduling [  0.00s]
+10:38:55.271865 [debug]: Compilation - 0 nodes selected: {}
+10:38:55.271881 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+10:38:55.271889 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+10:38:55.271897 [info ]: Started scheduling
+10:38:55.271951 [info ]: Finished scheduling [  0.00s]
+10:38:55.408059 [info ]: Started building task graph
+10:38:55.408127 [info ]: Finished building task graph [  0.00s]
+10:38:55.411320 [info ]: Started scheduling
+10:38:55.411370 [info ]: Finished scheduling [  0.00s]
+10:38:55.413212 [info ]: Cached model count updated: 8 models (accurate)
+10:38:55.557026 [info ]: Waiting for lease on 'target' directory
+10:38:55.673787 [info ]: Started loading project
+10:38:55.674858 [info ]: Loading ~/.dbt/profiles.yml
+10:38:55.693286 [info ]: Finished loading project [  0.02s]
+10:38:55.693434 [info ]: Cached model count updated: 8 models (accurate)
+10:38:57.292331 [info ]: Started loading project
+10:38:57.293130 [info ]: Loading ~/.dbt/profiles.yml
+10:38:57.307129 [info ]: Cached model count updated: 8 models (estimate)
+10:38:57.307152 [info ]: Cached model count updated: 8 models (accurate)
+10:38:57.307180 [info ]: Started scheduling
+10:38:57.307236 [info ]: Finished scheduling [  0.00s]
+10:38:57.307251 [debug]: Compilation - 8 nodes selected: {"model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+10:38:57.447900 [info ]: Started building task graph
+10:38:57.447983 [info ]: Finished building task graph [  0.00s]
+10:38:57.448128 [info ]: Started rendering (8 nodes)
+10:38:57.448154 [info ]: Started model analytics_prod.stg_supplier
+10:38:57.448168 [debug]: Started rendering model analytics_prod.stg_supplier
+10:38:57.448192 [info ]: Started model analytics_prod.stg_region
+10:38:57.448200 [debug]: Started rendering model analytics_prod.stg_region
+10:38:57.448211 [info ]: Started model analytics_prod.stg_partsupp
+10:38:57.448215 [debug]: Started rendering model analytics_prod.stg_partsupp
+10:38:57.448222 [info ]: Started model analytics_prod.stg_part
+10:38:57.448226 [debug]: Started rendering model analytics_prod.stg_part
+10:38:57.448232 [info ]: Started model analytics_prod.stg_orders
+10:38:57.448236 [debug]: Started rendering model analytics_prod.stg_orders
+10:38:57.448234 [info ]: Finished loading project [  0.16s]
+10:38:57.448243 [info ]: Started model analytics_prod.stg_nation
+10:38:57.448247 [debug]: Started rendering model analytics_prod.stg_nation
+10:38:57.448315 [info ]: Started model analytics_prod.stg_lineitem
+10:38:57.448332 [debug]: Started rendering model analytics_prod.stg_lineitem
+10:38:57.448342 [info ]: Started model analytics_prod.stg_customer
+10:38:57.448351 [debug]: Started rendering model analytics_prod.stg_customer
+10:38:57.453158 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+10:38:57.453182 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+10:38:57.453379 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+10:38:57.453698 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+10:38:57.453876 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+10:38:57.454022 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+10:38:57.454336 [info ]: Started analyzing (8 nodes)
+10:38:57.454361 [debug]: Started analyzing model analytics_prod.stg_supplier
+10:38:57.454402 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+10:38:57.454417 [debug]: Started analyzing model analytics_prod.stg_nation
+10:38:57.454318 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+10:38:57.454516 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+10:38:57.454543 [debug]: Started analyzing model analytics_prod.stg_lineitem
+10:38:57.454816 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_lineitem (table)
+10:38:57.454841 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+10:38:57.454876 [debug]: Started analyzing model analytics_prod.stg_region
+10:38:57.454884 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+10:38:57.454933 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+10:38:57.454952 [debug]: Started analyzing model analytics_prod.stg_orders
+10:38:57.455020 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_region (table)
+10:38:57.455040 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+10:38:57.456618 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_orders (table)
+10:38:57.456688 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+10:38:57.456730 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_supplier (table)
+10:38:57.456747 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+10:38:57.456768 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+10:38:57.456792 [debug]: Started analyzing model analytics_prod.stg_partsupp
+10:38:57.456909 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_nation (table)
+10:38:57.456940 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+10:38:57.457064 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_partsupp (table)
+10:38:57.457083 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+10:38:57.457324 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+10:38:57.457573 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+10:38:57.457602 [debug]: Started analyzing model analytics_prod.stg_part
+10:38:57.457877 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_part (table)
+10:38:57.457895 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+10:38:57.459388 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+10:38:57.460172 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+10:38:57.460199 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+10:38:57.460234 [debug]: Started analyzing model analytics_prod.stg_customer
+10:38:57.460565 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_customer (table)
+10:38:57.460598 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+10:38:57.460607 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+10:38:57.468224 [info ]: Started scheduling
+10:38:57.468299 [info ]: Finished scheduling [  0.00s]
+10:38:57.470143 [info ]: Cached model count updated: 8 models (accurate)
+10:41:26.694702 [info ]: Started loading project
+10:41:26.695406 [info ]: Loading ~/.dbt/profiles.yml
+10:41:26.718482 [info ]: Started parsing
+10:41:26.732401 [info ]: Finished loading project [  0.04s]
+10:41:26.733406 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:7:7
+10:41:26.733553 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:8:7
+10:41:26.733695 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:9:7
+10:41:26.733797 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:10:7
+10:41:26.733902 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:11:7
+10:41:26.734019 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:12:7
+10:41:26.734113 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:13:7
+10:41:26.734480 [debug]: Finished parsing models\s1_staging\_scr_project.yml [  0.00s]
+10:41:26.737116 [info ]: Finished parsing [  0.02s]
+10:41:26.738082 [info ]: Cached model count updated: 8 models (accurate)
+10:41:27.032546 [info ]: Waiting for lease on 'target' directory
+10:41:27.259016 [info ]: Started loading project
+10:41:27.259809 [info ]: Loading ~/.dbt/profiles.yml
+10:41:27.263714 [info ]: Started parsing
+10:41:27.277881 [info ]: Finished loading project [  0.02s]
+10:41:27.278752 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:7:7
+10:41:27.278889 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:8:7
+10:41:27.279004 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:9:7
+10:41:27.279105 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:10:7
+10:41:27.279205 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:11:7
+10:41:27.279301 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:12:7
+10:41:27.279392 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:13:7
+10:41:27.279594 [debug]: Finished parsing models\s1_staging\_scr_project.yml [  0.00s]
+10:41:27.282907 [info ]: Finished parsing [  0.02s]
+10:41:27.283488 [info ]: Cached model count updated: 8 models (accurate)
+10:41:28.884630 [info ]: Started loading project
+10:41:28.885815 [info ]: Loading ~/.dbt/profiles.yml
+10:41:28.891818 [info ]: Started parsing
+10:41:28.903993 [info ]: Finished loading project [  0.02s]
+10:41:28.905048 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:7:7
+10:41:28.905304 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:8:7
+10:41:28.905414 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:9:7
+10:41:28.905508 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:10:7
+10:41:28.905610 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:11:7
+10:41:28.905700 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:12:7
+10:41:28.905788 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_project.yml:13:7
+10:41:28.905976 [debug]: Finished parsing models\s1_staging\_scr_project.yml [  0.00s]
+10:41:28.908087 [info ]: Finished parsing [  0.02s]
+10:41:28.908672 [info ]: Cached model count updated: 8 models (accurate)
+10:43:19.376362 [info ]: Started loading project
+10:43:19.377178 [info ]: Loading ~/.dbt/profiles.yml
+10:43:19.380227 [info ]: Started loading project
+10:43:19.380845 [info ]: Loading ~/.dbt/profiles.yml
+10:43:19.380889 [info ]: Finished loading project [  0.00s]
+10:43:19.384010 [debug]:    Started loading packages
+10:43:19.387703 [debug]:     Loaded [  0.00s] packages
+10:43:19.388455 [info ]: Started parsing
+10:43:19.412556 [info ]: Finished loading project [  0.03s]
+10:43:19.413859 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:43:19.414245 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:43:19.414513 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:43:19.414755 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:43:19.414906 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:43:19.415290 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:43:19.415972 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:43:19.416456 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:43:19.421324 [info ]: Finished parsing [  0.03s]
+10:43:19.790303 [info ]: Waiting for lease on 'target' directory
+10:43:19.912103 [info ]: Started loading project
+10:43:19.912756 [info ]: Loading ~/.dbt/profiles.yml
+10:43:19.915740 [debug]:    Started loading packages
+10:43:19.917341 [debug]:     Loaded [  0.00s] packages
+10:43:19.918462 [info ]: Started parsing
+10:43:19.940842 [info ]: Finished loading project [  0.03s]
+10:43:19.941551 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:43:19.941688 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:43:19.941808 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:43:19.941921 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:43:19.942041 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:43:19.942203 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:43:19.942360 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:43:19.942526 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:43:19.945571 [info ]: Finished parsing [  0.03s]
+10:44:02.682966 [info ]: Started loading project
+10:44:02.683619 [info ]: Loading ~/.dbt/profiles.yml
+10:44:02.687717 [debug]:    Started loading packages
+10:44:02.689537 [debug]:     Loaded [  0.00s] packages
+10:44:02.690246 [info ]: Started parsing
+10:44:02.707971 [info ]: Finished loading project [  0.03s]
+10:44:02.720959 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:44:02.721098 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:44:02.721201 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:44:02.721326 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:44:02.721436 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:44:02.721533 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:44:02.721634 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:44:02.721908 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.01s]
+10:44:02.724014 [info ]: Finished parsing [  0.03s]
+10:44:03.078443 [info ]: Waiting for lease on 'target' directory
+10:44:03.192646 [info ]: Started loading project
+10:44:03.193300 [info ]: Loading ~/.dbt/profiles.yml
+10:44:03.196325 [debug]:    Started loading packages
+10:44:03.197902 [debug]:     Loaded [  0.00s] packages
+10:44:03.198482 [info ]: Started parsing
+10:44:03.215343 [info ]: Finished loading project [  0.02s]
+10:44:03.216133 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:44:03.216446 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:44:03.216571 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:44:03.216690 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:44:03.216790 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:44:03.216888 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:44:03.217122 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:44:03.217493 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:44:03.220327 [info ]: Finished parsing [  0.02s]
+10:44:30.582614 [info ]: Started loading project
+10:44:30.583276 [info ]: Loading ~/.dbt/profiles.yml
+10:44:30.586992 [debug]:    Started loading packages
+10:44:30.588642 [debug]:     Loaded [  0.00s] packages
+10:44:30.589245 [info ]: Started parsing
+10:44:30.606669 [info ]: Finished loading project [  0.02s]
+10:44:30.608612 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:44:30.608759 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:44:30.608871 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:44:30.608974 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:44:30.609067 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:44:30.609164 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:44:30.609260 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:44:30.609565 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:44:30.611920 [info ]: Finished parsing [  0.02s]
+10:44:30.908362 [info ]: Waiting for lease on 'target' directory
+10:44:31.144900 [info ]: Started loading project
+10:44:31.145657 [info ]: Loading ~/.dbt/profiles.yml
+10:44:31.149339 [debug]:    Started loading packages
+10:44:31.152060 [debug]:     Loaded [  0.00s] packages
+10:44:31.152715 [info ]: Started parsing
+10:44:31.170189 [info ]: Finished loading project [  0.03s]
+10:44:31.171103 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:44:31.171464 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:44:31.171767 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:44:31.171909 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:44:31.172052 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:44:31.172164 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:44:31.172348 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:44:31.172632 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:44:31.175962 [info ]: Finished parsing [  0.02s]
+10:44:41.697970 [info ]: Started loading project
+10:44:41.698943 [info ]: Loading ~/.dbt/profiles.yml
+10:44:41.704386 [debug]:    Started loading packages
+10:44:41.705967 [debug]:     Loaded [  0.00s] packages
+10:44:41.706589 [info ]: Started parsing
+10:44:41.726615 [info ]: Finished loading project [  0.03s]
+10:44:41.727364 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:44:41.727506 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:44:41.727679 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:44:41.727843 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:44:41.727958 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:44:41.728078 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:44:41.728187 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:44:41.728421 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:44:41.732034 [info ]: Finished parsing [  0.03s]
+10:45:21.698585 [info ]: Started loading project
+10:45:21.699260 [info ]: Loading ~/.dbt/profiles.yml
+10:45:21.703131 [debug]:    Started loading packages
+10:45:21.706059 [debug]:     Loaded [  0.00s] packages
+10:45:21.706671 [info ]: Started parsing
+10:45:21.724798 [info ]: Finished loading project [  0.03s]
+10:45:21.725751 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:21.725891 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:21.725999 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:21.726099 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:21.726213 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:21.726665 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:21.727012 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:21.727328 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:21.730024 [info ]: Finished parsing [  0.02s]
+10:45:21.731175 [info ]: Waiting for lease on 'target' directory
+10:45:22.292657 [info ]: Started loading project
+10:45:22.293411 [info ]: Loading ~/.dbt/profiles.yml
+10:45:22.297096 [debug]:    Started loading packages
+10:45:22.298674 [debug]:     Loaded [  0.00s] packages
+10:45:22.299234 [info ]: Started parsing
+10:45:22.316940 [info ]: Finished loading project [  0.02s]
+10:45:22.318207 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:22.318353 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:22.319050 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:22.319345 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:22.319718 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:22.320019 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:22.320269 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:22.320571 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:22.323087 [info ]: Finished parsing [  0.02s]
+10:45:22.324067 [info ]: Waiting for lease on 'target' directory
+10:45:22.890208 [info ]: Started loading project
+10:45:22.891386 [info ]: Loading ~/.dbt/profiles.yml
+10:45:22.896211 [debug]:    Started loading packages
+10:45:22.898352 [debug]:     Loaded [  0.00s] packages
+10:45:22.899049 [info ]: Started parsing
+10:45:22.921334 [info ]: Finished loading project [  0.03s]
+10:45:22.921969 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:22.922116 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:22.922236 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:22.922343 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:22.922855 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:22.923121 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:22.923369 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:22.923658 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:22.927829 [info ]: Finished parsing [  0.03s]
+10:45:26.360952 [info ]: Started loading project
+10:45:26.362283 [info ]: Loading ~/.dbt/profiles.yml
+10:45:26.365629 [debug]:    Started loading packages
+10:45:26.367643 [debug]:     Loaded [  0.00s] packages
+10:45:26.368315 [info ]: Started parsing
+10:45:26.392055 [info ]: Finished loading project [  0.03s]
+10:45:26.392996 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:26.393122 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:26.393222 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:26.393317 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:26.393411 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:26.393510 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:26.393607 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:26.393769 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:26.398953 [info ]: Finished parsing [  0.03s]
+10:45:26.400963 [info ]: Waiting for lease on 'target' directory
+10:45:26.944938 [info ]: Started loading project
+10:45:26.945922 [info ]: Loading ~/.dbt/profiles.yml
+10:45:26.950166 [debug]:    Started loading packages
+10:45:26.953612 [debug]:     Loaded [  0.00s] packages
+10:45:26.954676 [info ]: Started parsing
+10:45:26.972751 [info ]: Finished loading project [  0.03s]
+10:45:26.973521 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:26.973682 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:26.973778 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:26.973873 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:26.974287 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:26.974454 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:26.974580 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:26.974762 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:26.977291 [info ]: Finished parsing [  0.02s]
+10:45:29.082608 [info ]: Started loading project
+10:45:29.083652 [info ]: Loading ~/.dbt/profiles.yml
+10:45:29.087027 [debug]:    Started loading packages
+10:45:29.089107 [debug]:     Loaded [  0.00s] packages
+10:45:29.089717 [info ]: Started parsing
+10:45:29.112566 [info ]: Finished loading project [  0.03s]
+10:45:29.113278 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:29.113404 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:29.113504 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:29.113601 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:29.113934 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:29.114237 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:29.114667 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:29.114991 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:29.118447 [info ]: Finished parsing [  0.03s]
+10:45:29.120195 [info ]: Waiting for lease on 'target' directory
+10:45:29.693689 [info ]: Started loading project
+10:45:29.694720 [info ]: Loading ~/.dbt/profiles.yml
+10:45:29.697661 [debug]:    Started loading packages
+10:45:29.699317 [debug]:     Loaded [  0.00s] packages
+10:45:29.700008 [info ]: Started parsing
+10:45:29.724427 [info ]: Finished loading project [  0.03s]
+10:45:29.725782 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:29.726131 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:29.726406 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:29.726682 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:29.727058 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:29.727327 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:29.727578 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:29.727994 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:29.732691 [info ]: Finished parsing [  0.03s]
+10:45:39.472498 [info ]: Started loading project
+10:45:39.473554 [info ]: Loading ~/.dbt/profiles.yml
+10:45:39.478567 [debug]:    Started loading packages
+10:45:39.481164 [debug]:     Loaded [  0.00s] packages
+10:45:39.481771 [info ]: Started parsing
+10:45:39.503820 [info ]: Finished loading project [  0.03s]
+10:45:39.504734 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:39.504879 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:39.504995 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:39.505354 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:39.505728 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:39.506071 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:39.506538 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:39.507000 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:39.509321 [info ]: Finished parsing [  0.03s]
+10:45:39.510352 [info ]: Waiting for lease on 'target' directory
+10:45:40.076570 [info ]: Started loading project
+10:45:40.077230 [info ]: Loading ~/.dbt/profiles.yml
+10:45:40.081667 [debug]:    Started loading packages
+10:45:40.084813 [debug]:     Loaded [  0.00s] packages
+10:45:40.085587 [info ]: Started parsing
+10:45:40.103315 [info ]: Finished loading project [  0.03s]
+10:45:40.104349 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:40.104704 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:40.105018 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:40.105260 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:40.105529 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:40.105965 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:40.106288 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:40.106632 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:40.110961 [info ]: Finished parsing [  0.03s]
+10:45:45.256235 [info ]: Started loading project
+10:45:45.257238 [info ]: Loading ~/.dbt/profiles.yml
+10:45:45.262237 [debug]:    Started loading packages
+10:45:45.265543 [debug]:     Loaded [  0.00s] packages
+10:45:45.266713 [info ]: Started parsing
+10:45:45.289440 [info ]: Finished loading project [  0.03s]
+10:45:45.290397 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:45.290669 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:45.291020 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:45.291304 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:45.291537 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:45.291782 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:45.292023 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:45.292335 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:45.296991 [info ]: Finished parsing [  0.03s]
+10:45:45.298487 [info ]: Waiting for lease on 'target' directory
+10:45:45.758804 [info ]: Started loading project
+10:45:45.759960 [info ]: Loading ~/.dbt/profiles.yml
+10:45:45.763454 [debug]:    Started loading packages
+10:45:45.765071 [debug]:     Loaded [  0.00s] packages
+10:45:45.765696 [info ]: Started parsing
+10:45:45.784861 [info ]: Finished loading project [  0.03s]
+10:45:45.785846 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:45.786113 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:45.786227 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:45.786329 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:45.786436 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:45.786544 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:45.786643 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:45.786811 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:45.789551 [info ]: Finished parsing [  0.02s]
+10:45:53.860838 [info ]: Started loading project
+10:45:53.861869 [info ]: Loading ~/.dbt/profiles.yml
+10:45:53.867213 [debug]:    Started loading packages
+10:45:53.870319 [debug]:     Loaded [  0.00s] packages
+10:45:53.871536 [info ]: Started parsing
+10:45:53.894520 [info ]: Finished loading project [  0.03s]
+10:45:53.895543 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:53.895697 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:53.895845 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:53.895954 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:53.896072 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:53.896192 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:53.896381 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:53.896556 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:53.902267 [info ]: Finished parsing [  0.03s]
+10:45:53.903539 [info ]: Waiting for lease on 'target' directory
+10:45:54.443914 [info ]: Started loading project
+10:45:54.444844 [info ]: Loading ~/.dbt/profiles.yml
+10:45:54.447799 [debug]:    Started loading packages
+10:45:54.449651 [debug]:     Loaded [  0.00s] packages
+10:45:54.450774 [info ]: Started parsing
+10:45:54.470534 [info ]: Finished loading project [  0.03s]
+10:45:54.471184 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:45:54.471401 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:45:54.471518 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:45:54.471635 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:45:54.471738 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:45:54.471855 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:45:54.471993 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:45:54.472151 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:45:54.475933 [info ]: Finished parsing [  0.03s]
+10:46:03.958449 [info ]: Started loading project
+10:46:03.959488 [info ]: Loading ~/.dbt/profiles.yml
+10:46:03.964828 [debug]:    Started loading packages
+10:46:03.968717 [debug]:     Loaded [  0.00s] packages
+10:46:03.969841 [info ]: Started parsing
+10:46:03.997386 [info ]: Finished loading project [  0.04s]
+10:46:03.998416 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:03.998614 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:03.998757 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:03.998889 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:03.999063 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:03.999534 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:03.999890 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:04.000369 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:04.004403 [info ]: Finished parsing [  0.03s]
+10:46:04.006623 [info ]: Waiting for lease on 'target' directory
+10:46:04.541999 [info ]: Started loading project
+10:46:04.542638 [info ]: Loading ~/.dbt/profiles.yml
+10:46:04.546168 [debug]:    Started loading packages
+10:46:04.548041 [debug]:     Loaded [  0.00s] packages
+10:46:04.548676 [info ]: Started parsing
+10:46:04.585948 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:04.586506 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:04.586845 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:04.586977 [info ]: Finished loading project [  0.04s]
+10:46:04.593848 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:04.594428 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:04.595189 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:04.597293 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:04.597784 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.01s]
+10:46:04.606091 [info ]: Finished parsing [  0.06s]
+10:46:10.583278 [info ]: Started loading project
+10:46:10.584115 [info ]: Loading ~/.dbt/profiles.yml
+10:46:10.588566 [debug]:    Started loading packages
+10:46:10.591897 [debug]:     Loaded [  0.00s] packages
+10:46:10.593024 [info ]: Started parsing
+10:46:10.622617 [info ]: Finished loading project [  0.04s]
+10:46:10.623520 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:10.623831 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:10.624063 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:10.624344 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:10.624634 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:10.624892 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:10.625044 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:10.625343 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:10.629656 [info ]: Finished parsing [  0.04s]
+10:46:16.190922 [info ]: Started loading project
+10:46:16.191585 [info ]: Loading ~/.dbt/profiles.yml
+10:46:16.194815 [debug]:    Started loading packages
+10:46:16.196560 [debug]:     Loaded [  0.00s] packages
+10:46:16.197159 [info ]: Started parsing
+10:46:16.220445 [info ]: Finished loading project [  0.03s]
+10:46:16.221087 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:16.221212 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:16.221510 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:16.221786 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:16.222029 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:16.222592 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:16.222924 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:16.223209 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:16.225509 [info ]: Finished parsing [  0.03s]
+10:46:16.981560 [info ]: Started loading project
+10:46:16.982808 [info ]: Loading ~/.dbt/profiles.yml
+10:46:16.987757 [debug]:    Started loading packages
+10:46:16.989707 [debug]:     Loaded [  0.00s] packages
+10:46:16.990322 [info ]: Started parsing
+10:46:17.015571 [info ]: Finished loading project [  0.03s]
+10:46:17.016876 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:17.017068 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:17.017174 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:17.017326 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:17.017428 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:17.017528 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:17.017622 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:17.017818 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:17.023182 [info ]: Finished parsing [  0.03s]
+10:46:17.525532 [info ]: Started loading project
+10:46:17.526344 [info ]: Loading ~/.dbt/profiles.yml
+10:46:17.529557 [debug]:    Started loading packages
+10:46:17.531142 [debug]:     Loaded [  0.00s] packages
+10:46:17.531725 [info ]: Started parsing
+10:46:17.554405 [info ]: Finished loading project [  0.03s]
+10:46:17.555271 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:17.555611 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:17.555860 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:17.556135 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:17.556258 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:17.556385 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:17.556629 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:17.556900 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:17.561622 [info ]: Finished parsing [  0.03s]
+10:46:20.329338 [info ]: Started loading project
+10:46:20.330257 [info ]: Loading ~/.dbt/profiles.yml
+10:46:20.334863 [debug]:    Started loading packages
+10:46:20.336651 [debug]:     Loaded [  0.00s] packages
+10:46:20.337238 [info ]: Started parsing
+10:46:20.354244 [info ]: Finished loading project [  0.02s]
+10:46:20.354864 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:20.354985 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:20.355481 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:20.355797 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:20.356017 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:20.356238 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:20.356339 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:20.356525 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:20.358578 [info ]: Finished parsing [  0.02s]
+10:46:20.359714 [info ]: Waiting for lease on 'target' directory
+10:46:20.924648 [info ]: Started loading project
+10:46:20.925321 [info ]: Loading ~/.dbt/profiles.yml
+10:46:20.928080 [debug]:    Started loading packages
+10:46:20.930159 [debug]:     Loaded [  0.00s] packages
+10:46:20.930735 [info ]: Started parsing
+10:46:20.950001 [info ]: Finished loading project [  0.03s]
+10:46:20.951254 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:20.951701 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:20.951972 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:20.952266 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:20.952940 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:20.953232 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:20.953425 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:20.953667 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:20.955735 [info ]: Finished parsing [  0.02s]
+10:46:20.956648 [info ]: Waiting for lease on 'target' directory
+10:46:21.524123 [info ]: Started loading project
+10:46:21.524743 [info ]: Loading ~/.dbt/profiles.yml
+10:46:21.527546 [debug]:    Started loading packages
+10:46:21.529190 [debug]:     Loaded [  0.00s] packages
+10:46:21.529731 [info ]: Started parsing
+10:46:21.546625 [info ]: Finished loading project [  0.02s]
+10:46:21.547621 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:21.547894 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:21.548237 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:21.548508 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:21.548621 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:21.548711 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:21.548800 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:21.549110 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:21.552456 [info ]: Finished parsing [  0.02s]
+10:46:22.904360 [info ]: Started loading project
+10:46:22.905163 [info ]: Loading ~/.dbt/profiles.yml
+10:46:22.907986 [debug]:    Started loading packages
+10:46:22.909634 [debug]:     Loaded [  0.00s] packages
+10:46:22.910217 [info ]: Started parsing
+10:46:22.933037 [info ]: Finished loading project [  0.03s]
+10:46:22.934339 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:22.934646 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:22.934930 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:22.935266 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:22.935604 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:22.935716 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:22.935819 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:22.936112 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:22.940372 [info ]: Finished parsing [  0.03s]
+10:46:23.942679 [info ]: Started loading project
+10:46:23.943755 [info ]: Loading ~/.dbt/profiles.yml
+10:46:23.948033 [debug]:    Started loading packages
+10:46:23.950351 [debug]:     Loaded [  0.00s] packages
+10:46:23.951482 [info ]: Started parsing
+10:46:23.969794 [info ]: Finished loading project [  0.03s]
+10:46:23.970673 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:23.970796 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:23.970890 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:23.970990 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:23.971112 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:23.971199 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:23.971300 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:23.971473 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:23.973918 [info ]: Finished parsing [  0.02s]
+10:46:23.974984 [info ]: Waiting for lease on 'target' directory
+10:46:24.531995 [info ]: Started loading project
+10:46:24.532929 [info ]: Loading ~/.dbt/profiles.yml
+10:46:24.537141 [debug]:    Started loading packages
+10:46:24.538664 [debug]:     Loaded [  0.00s] packages
+10:46:24.539254 [info ]: Started parsing
+10:46:24.556335 [info ]: Finished loading project [  0.02s]
+10:46:24.556974 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:24.557144 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:24.557245 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:24.557339 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:24.557518 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:24.557900 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:24.558172 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:24.558460 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:24.560587 [info ]: Finished parsing [  0.02s]
+10:46:24.561715 [info ]: Waiting for lease on 'target' directory
+10:46:25.108739 [info ]: Started loading project
+10:46:25.109927 [info ]: Loading ~/.dbt/profiles.yml
+10:46:25.114396 [debug]:    Started loading packages
+10:46:25.116775 [debug]:     Loaded [  0.00s] packages
+10:46:25.117418 [info ]: Started parsing
+10:46:25.135371 [info ]: Finished loading project [  0.03s]
+10:46:25.135954 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:25.136099 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:25.136545 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:25.136774 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:25.137076 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:25.137209 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:25.137428 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:25.137681 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:25.139700 [info ]: Finished parsing [  0.02s]
+10:46:25.140638 [info ]: Waiting for lease on 'target' directory
+10:46:25.707382 [info ]: Waiting for lease on 'target' directory
+10:46:26.266644 [info ]: Waiting for lease on 'target' directory
+10:46:26.822233 [info ]: Waiting for lease on 'target' directory
+10:46:27.386643 [info ]: Waiting for lease on 'target' directory
+10:46:27.943061 [info ]: Waiting for lease on 'target' directory
+10:46:28.494816 [info ]: Waiting for lease on 'target' directory
+10:46:29.060949 [info ]: Waiting for lease on 'target' directory
+10:46:29.620695 [info ]: Waiting for lease on 'target' directory
+10:46:30.162004 [info ]: Waiting for lease on 'target' directory
+10:46:30.710483 [info ]: Waiting for lease on 'target' directory
+10:46:31.275835 [info ]: Started loading project
+10:46:31.276537 [info ]: Loading ~/.dbt/profiles.yml
+10:46:31.279673 [debug]:    Started loading packages
+10:46:31.281339 [debug]:     Loaded [  0.00s] packages
+10:46:31.281995 [info ]: Started parsing
+10:46:31.302868 [info ]: Finished loading project [  0.03s]
+10:46:31.303869 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:31.304010 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:31.304105 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:31.304339 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:31.304446 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:31.304541 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:31.304637 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:31.304804 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:31.309003 [info ]: Finished parsing [  0.03s]
+10:46:31.309967 [info ]: Waiting for lease on 'target' directory
+10:46:31.874044 [info ]: Started loading project
+10:46:31.874814 [info ]: Loading ~/.dbt/profiles.yml
+10:46:31.877829 [debug]:    Started loading packages
+10:46:31.879574 [debug]:     Loaded [  0.00s] packages
+10:46:31.880131 [info ]: Started parsing
+10:46:31.898457 [info ]: Finished loading project [  0.02s]
+10:46:31.899643 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:31.900058 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:31.900514 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:31.900811 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:31.901063 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:31.901340 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:31.901685 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:31.901970 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:31.904071 [info ]: Finished parsing [  0.02s]
+10:46:40.101548 [info ]: Started loading project
+10:46:40.102297 [info ]: Loading ~/.dbt/profiles.yml
+10:46:40.107533 [debug]:    Started loading packages
+10:46:40.110994 [debug]:     Loaded [  0.00s] packages
+10:46:40.112275 [info ]: Started parsing
+10:46:40.138276 [info ]: Finished loading project [  0.04s]
+10:46:40.139161 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:40.139337 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:40.139448 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:40.139583 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:40.139691 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:40.139808 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:40.139914 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:40.140076 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:40.143258 [info ]: Finished parsing [  0.03s]
+10:46:41.363257 [info ]: Started loading project
+10:46:41.364432 [info ]: Loading ~/.dbt/profiles.yml
+10:46:41.368583 [debug]:    Started loading packages
+10:46:41.370225 [debug]:     Loaded [  0.00s] packages
+10:46:41.370946 [info ]: Started parsing
+10:46:41.393995 [info ]: Finished loading project [  0.03s]
+10:46:41.395149 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:41.395357 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:41.395660 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:41.395944 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:41.396219 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:41.396683 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:41.396961 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:41.397245 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:41.402254 [info ]: Finished parsing [  0.03s]
+10:46:46.137718 [info ]: Started loading project
+10:46:46.138515 [info ]: Loading ~/.dbt/profiles.yml
+10:46:46.141489 [debug]:    Started loading packages
+10:46:46.143228 [debug]:     Loaded [  0.00s] packages
+10:46:46.143819 [info ]: Started parsing
+10:46:46.168217 [info ]: Finished loading project [  0.03s]
+10:46:46.168843 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:46.168968 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:46.169065 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:46.169160 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:46.169250 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:46.169344 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:46.169428 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:46.169598 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:46.172899 [info ]: Finished parsing [  0.03s]
+10:46:47.134814 [info ]: Started loading project
+10:46:47.135873 [info ]: Loading ~/.dbt/profiles.yml
+10:46:47.140918 [debug]:    Started loading packages
+10:46:47.142619 [debug]:     Loaded [  0.00s] packages
+10:46:47.143373 [info ]: Started parsing
+10:46:47.167378 [info ]: Finished loading project [  0.03s]
+10:46:47.168963 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:47.169195 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:47.169344 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:47.169694 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:47.169918 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:47.170536 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:47.170722 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:47.171059 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:47.174318 [info ]: Finished parsing [  0.03s]
+10:46:47.680079 [info ]: Started loading project
+10:46:47.681029 [info ]: Loading ~/.dbt/profiles.yml
+10:46:47.684889 [debug]:    Started loading packages
+10:46:47.686516 [debug]:     Loaded [  0.00s] packages
+10:46:47.687109 [info ]: Started parsing
+10:46:47.710572 [info ]: Finished loading project [  0.03s]
+10:46:47.711984 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:47.712302 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:47.712562 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:47.713003 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:47.713304 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:47.713555 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:47.713795 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:47.714093 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:47.718311 [info ]: Finished parsing [  0.03s]
+10:46:47.720166 [info ]: Waiting for lease on 'target' directory
+10:46:48.284063 [info ]: Started loading project
+10:46:48.285006 [info ]: Loading ~/.dbt/profiles.yml
+10:46:48.288925 [debug]:    Started loading packages
+10:46:48.291975 [debug]:     Loaded [  0.00s] packages
+10:46:48.292939 [info ]: Started parsing
+10:46:48.318163 [info ]: Finished parsing [  0.03s]
+10:46:48.318357 [info ]: Finished loading project [  0.03s]
+10:46:48.318972 [info ]: Waiting for lease on 'target' directory
+10:46:48.889113 [info ]: Started loading project
+10:46:48.889859 [info ]: Loading ~/.dbt/profiles.yml
+10:46:48.892754 [debug]:    Started loading packages
+10:46:48.894319 [debug]:     Loaded [  0.00s] packages
+10:46:48.895112 [info ]: Started parsing
+10:46:48.913011 [info ]: Finished loading project [  0.02s]
+10:46:48.913743 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:48.913868 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:48.913969 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:48.914087 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:48.914185 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:48.914305 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:48.914456 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:48.914696 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:48.918934 [info ]: Finished parsing [  0.02s]
+10:46:48.920408 [info ]: Waiting for lease on 'target' directory
+10:46:49.471903 [info ]: Started loading project
+10:46:49.472675 [info ]: Loading ~/.dbt/profiles.yml
+10:46:49.475741 [debug]:    Started loading packages
+10:46:49.477465 [debug]:     Loaded [  0.00s] packages
+10:46:49.478060 [info ]: Started parsing
+10:46:49.497098 [info ]: Finished loading project [  0.03s]
+10:46:49.498315 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:49.498510 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:49.499054 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:49.499336 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:49.499705 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:49.499985 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:49.500223 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:49.500588 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:49.503174 [info ]: Finished parsing [  0.03s]
+10:46:50.294023 [info ]: Started loading project
+10:46:50.295068 [info ]: Loading ~/.dbt/profiles.yml
+10:46:50.299466 [debug]:    Started loading packages
+10:46:50.301865 [debug]:     Loaded [  0.00s] packages
+10:46:50.302482 [info ]: Started parsing
+10:46:50.323946 [info ]: Finished loading project [  0.03s]
+10:46:50.324745 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:50.324872 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:50.324959 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:50.325050 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:50.325142 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:50.325235 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:50.325333 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:50.325509 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:50.329715 [info ]: Finished parsing [  0.03s]
+10:46:50.731677 [info ]: Waiting for lease on 'target' directory
+10:46:50.860378 [info ]: Started loading project
+10:46:50.861446 [info ]: Loading ~/.dbt/profiles.yml
+10:46:50.867108 [debug]:    Started loading packages
+10:46:50.869709 [debug]:     Loaded [  0.00s] packages
+10:46:50.870761 [info ]: Started parsing
+10:46:50.895007 [info ]: Finished loading project [  0.03s]
+10:46:50.896379 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:50.896728 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:50.896982 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:50.897443 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:50.897807 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:50.898036 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:50.898276 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:50.898651 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:50.902438 [info ]: Finished parsing [  0.03s]
+10:46:51.757877 [info ]: Started loading project
+10:46:51.758793 [info ]: Loading ~/.dbt/profiles.yml
+10:46:51.763444 [debug]:    Started loading packages
+10:46:51.765004 [debug]:     Loaded [  0.00s] packages
+10:46:51.766103 [info ]: Started parsing
+10:46:51.791494 [info ]: Finished loading project [  0.03s]
+10:46:51.792390 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:51.792663 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:51.792778 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:51.792860 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:51.792959 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:51.793048 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:51.793138 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:51.793306 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:51.796856 [info ]: Finished parsing [  0.03s]
+10:46:52.274348 [info ]: Started loading project
+10:46:52.275191 [info ]: Loading ~/.dbt/profiles.yml
+10:46:52.278174 [debug]:    Started loading packages
+10:46:52.280009 [debug]:     Loaded [  0.00s] packages
+10:46:52.280789 [info ]: Started parsing
+10:46:52.306634 [info ]: Finished loading project [  0.03s]
+10:46:52.307757 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:52.308062 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:52.308294 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:52.308419 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:52.308660 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:52.308780 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:52.308878 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:52.309200 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:52.311966 [info ]: Finished parsing [  0.03s]
+10:46:53.859719 [info ]: Started loading project
+10:46:53.860876 [info ]: Loading ~/.dbt/profiles.yml
+10:46:53.864551 [debug]:    Started loading packages
+10:46:53.867478 [debug]:     Loaded [  0.00s] packages
+10:46:53.868339 [info ]: Started parsing
+10:46:53.893573 [info ]: Finished loading project [  0.03s]
+10:46:53.895020 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:53.895275 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:53.895495 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:53.895723 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:53.895990 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:53.896361 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:53.896632 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:53.896934 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:53.901476 [info ]: Finished parsing [  0.03s]
+10:46:54.811571 [info ]: Started loading project
+10:46:54.812236 [info ]: Loading ~/.dbt/profiles.yml
+10:46:54.815315 [debug]:    Started loading packages
+10:46:54.818569 [debug]:     Loaded [  0.00s] packages
+10:46:54.819572 [info ]: Started parsing
+10:46:54.840097 [info ]: Finished loading project [  0.03s]
+10:46:54.840834 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:54.841026 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:54.841145 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:54.841243 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:54.841354 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:54.841462 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:54.841572 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:54.841732 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:54.846752 [info ]: Finished parsing [  0.03s]
+10:46:59.526051 [info ]: Started loading project
+10:46:59.526679 [info ]: Loading ~/.dbt/profiles.yml
+10:46:59.529736 [debug]:    Started loading packages
+10:46:59.531663 [debug]:     Loaded [  0.00s] packages
+10:46:59.532607 [info ]: Started parsing
+10:46:59.551853 [info ]: Finished loading project [  0.03s]
+10:46:59.553396 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:46:59.553719 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:46:59.554163 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:46:59.554265 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:46:59.554356 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:46:59.554443 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:46:59.554523 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:46:59.554697 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:46:59.556818 [info ]: Finished parsing [  0.02s]
+10:46:59.934487 [info ]: Waiting for lease on 'target' directory
+10:47:00.050593 [info ]: Started loading project
+10:47:00.051723 [info ]: Loading ~/.dbt/profiles.yml
+10:47:00.055007 [debug]:    Started loading packages
+10:47:00.056543 [debug]:     Loaded [  0.00s] packages
+10:47:00.057126 [info ]: Started parsing
+10:47:00.074684 [info ]: Finished loading project [  0.02s]
+10:47:00.075338 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:7:7
+10:47:00.075467 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:8:7
+10:47:00.075566 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:9:7
+10:47:00.075658 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:10:7
+10:47:00.075756 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:11:7
+10:47:00.075869 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:12:7
+10:47:00.075965 [error]: dbt1059: Duplicate key `-name`. This key overwrites a previous definition of the same key at line 6 column 7. YAML path: `sources[0].tables.-name`.
+  --> models\s1_staging\_scr_tpch.yml:13:7
+10:47:00.076123 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:47:00.079536 [info ]: Finished parsing [  0.02s]
+10:48:04.828823 [info ]: Started loading project
+10:48:04.829514 [info ]: Loading ~/.dbt/profiles.yml
+10:48:04.833302 [debug]:    Started loading packages
+10:48:04.834977 [debug]:     Loaded [  0.00s] packages
+10:48:04.835690 [info ]: Started parsing
+10:48:04.852761 [info ]: Finished loading project [  0.02s]
+10:48:04.860337 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.01s]
+10:48:04.877337 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.02s]
+10:48:04.893595 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.02s]
+10:48:04.904505 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.01s]
+10:48:04.915422 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.01s]
+10:48:04.916145 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+10:48:04.917997 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+10:48:04.928387 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.01s]
+10:48:04.942221 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.01s]
+10:48:04.943325 [info ]: Finished parsing [  0.11s]
+10:48:04.944071 [info ]: Cached model count updated: 8 models (estimate)
+10:48:04.944083 [info ]: Cached model count updated: 8 models (accurate)
+10:48:04.944121 [info ]: Started scheduling
+10:48:04.944216 [info ]: Finished scheduling [  0.00s]
+10:48:04.944227 [debug]: Compilation - 0 nodes selected: {}
+10:48:04.944250 [warn ]: dbt1600: The selection criterion '+source:project.tpch.region +source:project.tpch.lineitem +source:project.tpch.part +source:project.tpch.nation +source:project.tpch.customer +source:project.tpch.supplier +source:project.tpch.orders +source:project.tpch.partsupp' does not match any enabled nodes
+10:48:04.944259 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+10:48:04.944265 [info ]: Started scheduling
+10:48:04.944322 [info ]: Finished scheduling [  0.00s]
+10:48:04.944385 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+10:48:04.944422 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+10:48:04.944437 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+10:48:04.944452 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+10:48:04.944464 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+10:48:04.944477 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+10:48:05.064796 [info ]: Started building task graph
+10:48:05.064845 [info ]: Finished building task graph [  0.00s]
+10:48:05.070217 [info ]: Started scheduling
+10:48:05.070304 [info ]: Finished scheduling [  0.00s]
+10:48:05.070982 [info ]: Cached model count updated: 8 models (accurate)
+10:48:05.109579 [info ]: Waiting for lease on 'target' directory
+10:48:05.336660 [info ]: Cached model count updated: 8 models (accurate)
+10:48:05.342865 [info ]: Waiting for lease on 'target' directory
+10:48:05.901378 [info ]: Cached model count updated: 8 models (accurate)
+10:48:05.907324 [info ]: Waiting for lease on 'target' directory
+10:48:06.476285 [info ]: Started loading project
+10:48:06.477022 [info ]: Loading ~/.dbt/profiles.yml
+10:48:06.482227 [info ]: Started parsing
+10:48:06.494505 [info ]: Finished loading project [  0.02s]
+10:48:06.495373 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+10:48:06.497420 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+10:48:06.498306 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+10:48:06.499009 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+10:48:06.499604 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+10:48:06.500106 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+10:48:06.502536 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+10:48:06.503432 [info ]: Finished parsing [  0.02s]
+10:48:06.504541 [info ]: Cached model count updated: 8 models (estimate)
+10:48:06.504554 [info ]: Cached model count updated: 8 models (accurate)
+10:48:06.504582 [info ]: Started scheduling
+10:48:06.504616 [info ]: Finished scheduling [  0.00s]
+10:48:06.504626 [debug]: Compilation - 0 nodes selected: {}
+10:48:06.504636 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+10:48:06.504642 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+10:48:06.614944 [info ]: Started building task graph
+10:48:06.614982 [info ]: Finished building task graph [  0.00s]
+10:48:06.618083 [info ]: Started scheduling
+10:48:06.618222 [info ]: Finished scheduling [  0.00s]
+10:48:06.620313 [info ]: Cached model count updated: 8 models (accurate)
+10:48:08.214043 [info ]: Started loading project
+10:48:08.214865 [info ]: Loading ~/.dbt/profiles.yml
+10:48:08.236377 [info ]: Cached model count updated: 8 models (estimate)
+10:48:08.236403 [info ]: Cached model count updated: 8 models (accurate)
+10:48:08.236445 [info ]: Started scheduling
+10:48:08.236537 [info ]: Finished scheduling [  0.00s]
+10:48:08.236555 [debug]: Compilation - 8 nodes selected: {"model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+10:48:08.379400 [info ]: Started building task graph
+10:48:08.379505 [info ]: Finished building task graph [  0.00s]
+10:48:08.379690 [info ]: Started rendering (8 nodes)
+10:48:08.379712 [info ]: Started model analytics_prod.stg_supplier
+10:48:08.379727 [debug]: Started rendering model analytics_prod.stg_supplier
+10:48:08.379757 [info ]: Started model analytics_prod.stg_region
+10:48:08.379841 [info ]: Finished loading project [  0.17s]
+10:48:08.379879 [debug]: Started rendering model analytics_prod.stg_region
+10:48:08.379902 [info ]: Started model analytics_prod.stg_partsupp
+10:48:08.379908 [debug]: Started rendering model analytics_prod.stg_partsupp
+10:48:08.379916 [info ]: Started model analytics_prod.stg_part
+10:48:08.379921 [debug]: Started rendering model analytics_prod.stg_part
+10:48:08.379966 [info ]: Started model analytics_prod.stg_orders
+10:48:08.379987 [debug]: Started rendering model analytics_prod.stg_orders
+10:48:08.380010 [info ]: Started model analytics_prod.stg_nation
+10:48:08.380017 [debug]: Started rendering model analytics_prod.stg_nation
+10:48:08.380030 [info ]: Started model analytics_prod.stg_lineitem
+10:48:08.380040 [debug]: Started rendering model analytics_prod.stg_lineitem
+10:48:08.380052 [info ]: Started model analytics_prod.stg_customer
+10:48:08.380060 [debug]: Started rendering model analytics_prod.stg_customer
+10:48:08.384884 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+10:48:08.388322 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+10:48:08.388520 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+10:48:08.388895 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+10:48:08.390162 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+10:48:08.391580 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+10:48:08.396066 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_supplier [success]
+10:48:08.396130 [info ]: Started analyzing (8 nodes)
+10:48:08.396147 [debug]: Started analyzing model analytics_prod.stg_supplier
+10:48:08.396540 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_supplier (table)
+10:48:08.396574 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+10:48:08.396618 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_orders [success]
+10:48:08.396636 [debug]: Started analyzing model analytics_prod.stg_orders
+10:48:08.396859 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_orders (table)
+10:48:08.396876 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+10:48:08.396897 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_partsupp [success]
+10:48:08.396910 [debug]: Started analyzing model analytics_prod.stg_partsupp
+10:48:08.397074 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_partsupp (table)
+10:48:08.397087 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+10:48:08.397116 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_nation [success]
+10:48:08.397128 [debug]: Started analyzing model analytics_prod.stg_nation
+10:48:08.397239 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_nation (table)
+10:48:08.397249 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+10:48:08.397268 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_part [success]
+10:48:08.397278 [debug]: Started analyzing model analytics_prod.stg_part
+10:48:08.397376 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_part (table)
+10:48:08.397386 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+10:48:08.397412 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_lineitem [success]
+10:48:08.397422 [debug]: Started analyzing model analytics_prod.stg_lineitem
+10:48:08.397531 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_lineitem (table)
+10:48:08.397543 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+10:48:08.399804 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+10:48:08.400985 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_customer [success]
+10:48:08.401034 [debug]: Started analyzing model analytics_prod.stg_customer
+10:48:08.402043 [info ]:  Succeeded [  0.02s] model analytics_prod.stg_customer (table)
+10:48:08.402084 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+10:48:08.409874 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+10:48:08.410078 [debug]: Finished rendering [  0.03s] model analytics_prod.stg_region [success]
+10:48:08.410107 [info ]: Finished rendering [  0.03s] (8 nodes, 0 skipped, 0 errors)
+10:48:08.410141 [debug]: Started analyzing model analytics_prod.stg_region
+10:48:08.410437 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_region (table)
+10:48:08.410469 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+10:48:08.410476 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+10:48:08.414469 [info ]: Started scheduling
+10:48:08.414565 [info ]: Finished scheduling [  0.00s]
+10:48:08.416094 [info ]: Cached model count updated: 8 models (accurate)
+10:49:09.801644 [info ]: Cached model count updated: 8 models (accurate)
+10:49:09.802604 [info ]: Waiting for lease on 'target' directory

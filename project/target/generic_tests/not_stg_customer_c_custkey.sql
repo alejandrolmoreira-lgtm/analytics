@@ -1,0 +1,1 @@
+{{ test_not(column_name="c_custkey", model=get_where_subquery(ref('stg_customer'))) }}
