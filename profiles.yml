@@ -1,0 +1,13 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 16
+      account: IURJGBG-HU17824
+      user: TRIALALM1989
+      database: analytics
+      warehouse: compute_wh
+      schema: analytics_prod
+      password: Building_1981!
+      role: ACCOUNTADMIN

@@ -1,0 +1,48 @@
+==================== 2026-04-21T08:12:05.451037Z | 019daf18-b5c8-73e2-9efa-dd43eae206a0 ====================
+08:12:05.451164 [info ]: Installing dbt project and profile setup
+08:12:05.501864 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+08:12:05.502864 [info ]: Success Project created successfully!
+08:12:05.503122 [info ]: Info Project name: jaffle_shop
+08:12:05.503433 [info ]: Info Project directory: jaffle_shop
+08:12:05.503899 [info ]: Info Setting up your profile...
+08:12:05.504339 [info ]: Info Creating new profile...
+08:12:07.383898 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+08:14:11.155455 [info ]: Success Profile written to C:\Users\alejandro.lmoreira\.dbt\profiles.yml
+08:14:11.155845 [info ]: Validating profile inputs, adapters, and connection
+
+08:14:11.156031 [info ]: dbt-fusion 2.0.0-preview.171
+08:14:11.156605 [info ]: Started loading project
+08:14:11.157994 [info ]: Loading ~/.dbt/profiles.yml
+08:14:11.174214 [info ]: Finished loading project [  0.02s]
+08:14:11.174382 [info ]: Started debugging
+08:14:11.174460 [info ]: Debugging profile: dev
+08:14:11.174617 [info ]: Debugging dbt version: 2.0.0-preview.171
+08:14:11.174820 [info ]: Debugging platform: windows x86_64 (windows)
+08:14:11.174985 [info ]: Debugging adapter type: snowflake (remote)
+08:14:11.175425 [info ]: Debugging dependencies:
+  git: ERROR
+08:14:11.175600 [info ]: Debugging connection:
+  "account": "IURJGBG-HU17824",
+  "user": "TRIALALM1989",
+  "database": "analytics",
+  "warehouse": "compute_wh",
+  "schema": "analytics_prod",
+  "role": "ACCOUNTADMIN"
+08:14:12.413420 [debug]: Query executed on node unknown:
+select 1 as id
+08:14:12.413586 [info ]: Debugging connection test: OK
+08:14:12.414123 [info ]: Finished debugging [  1.24s]
+08:14:13.326167 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+08:14:13.375389 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [2m 8s]
+{"data":{"log_version":3,"version":"=2.0.0-preview.171"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019daf1f-c31a-7eb3-adfa-52587ed06e9e","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.171","name":"MainReportVersion","pid":3140,"thread":"tokio-rt-worker","ts":"2026-04-21T08:19:47.612755Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\alejandro.lmoreira\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019daf1f-c31a-7eb3-adfa-52587ed06e9e","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":3140,"thread":"tokio-rt-worker","ts":"2026-04-21T08:19:47.612786Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019daf1f-c31a-7eb3-adfa-52587ed06e9e","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":3140,"thread":"tokio-rt-worker","ts":"2026-04-21T08:19:47.617315Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019daf1f-c31a-7eb3-adfa-52587ed06e9e","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":3140,"thread":"tokio-rt-worker","ts":"2026-04-21T08:19:47.617737Z"}}
+{"data":{"completed_at":"2026-04-21T08:19:47.917768Z","elapsed":0.30517229437828064,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019daf1f-c31a-7eb3-adfa-52587ed06e9e","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [305ms]","name":"CommandCompleted","pid":3140,"thread":"tokio-rt-worker","ts":"2026-04-21T08:19:47.917897Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.171"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019daf27-a98a-7f50-82c6-a889f234b8b7","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.171","name":"MainReportVersion","pid":20120,"thread":"tokio-rt-worker","ts":"2026-04-21T08:28:25.358217Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\alejandro.lmoreira\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019daf27-a98a-7f50-82c6-a889f234b8b7","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":20120,"thread":"tokio-rt-worker","ts":"2026-04-21T08:28:25.358282Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019daf27-a98a-7f50-82c6-a889f234b8b7","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":20120,"thread":"tokio-rt-worker","ts":"2026-04-21T08:28:25.362907Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019daf27-a98a-7f50-82c6-a889f234b8b7","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":20120,"thread":"tokio-rt-worker","ts":"2026-04-21T08:28:25.363563Z"}}
+{"data":{"completed_at":"2026-04-21T08:28:25.593305Z","elapsed":0.23525939881801605,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019daf27-a98a-7f50-82c6-a889f234b8b7","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [235ms]","name":"CommandCompleted","pid":20120,"thread":"tokio-rt-worker","ts":"2026-04-21T08:28:25.593401Z"}}
