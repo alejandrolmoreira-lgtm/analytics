@@ -1,0 +1,9 @@
+models:
+  - name: int_lineitem_enriched
+    description: a table with all the fact data, derived metrics and a new grain primary key
+    columns:
+      - name: lineitem_id
+        description: the new grain primary key
+        data_tests:
+          - unique
+          - not_null

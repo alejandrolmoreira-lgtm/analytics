@@ -1,38 +1,4 @@
--- created_at: 2026-04-22T10:45:26.898563300+00:00
--- finished_at: 2026-04-22T10:45:27.009102400+00:00
--- elapsed: 110ms
--- outcome: success
--- dialect: snowflake
--- node_id: not available
--- query_id: 01c3e0a5-0001-b501-0002-5ab60001c25e
--- desc: execute adapter call
-show terse schemas in database analytics
-    limit 10000
-/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */;
--- created_at: 2026-04-22T10:45:27.902976900+00:00
--- finished_at: 2026-04-22T10:45:28.051231400+00:00
--- elapsed: 148ms
--- outcome: success
--- dialect: snowflake
--- node_id: model.project.int_lineitem_enriched
--- query_id: 01c3e0a5-0001-b4ae-0002-5ab600014396
--- desc: get_relation > list_relations call
-SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000;
--- created_at: 2026-04-22T10:45:28.054147900+00:00
--- finished_at: 2026-04-22T10:45:28.610791100+00:00
--- elapsed: 556ms
--- outcome: success
--- dialect: snowflake
--- node_id: model.project.int_lineitem_enriched
--- query_id: 01c3e0a5-0001-b46f-0000-00025ab69dbd
--- desc: execute adapter call
-create or replace   view analytics.analytics_prod.int_lineitem_enriched
-  
-  
-  
-  
-  as (
-    with lineitem as (
+with lineitem as (
 
     select *
     from analytics.analytics_prod.stg_lineitem
@@ -150,5 +116,3 @@ create or replace   view analytics.analytics_prod.int_lineitem_enriched
 )
 
 select * from final
-  )
-/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */;

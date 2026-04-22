@@ -1,0 +1,2 @@
+select *
+from analytics.analytics_prod.int_lineitem_enriched

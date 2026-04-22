@@ -17,11 +17,11 @@ create or replace transient  table analytics.analytics_prod.stg_supplier
     select
         s_suppkey as supp_key
         , s_nationkey as nation_key
-        , s_acctbal as s_acctbal
-        , s_name as s_name
-        , s_address as s_address
-        , s_phone as s_phone
-        , s_comment as s_comment
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
     from source
 )
 

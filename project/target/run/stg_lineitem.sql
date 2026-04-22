@@ -15,19 +15,19 @@ create or replace transient  table analytics.analytics_prod.stg_lineitem
 
 , final as (
     select
-        l_receiptdate as l_receipt_date
-        , l_shipdate as l_ship_date
-        , l_linenumber as l_line_number
-        , l_linestatus as l_line_status
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
         , l_orderkey as order_key
         , l_partkey as part_key
-        , l_discount as l_discount
-        , l_extendedprice as l_extended_price
-        , l_quantity as l_quantity
-        , l_returnflag as l_return_flag
-        , l_shipmode as l_ship_mode
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
         , l_suppkey as supp_key
-        , l_tax as l_tax
+        , l_tax as line_tax
     from source
 )
 

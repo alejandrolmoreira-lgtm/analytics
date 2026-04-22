@@ -1,0 +1,1 @@
+{{ test_unique(column_name="lineitem_id", model=get_where_subquery(ref('int_lineitem_enriched'))) }}

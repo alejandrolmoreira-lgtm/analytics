@@ -6,13 +6,13 @@ with source as (
 , final as (
     select
         p_partkey as part_key
-        , p_size as p_size
-        , p_type as p_type
-        , p_mfgr as p_mfgr
-        , p_name as p_name
-        , p_container as p_container
-        , p_retailprice as p_retail_price
-        , p_comment as p_comment
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
     from source
 )
 

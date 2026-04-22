@@ -16,8 +16,8 @@ create or replace transient  table analytics.analytics_prod.stg_region
 , final as (
     select
         r_regionkey as region_key
-        , r_name as r_name
-        , r_comment as r_comment
+        , r_name as region_name
+        , r_comment as region_comment
     from source
 )
 

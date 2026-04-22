@@ -2,7 +2,7 @@ models:
   - name: stg_customer
     description: a table with all the data for each customer (one unique customer per row)
     columns:
-      - name: c_custkey
+      - name: cust_key
         description: the primary key
         data_tests:
           - unique

@@ -7,8 +7,8 @@ with source as (
     select
         n_nationkey as nation_key
         , n_regionkey as region_key
-        , n_name as n_name
-        , n_comment as n_comment
+        , n_name as nation_name
+        , n_comment as nation_comment
     from source
 )
 

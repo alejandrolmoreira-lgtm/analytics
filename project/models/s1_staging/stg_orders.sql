@@ -9,11 +9,11 @@ with source as (
         , o_orderdate as order_date
         , o_orderstatus as order_status
         , o_orderpriority as order_priority
-        , o_shippriority as ship_priority
-        , o_clerk as o_clerk
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
         , o_custkey as cust_key
-        , o_totalprice as total_price
-        , o_comment as o_comment
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
     from source
 )
 

@@ -7,9 +7,9 @@ with source as (
     select
         ps_partkey as part_key
         , ps_suppkey as supp_key
-        , ps_availqty as ps_avail_qty
-        , ps_supplycost as ps_supply_cost
-        , ps_comment as ps_comment
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
     from source
 )
 
