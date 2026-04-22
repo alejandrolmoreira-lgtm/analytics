@@ -1,9 +1,31 @@
+version: 2
+
 models:
+
   - name: int_lineitem_enriched
-    description: a table with all the fact data, derived metrics and a new grain primary key
     columns:
+
       - name: lineitem_id
-        description: the new grain primary key
-        data_tests:
+        tests:
+          - not_null
           - unique
+
+      - name: order_key
+        tests:
+          - not_null
+
+      - name: customer_key
+        tests:
+          - not_null
+
+      - name: net_revenue
+        tests:
+          - not_null
+
+      - name: total_cost
+        tests:
+          - not_null
+
+      - name: profit
+        tests:
           - not_null

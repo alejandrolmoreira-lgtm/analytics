@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="total_cost", model=get_where_subquery(ref('int_lineitem_enriched'))) }}

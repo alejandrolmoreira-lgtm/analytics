@@ -1,0 +1,1 @@
+{{ test_relationships(column_name="part_key", field="part_key", model=get_where_subquery(ref('stg_lineitem')), to=ref('stg_part')) }}

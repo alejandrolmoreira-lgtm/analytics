@@ -1,0 +1,1 @@
+{{ test_relationships(column_name="part_key", field="part_key", model=get_where_subquery(ref('fact_lineitem')), to=ref('dim_part')) }}

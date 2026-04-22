@@ -65,7 +65,7 @@ with lineitem as (
         --foreign keys
         , l.part_key as part_key
         , l.supp_key as supp_key
-        , o.cust_key as cust_key
+        , o.cust_key as customer_key
 
         --order info
         , o.order_date as order_date

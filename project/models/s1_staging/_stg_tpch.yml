@@ -1,9 +1,37 @@
+version: 2
+
 models:
-  - name: stg_customer
-    description: a table with all the data for each customer (one unique customer per row)
+
+  - name: stg_orders
     columns:
       - name: cust_key
-        description: the primary key
-        data_tests:
-          - unique
+        tests:
           - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customer')
+                field: cust_key
+
+  - name: stg_lineitem
+    columns:
+      - name: order_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_orders')
+                field: order_key
+
+      - name: part_key
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_part')
+                field: part_key
+
+      - name: supp_key
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_supplier')
+                field: supp_key
