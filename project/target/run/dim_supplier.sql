@@ -1,21 +1,31 @@
-with supplier as (
+
+  
+    
+
+
+
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
 
     select *
-    from {{ ref('stg_supplier') }}
+    from analytics.analytics_prod.stg_supplier
 
 )
 
 , nation as (
 
     select *
-    from {{ ref('stg_nation') }}
+    from analytics.analytics_prod.stg_nation
 
 )
 
 , region as (
 
     select *
-    from {{ ref('stg_region') }}
+    from analytics.analytics_prod.stg_region
     
 )
 
@@ -46,3 +56,10 @@ with supplier as (
 )
 
 select * from final
+    )
+;
+
+
+
+
+  

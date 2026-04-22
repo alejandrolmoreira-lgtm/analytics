@@ -30,6 +30,7 @@ with customer as (
         , c.cust_address as customer_address
         , c.cust_phone as customer_phone
         , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
 
         --geography
         , n.nation_name as nation

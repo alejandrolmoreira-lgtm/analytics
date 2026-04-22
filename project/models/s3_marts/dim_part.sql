@@ -1,12 +1,12 @@
 select
 
     --primary key
-    p.part_key as part_key
+    part_key as part_key
 
     --attributes
     , part_name as part_name
     , part_mfgr as manufacturer
-    , part_brand as brand
+    , part_size as part_size
     , part_type  as part_type
     , part_container part_container
 

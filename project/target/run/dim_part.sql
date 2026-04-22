@@ -1,4 +1,14 @@
-select
+
+  
+    
+
+
+
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
 
     --primary key
     part_key as part_key
@@ -14,3 +24,10 @@ select
     , part_retail_price as retail_price
 
 from analytics.analytics_prod.stg_part
+    )
+;
+
+
+
+
+  
