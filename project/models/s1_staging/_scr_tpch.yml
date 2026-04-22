@@ -1,14 +1,32 @@
+version: 2
+
 sources:
   - name: tpch
+    description: "TPCH sample dataset provided by Snowflake, used as the raw data source for this project."
     database: SNOWFLAKE_SAMPLE_DATA
     schema: TPCH_SF1
 
     tables:
       - name: customer
+        description: "Contains customer information including demographic details and account balance."
+
       - name: lineitem
+        description: "Transactional table representing individual line items within each order."
+
       - name: nation
+        description: "Lookup table containing nation-level geographic information."
+
       - name: orders
+        description: "Table containing order-level information such as order date and customer reference."
+
       - name: part
+        description: "Product dimension table with attributes such as name, type, and retail price."
+
       - name: partsupp
+        description: "Bridge table linking parts and suppliers, including supply cost information."
+
       - name: region
+        description: "Lookup table defining high-level geographic regions."
+
       - name: supplier
+        description: "Contains supplier information including location and account details."

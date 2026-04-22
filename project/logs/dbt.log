@@ -19163,3 +19163,2447 @@ Summary: 45 total | 45 success
 Finished 'compile' successfully for target 'dev' [724ms]
 Processed: 16 models | 24 tests | 5 analyses
 Summary: 45 total | 45 success
+==================== 2026-04-22T15:54:36.578475Z | 019db5e6-849f-7302-badf-4b756a625955 ====================
+15:54:36.578612 [info ]: dbt-fusion 2.0.0-preview.171
+15:54:36.579016 [info ]: Started loading project
+15:54:36.582351 [info ]: Loading ~/.dbt/profiles.yml
+15:54:36.588596 [info ]: Loading packages.yml
+15:54:36.588991 [debug]:    Started loading packages
+15:54:36.602106 [debug]:     Loaded [  0.01s] packages
+15:54:36.602701 [info ]: Finished loading project [  0.02s]
+15:54:36.603326 [info ]: Started parsing
+15:54:36.646986 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:54:36.647314 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:54:36.647575 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:54:36.647806 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:54:36.649998 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:54:36.650698 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:54:36.651238 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:54:36.651868 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:54:36.652488 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:54:36.653038 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:54:36.653511 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:54:36.653921 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:54:36.654405 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:54:36.654816 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:54:36.655173 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:54:36.655545 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+15:54:36.655907 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:54:36.656251 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+15:54:36.656614 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:54:36.657225 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:54:36.677785 [debug]: Finished parsing analysis\customer_value.sql [  0.00s]
+15:54:36.678589 [debug]: Finished parsing analysis\pricing_analysis.sql [  0.00s]
+15:54:36.679214 [debug]: Finished parsing analysis\profitability.sql [  0.00s]
+15:54:36.679690 [debug]: Finished parsing analysis\revenue_trend.sql [  0.00s]
+15:54:36.680201 [debug]: Finished parsing analysis\supplier_performance.sql [  0.00s]
+15:54:36.682082 [debug]: Finished parsing target\generic_tests\unique_dim_customer_customer_key.sql [  0.00s]
+15:54:36.682678 [debug]: Finished parsing target\generic_tests\not_null_dim_customer_customer_key.sql [  0.00s]
+15:54:36.683170 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:54:36.683641 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:54:36.684087 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:54:36.684546 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:54:36.685031 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.sql [  0.00s]
+15:54:36.685484 [debug]: Finished parsing target\generic_tests\unique_fact_lineitem_lineitem_id.sql [  0.00s]
+15:54:36.685976 [debug]: Finished parsing target\generic_tests\not_null_fact_lineitem_lineitem_id.sql [  0.00s]
+15:54:36.686459 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_part_key__part_key__ref_dim_part_.sql [  0.00s]
+15:54:36.686937 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_838af132f82122980ff89c33e4368958.sql [  0.00s]
+15:54:36.687412 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_customer_key.sql [  0.00s]
+15:54:36.688154 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:54:36.688633 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:54:36.689069 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_net_revenue.sql [  0.00s]
+15:54:36.689479 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_order_key.sql [  0.00s]
+15:54:36.689896 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_profit.sql [  0.00s]
+15:54:36.690307 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_total_cost.sql [  0.00s]
+15:54:36.690993 [debug]: Finished parsing target\generic_tests\not_null_stg_lineitem_order_key.sql [  0.00s]
+15:54:36.691937 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.sql [  0.00s]
+15:54:36.692864 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_part_key__part_key__ref_stg_part_.sql [  0.00s]
+15:54:36.693615 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.sql [  0.00s]
+15:54:36.694244 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_cust_key.sql [  0.00s]
+15:54:36.695093 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.sql [  0.00s]
+15:54:36.703384 [info ]: Finished parsing [  0.10s]
+15:54:36.705450 [info ]: Started scheduling
+15:54:36.705817 [info ]: Finished scheduling [  0.00s]
+15:54:36.709337 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+15:54:36.709431 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+15:54:36.709448 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+15:54:36.709463 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:54:36.709474 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+15:54:36.709484 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+15:54:36.709494 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+15:54:36.709508 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+15:54:36.878649 [info ]: Started building task graph
+15:54:36.879302 [info ]: Finished building task graph [  0.00s]
+15:54:38.202213 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:38.202575 [info ]: Started rendering (16 nodes)
+15:54:38.202705 [info ]: Started model analytics_prod.stg_lineitem
+15:54:38.202722 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:54:38.202759 [info ]: Started model analytics_prod.stg_supplier
+15:54:38.202767 [debug]: Started rendering model analytics_prod.stg_supplier
+15:54:38.202777 [info ]: Started model analytics_prod.stg_partsupp
+15:54:38.202785 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:54:38.202794 [info ]: Started model analytics_prod.stg_part
+15:54:38.202800 [debug]: Started rendering model analytics_prod.stg_part
+15:54:38.202810 [info ]: Started model analytics_prod.stg_orders
+15:54:38.202817 [debug]: Started rendering model analytics_prod.stg_orders
+15:54:38.202829 [info ]: Started model analytics_prod.stg_region
+15:54:38.202836 [debug]: Started rendering model analytics_prod.stg_region
+15:54:38.202843 [info ]: Started model analytics_prod.stg_nation
+15:54:38.202848 [debug]: Started rendering model analytics_prod.stg_nation
+15:54:38.202855 [info ]: Started model analytics_prod.stg_customer
+15:54:38.202858 [debug]: Started rendering model analytics_prod.stg_customer
+15:54:38.207422 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+15:54:38.207931 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+15:54:38.208623 [info ]: Started analyzing (16 nodes)
+15:54:38.208844 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:54:38.211427 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+15:54:38.211825 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:54:38.211830 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+15:54:38.211930 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+15:54:38.211594 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:54:38.211987 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+15:54:38.211991 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+15:54:38.212026 [debug]: Started analyzing model analytics_prod.stg_nation
+15:54:38.212034 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+15:54:38.212072 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+15:54:38.212371 [debug]: Started analyzing model analytics_prod.stg_customer
+15:54:38.212416 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:54:38.212692 [debug]: Started analyzing model analytics_prod.stg_region
+15:54:38.212725 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+15:54:38.212964 [debug]: Started analyzing model analytics_prod.stg_part
+15:54:38.212988 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+15:54:38.213194 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:54:38.213287 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+15:54:38.213617 [debug]: Started analyzing model analytics_prod.stg_orders
+15:54:38.213642 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+15:54:38.213910 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:54:38.219712 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+15:54:38.219983 [info ]: Started running (16 nodes)
+15:54:38.220112 [info ]: Started running model analytics_prod.stg_partsupp
+15:54:38.220141 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_lineitem [success]
+15:54:38.220355 [info ]: Started running model analytics_prod.stg_lineitem
+15:54:38.220389 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+15:54:38.220727 [info ]: Started running model analytics_prod.stg_orders
+15:54:38.220746 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+15:54:38.221079 [info ]: Started running model analytics_prod.stg_customer
+15:54:38.221121 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+15:54:38.221407 [info ]: Started running model analytics_prod.stg_part
+15:54:38.221445 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+15:54:38.221933 [info ]: Started running model analytics_prod.stg_region
+15:54:38.221960 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_supplier [success]
+15:54:38.222280 [info ]: Started running model analytics_prod.stg_supplier
+15:54:38.222315 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_nation [success]
+15:54:38.222862 [info ]: Started running model analytics_prod.stg_nation
+15:54:39.338357 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:39.341332 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+15:54:40.312977 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:40.314390 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+15:54:40.633221 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:40.634602 [debug]: Writing runtime sql for node "model.project.stg_orders"
+15:54:41.380848 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+)
+
+, final as (
+    select
+        ps_partkey as part_key
+        , ps_suppkey as supp_key
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:41.382976 [info ]:  Succeeded [  3.18s] model analytics_prod.stg_partsupp (table)
+15:54:41.383404 [info ]: Finished running [  3.16s] model analytics_prod.stg_partsupp [success]
+15:54:41.383661 [info ]: Started model analytics_prod.dim_part_supplier
+15:54:41.383680 [debug]: Started rendering model analytics_prod.dim_part_supplier
+15:54:41.385663 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+15:54:41.385852 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:54:41.385966 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+15:54:41.386315 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:54:41.386384 [info ]: Started running model analytics_prod.dim_part_supplier
+15:54:41.388043 [debug]: Writing runtime sql for node "model.project.dim_part_supplier"
+15:54:41.542243 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:41.543759 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:54:42.112376 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+)
+
+, final as (
+    select
+        o_orderkey as order_key
+        , o_orderdate as order_date
+        , o_orderstatus as order_status
+        , o_orderpriority as order_priority
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
+        , o_custkey as cust_key
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:42.113404 [info ]:  Succeeded [  3.91s] model analytics_prod.stg_orders (table)
+15:54:42.113803 [info ]: Finished running [  3.89s] model analytics_prod.stg_orders [success]
+15:54:42.113884 [info ]: Started model analytics_prod.dim_date
+15:54:42.113896 [debug]: Started rendering model analytics_prod.dim_date
+15:54:42.118192 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:54:42.118357 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:54:42.118480 [debug]: Started analyzing model analytics_prod.dim_date
+15:54:42.122801 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_date [success]
+15:54:42.122919 [info ]: Started running model analytics_prod.dim_date
+15:54:42.126321 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:54:42.131642 [debug]: Query executed on node model.project.dim_part_supplier:
+create or replace transient  table analytics.analytics_prod.dim_part_supplier
+    
+    
+    
+    as (select
+    part_key
+    , supp_key
+    , part_supp_supply_cost as supply_cost
+from analytics.analytics_prod.stg_partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:42.133119 [info ]:  Succeeded [  0.75s] model analytics_prod.dim_part_supplier (table)
+15:54:42.133458 [info ]: Finished running [  0.75s] model analytics_prod.dim_part_supplier [success]
+15:54:42.497590 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:42.499528 [debug]: Writing runtime sql for node "model.project.stg_part"
+15:54:42.675776 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_account_balance
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:42.676896 [info ]:  Succeeded [  4.47s] model analytics_prod.stg_customer (table)
+15:54:42.677402 [info ]: Finished running [  4.46s] model analytics_prod.stg_customer [success]
+15:54:42.769615 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:42.770967 [debug]: Writing runtime sql for node "model.project.stg_region"
+15:54:42.933959 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:42.935065 [info ]:  Succeeded [  0.82s] model analytics_prod.dim_date (table)
+15:54:42.935867 [info ]: Finished running [  0.81s] model analytics_prod.dim_date [success]
+15:54:43.344681 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+)
+
+, final as (
+    select
+        r_regionkey as region_key
+        , r_name as region_name
+        , r_comment as region_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:43.346768 [info ]:  Succeeded [  5.14s] model analytics_prod.stg_region (table)
+15:54:43.347425 [info ]: Finished running [  5.13s] model analytics_prod.stg_region [success]
+15:54:43.481406 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+)
+
+, final as (
+    select
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
+        , l_orderkey as order_key
+        , l_partkey as part_key
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
+        , l_suppkey as supp_key
+        , l_tax as line_tax
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:43.482945 [info ]:  Succeeded [  5.28s] model analytics_prod.stg_lineitem (table)
+15:54:43.483403 [info ]: Finished running [  5.26s] model analytics_prod.stg_lineitem [success]
+15:54:43.703539 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:43.704903 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+15:54:43.761711 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+)
+
+, final as (
+    select
+        p_partkey as part_key
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:43.763360 [info ]:  Succeeded [  5.56s] model analytics_prod.stg_part (table)
+15:54:43.764070 [info ]: Finished running [  5.54s] model analytics_prod.stg_part [success]
+15:54:43.764397 [info ]: Started model analytics_prod.dim_part
+15:54:43.764416 [debug]: Started rendering model analytics_prod.dim_part
+15:54:43.766391 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+15:54:43.766494 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:54:43.766600 [debug]: Started analyzing model analytics_prod.dim_part
+15:54:43.767034 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:54:43.767108 [info ]: Started running model analytics_prod.dim_part
+15:54:43.768816 [debug]: Writing runtime sql for node "model.project.dim_part"
+15:54:43.923487 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:54:43.925535 [debug]: Writing runtime sql for node "model.project.stg_nation"
+15:54:44.483172 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+)
+
+, final as (
+    select
+        n_nationkey as nation_key
+        , n_regionkey as region_key
+        , n_name as nation_name
+        , n_comment as nation_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:44.484211 [info ]:  Succeeded [  6.28s] model analytics_prod.stg_nation (table)
+15:54:44.484554 [info ]: Finished running [  6.26s] model analytics_prod.stg_nation [success]
+15:54:44.484607 [info ]: Started model analytics_prod.dim_location
+15:54:44.484620 [debug]: Started rendering model analytics_prod.dim_location
+15:54:44.484636 [info ]: Started model analytics_prod.dim_customer
+15:54:44.484640 [debug]: Started rendering model analytics_prod.dim_customer
+15:54:44.489021 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+15:54:44.489274 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+15:54:44.489252 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_location [success]
+15:54:44.489486 [debug]: Started analyzing model analytics_prod.dim_location
+15:54:44.489562 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_customer [success]
+15:54:44.489722 [debug]: Started analyzing model analytics_prod.dim_customer
+15:54:44.494526 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_location [success]
+15:54:44.494685 [info ]: Started running model analytics_prod.dim_location
+15:54:44.494710 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+15:54:44.494767 [info ]: Started running model analytics_prod.dim_customer
+15:54:44.496730 [debug]: Writing runtime sql for node "model.project.dim_location"
+15:54:44.497075 [debug]: Writing runtime sql for node "model.project.dim_customer"
+15:54:44.504908 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+)
+
+, final as (
+    select
+        s_suppkey as supp_key
+        , s_nationkey as nation_key
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:44.506380 [info ]:  Succeeded [  6.30s] model analytics_prod.stg_supplier (table)
+15:54:44.506892 [info ]: Finished running [  6.28s] model analytics_prod.stg_supplier [success]
+15:54:44.506996 [info ]: Started model analytics_prod.int_lineitem_enriched
+15:54:44.507016 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+15:54:44.507048 [info ]: Started model analytics_prod.dim_supplier
+15:54:44.507061 [debug]: Started rendering model analytics_prod.dim_supplier
+15:54:44.510635 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+15:54:44.510740 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+15:54:44.510844 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+15:54:44.510994 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+15:54:44.511035 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+15:54:44.511127 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:54:44.512189 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:54:44.512344 [info ]: Started running model analytics_prod.dim_supplier
+15:54:44.514858 [debug]: Writing runtime sql for node "model.project.dim_supplier"
+15:54:44.519408 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+15:54:44.519600 [info ]: Started running model analytics_prod.int_lineitem_enriched
+15:54:44.521489 [debug]: Writing runtime sql for node "model.project.int_lineitem_enriched"
+15:54:44.594205 [debug]: Query executed on node model.project.dim_part:
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
+
+    --primary key
+    part_key as part_key
+
+    --attributes
+    , part_name as part_name
+    , part_mfgr as manufacturer
+    , part_size as part_size
+    , part_type  as part_type
+    , part_container part_container
+
+    --reference price
+    , part_retail_price as retail_price
+
+from analytics.analytics_prod.stg_part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:44.595433 [info ]:  Succeeded [  0.83s] model analytics_prod.dim_part (table)
+15:54:44.596106 [info ]: Finished running [  0.83s] model analytics_prod.dim_part [success]
+15:54:44.882033 [debug]: Query executed on node model.project.int_lineitem_enriched:
+create or replace   view analytics.analytics_prod.int_lineitem_enriched
+  
+  
+  
+  
+  as (
+    with lineitem as (
+
+    select *
+    from analytics.analytics_prod.stg_lineitem
+
+)
+
+, orders as (
+
+    select *
+    from analytics.analytics_prod.stg_orders
+
+)
+
+, customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, part as (
+
+    select *
+    from analytics.analytics_prod.stg_part
+
+)
+
+, part_supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_partsupp
+
+)
+
+
+, final as (
+    select
+        --grain keys
+        concat(l.order_key, '-', l.line_number) as lineitem_id
+        , o.order_key as order_key
+        , l.line_number as line_number
+
+        --foreign keys
+        , l.part_key as part_key
+        , l.supp_key as supp_key
+        , o.cust_key as customer_key
+
+        --order info
+        , o.order_date as order_date
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+        --metrics
+        , l.line_quantity as quantity
+        , p.part_retail_price as retail_price
+        , l.line_extended_price as gross_revenue
+        , l.line_discount as discount
+        , l.line_tax as tax
+        , ps.part_supp_supply_cost as supply_cost
+
+        --derived metrics
+        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
+        , l.line_extended_price * (1 - l.line_discount) as net_revenue
+        , l.line_extended_price * l.line_discount as discount_amount
+        , p.part_retail_price * l.line_quantity as expected_revenue
+        , l.line_quantity * ps.part_supp_supply_cost as total_cost
+        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
+
+
+    from lineitem l
+
+    left join orders o
+        using (order_key)
+
+    left join customer c
+        using (cust_key)
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+    left join supplier s
+        using(supp_key)
+
+    left join part p
+        using(part_key)
+
+    left join part_supplier ps
+        using(part_key, supp_key)
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:44.884112 [info ]:  Succeeded [  0.38s] model analytics_prod.int_lineitem_enriched (view)
+15:54:44.884698 [info ]: Finished running [  0.37s] model analytics_prod.int_lineitem_enriched [success]
+15:54:44.884955 [info ]: Started model analytics_prod.fact_lineitem
+15:54:44.884974 [debug]: Started rendering model analytics_prod.fact_lineitem
+15:54:44.886478 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+15:54:44.886577 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+15:54:44.886919 [info ]: Finished rendering [  6.68s] (16 nodes, 0 skipped, 0 errors)
+15:54:44.887467 [debug]: Started analyzing model analytics_prod.fact_lineitem
+15:54:44.887728 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+15:54:44.887800 [info ]: Finished analyzing [  6.68s] (16 nodes, 0 skipped, 0 errors)
+15:54:44.888137 [info ]: Started running model analytics_prod.fact_lineitem
+15:54:44.890292 [debug]: Writing runtime sql for node "model.project.fact_lineitem"
+15:54:45.243393 [debug]: Query executed on node model.project.dim_location:
+create or replace transient  table analytics.analytics_prod.dim_location
+    
+    
+    
+    as (with nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+
+        --primary key
+        n.nation_key
+
+        --attributes
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from nation n
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_location", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:45.244929 [info ]:  Succeeded [  0.76s] model analytics_prod.dim_location (table)
+15:54:45.245516 [info ]: Finished running [  0.75s] model analytics_prod.dim_location [success]
+15:54:45.403892 [debug]: Query executed on node model.project.dim_customer:
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+        --primary key
+        c.cust_key as customer_key
+
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from customer c
+    
+    left join nation n
+        using(nation_key)
+    
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:45.405232 [info ]:  Succeeded [  0.92s] model analytics_prod.dim_customer (table)
+15:54:45.405615 [info ]: Finished running [  0.91s] model analytics_prod.dim_customer [success]
+15:54:45.622170 [debug]: Query executed on node model.project.dim_supplier:
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+    
+)
+
+, final as (
+    select
+
+        --primary key
+        s.supp_key
+
+        --attributes
+        , s.supp_name as supplier_name
+        , s.supp_address as supplier_address
+        , s.supp_phone as supplier_phone
+        , s.supp_acctbal as supplier_account_balance
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from supplier s
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:45.623622 [info ]:  Succeeded [  1.11s] model analytics_prod.dim_supplier (table)
+15:54:45.624114 [info ]: Finished running [  1.11s] model analytics_prod.dim_supplier [success]
+15:54:50.598998 [debug]: Query executed on node model.project.fact_lineitem:
+create or replace transient  table analytics.analytics_prod.fact_lineitem
+    
+    
+    
+    as (select *
+from analytics.analytics_prod.int_lineitem_enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.fact_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:54:50.600600 [info ]:  Succeeded [  5.71s] model analytics_prod.fact_lineitem (table)
+15:54:50.601143 [info ]: Finished running [  5.71s] model analytics_prod.fact_lineitem [success]
+15:54:50.601370 [info ]: Finished running [ 12.38s] (16 nodes, 0 skipped, 0 errors)
+15:54:50.637021 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:54:50.700854 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [14.1s]
+Processed: 16 models
+Summary: 16 total | 16 success
+==================== 2026-04-22T16:14:48.984582Z | 019db5f9-0495-7850-99ad-7c0fdf936caa ====================
+16:14:48.984711 [info ]: dbt-fusion 2.0.0-preview.171
+16:14:48.985072 [info ]: Started loading project
+16:14:48.987978 [info ]: Loading ~/.dbt/profiles.yml
+16:14:49.025820 [info ]: Loading packages.yml
+16:14:49.026209 [debug]:    Started loading packages
+16:14:49.066198 [debug]:     Loaded [  0.04s] packages
+16:14:49.066800 [info ]: Finished loading project [  0.08s]
+16:14:49.077574 [info ]: Started parsing
+16:14:49.131298 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+16:14:49.131716 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+16:14:49.132042 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+16:14:49.132425 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+16:14:49.135472 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+16:14:49.136309 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+16:14:49.137011 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+16:14:49.137570 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+16:14:49.138055 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+16:14:49.138440 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+16:14:49.138950 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+16:14:49.139349 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+16:14:49.139795 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+16:14:49.140205 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+16:14:49.151001 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.01s]
+16:14:49.160854 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.01s]
+16:14:49.161768 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+16:14:49.172702 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.01s]
+16:14:49.173469 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+16:14:49.174281 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+16:14:49.223855 [debug]: Finished parsing analysis\customer_value.sql [  0.01s]
+16:14:49.235836 [debug]: Finished parsing analysis\pricing_analysis.sql [  0.01s]
+16:14:49.247712 [debug]: Finished parsing analysis\profitability.sql [  0.01s]
+16:14:49.260856 [debug]: Finished parsing analysis\revenue_trend.sql [  0.01s]
+16:14:49.271713 [debug]: Finished parsing analysis\supplier_performance.sql [  0.01s]
+16:14:49.274161 [debug]: Finished parsing target\generic_tests\unique_dim_customer_customer_key.sql [  0.00s]
+16:14:49.275347 [debug]: Finished parsing target\generic_tests\not_null_dim_customer_customer_key.sql [  0.00s]
+16:14:49.276466 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+16:14:49.277497 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+16:14:49.278807 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+16:14:49.279911 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+16:14:49.280741 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.sql [  0.00s]
+16:14:49.281526 [debug]: Finished parsing target\generic_tests\unique_fact_lineitem_lineitem_id.sql [  0.00s]
+16:14:49.282570 [debug]: Finished parsing target\generic_tests\not_null_fact_lineitem_lineitem_id.sql [  0.00s]
+16:14:49.283213 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_part_key__part_key__ref_dim_part_.sql [  0.00s]
+16:14:49.283696 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_838af132f82122980ff89c33e4368958.sql [  0.00s]
+16:14:49.284391 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_customer_key.sql [  0.00s]
+16:14:49.284861 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+16:14:49.285318 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+16:14:49.285958 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_net_revenue.sql [  0.00s]
+16:14:49.286372 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_order_key.sql [  0.00s]
+16:14:49.286787 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_profit.sql [  0.00s]
+16:14:49.287528 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_total_cost.sql [  0.00s]
+16:14:49.288092 [debug]: Finished parsing target\generic_tests\not_null_stg_lineitem_order_key.sql [  0.00s]
+16:14:49.288855 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.sql [  0.00s]
+16:14:49.289402 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_part_key__part_key__ref_stg_part_.sql [  0.00s]
+16:14:49.289884 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.sql [  0.00s]
+16:14:49.290334 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_cust_key.sql [  0.00s]
+16:14:49.290769 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.sql [  0.00s]
+16:14:49.298427 [info ]: Finished parsing [  0.22s]
+16:14:49.299883 [info ]: Started scheduling
+16:14:49.300256 [info ]: Finished scheduling [  0.00s]
+16:14:49.303304 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+16:14:49.303373 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+16:14:49.303390 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+16:14:49.303401 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+16:14:49.303413 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+16:14:49.303426 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+16:14:49.303438 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+16:14:49.303450 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+16:14:49.468789 [info ]: Started building task graph
+16:14:49.469284 [info ]: Finished building task graph [  0.00s]
+16:14:49.469714 [info ]: Started rendering (45 nodes)
+16:14:49.469877 [info ]: Started test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id
+16:14:49.469889 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id
+16:14:49.469918 [info ]: Started test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id
+16:14:49.469924 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id
+16:14:49.469932 [info ]: Started test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key
+16:14:49.469935 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key
+16:14:49.469942 [info ]: Started test analytics_prod_dbt_test__audit.unique_dim_part_part_key
+16:14:49.469945 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_dim_part_part_key
+16:14:49.469951 [info ]: Started test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key
+16:14:49.469954 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key
+16:14:49.469961 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_
+16:14:49.469967 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_
+16:14:49.469972 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_
+16:14:49.469976 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_
+16:14:49.469981 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_
+16:14:49.469985 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_
+16:14:49.469993 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_
+16:14:49.469997 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_
+16:14:49.470003 [info ]: Started test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_
+16:14:49.470053 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_
+16:14:49.470060 [info ]: Started test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_
+16:14:49.470064 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_
+16:14:49.470069 [info ]: Started test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_
+16:14:49.470072 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_
+16:14:49.470078 [info ]: Started test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key
+16:14:49.470081 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key
+16:14:49.470086 [info ]: Started test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key
+16:14:49.470089 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key
+16:14:49.470094 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost
+16:14:49.470098 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost
+16:14:49.470106 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit
+16:14:49.470109 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit
+16:14:49.470116 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key
+16:14:49.470119 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key
+16:14:49.470125 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue
+16:14:49.470128 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue
+16:14:49.470134 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id
+16:14:49.470138 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id
+16:14:49.470144 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key
+16:14:49.470148 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key
+16:14:49.470154 [info ]: Started test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id
+16:14:49.470157 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id
+16:14:49.470162 [info ]: Started test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key
+16:14:49.470166 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key
+16:14:49.470172 [info ]: Started test analytics_prod_dbt_test__audit.not_null_dim_part_part_key
+16:14:49.470175 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_dim_part_part_key
+16:14:49.470181 [info ]: Started test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key
+16:14:49.470185 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key
+16:14:49.470193 [info ]: Started model analytics_prod.dim_part_supplier
+16:14:49.470197 [debug]: Started rendering model analytics_prod.dim_part_supplier
+16:14:49.470332 [info ]: Started model analytics_prod.dim_location
+16:14:49.470350 [debug]: Started rendering model analytics_prod.dim_location
+16:14:49.470448 [info ]: Started model analytics_prod.dim_date
+16:14:49.470467 [debug]: Started rendering model analytics_prod.dim_date
+16:14:49.470481 [info ]: Started analysis analytics_prod.supplier_performance
+16:14:49.470489 [debug]: Started rendering analysis analytics_prod.supplier_performance
+16:14:49.470501 [info ]: Started model analytics_prod.dim_supplier
+16:14:49.470507 [debug]: Started rendering model analytics_prod.dim_supplier
+16:14:49.470716 [info ]: Started analysis analytics_prod.revenue_trend
+16:14:49.470735 [debug]: Started rendering analysis analytics_prod.revenue_trend
+16:14:49.470753 [info ]: Started analysis analytics_prod.profitability
+16:14:49.470762 [debug]: Started rendering analysis analytics_prod.profitability
+16:14:49.470776 [info ]: Started analysis analytics_prod.pricing_analysis
+16:14:49.470788 [debug]: Started rendering analysis analytics_prod.pricing_analysis
+16:14:49.470804 [info ]: Started model analytics_prod.dim_part
+16:14:49.470813 [debug]: Started rendering model analytics_prod.dim_part
+16:14:49.470828 [info ]: Started analysis analytics_prod.customer_value
+16:14:49.470899 [debug]: Started rendering analysis analytics_prod.customer_value
+16:14:49.470920 [info ]: Started model analytics_prod.fact_lineitem
+16:14:49.470932 [debug]: Started rendering model analytics_prod.fact_lineitem
+16:14:49.470949 [info ]: Started model analytics_prod.int_lineitem_enriched
+16:14:49.470958 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+16:14:49.470978 [info ]: Started model analytics_prod.stg_supplier
+16:14:49.470985 [debug]: Started rendering model analytics_prod.stg_supplier
+16:14:49.470999 [info ]: Started model analytics_prod.stg_partsupp
+16:14:49.471009 [debug]: Started rendering model analytics_prod.stg_partsupp
+16:14:49.471023 [info ]: Started model analytics_prod.stg_part
+16:14:49.471032 [debug]: Started rendering model analytics_prod.stg_part
+16:14:49.471047 [info ]: Started model analytics_prod.stg_orders
+16:14:49.471055 [debug]: Started rendering model analytics_prod.stg_orders
+16:14:49.471075 [info ]: Started model analytics_prod.stg_lineitem
+16:14:49.471085 [debug]: Started rendering model analytics_prod.stg_lineitem
+16:14:49.471099 [info ]: Started model analytics_prod.dim_customer
+16:14:49.471109 [debug]: Started rendering model analytics_prod.dim_customer
+16:14:49.471123 [info ]: Started model analytics_prod.stg_region
+16:14:49.471134 [debug]: Started rendering model analytics_prod.stg_region
+16:14:49.471150 [info ]: Started model analytics_prod.stg_nation
+16:14:49.471159 [debug]: Started rendering model analytics_prod.stg_nation
+16:14:49.471174 [info ]: Started model analytics_prod.stg_customer
+16:14:49.471182 [debug]: Started rendering model analytics_prod.stg_customer
+16:14:49.477698 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+16:14:49.480424 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_total_cost.5147d7a5ac at target\compiled\generic_tests\not_null_int_lineitem_enriched_total_cost.sql
+16:14:49.480473 [debug]: Compiled SQL for node test.project.not_null_dim_supplier_supp_key.467488707a at target\compiled\generic_tests\not_null_dim_supplier_supp_key.sql
+16:14:49.480637 [debug]: Compiled SQL for node test.project.relationships_stg_lineitem_part_key__part_key__ref_stg_part_.e1f053329a at target\compiled\generic_tests\relationships_stg_lineitem_part_key__part_key__ref_stg_part_.sql
+16:14:49.485629 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+16:14:49.485650 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+16:14:49.485750 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+16:14:49.486080 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+16:14:49.486202 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+16:14:49.487341 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+16:14:49.491454 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+16:14:49.496749 [debug]: Compiled SQL for node analysis.project.pricing_analysis at target\compiled\analysis\pricing_analysis.sql
+16:14:49.496882 [debug]: Finished rendering [  0.03s] model analytics_prod.fact_lineitem [success]
+16:14:49.501116 [info ]: Started analyzing (45 nodes)
+16:14:49.501360 [debug]: Started analyzing model analytics_prod.fact_lineitem
+16:14:49.506505 [debug]: Compiled SQL for node analysis.project.customer_value at target\compiled\analysis\customer_value.sql
+16:14:49.507125 [debug]: Compiled SQL for node analysis.project.profitability at target\compiled\analysis\profitability.sql
+16:14:49.507514 [debug]: Compiled SQL for node test.project.not_null_dim_customer_customer_key.c289fe4d1f at target\compiled\generic_tests\not_null_dim_customer_customer_key.sql
+16:14:49.507553 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+16:14:49.507779 [debug]: Compiled SQL for node test.project.unique_fact_lineitem_lineitem_id.999ad50b01 at target\compiled\generic_tests\unique_fact_lineitem_lineitem_id.sql
+16:14:49.508772 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+16:14:49.513962 [debug]: Compiled SQL for node test.project.not_null_stg_lineitem_order_key.992908a611 at target\compiled\generic_tests\not_null_stg_lineitem_order_key.sql
+16:14:49.514112 [debug]: Compiled SQL for node test.project.unique_dim_part_part_key.871035ca2b at target\compiled\generic_tests\unique_dim_part_part_key.sql
+16:14:49.514235 [debug]: Compiled SQL for node test.project.unique_dim_supplier_supp_key.eaeb41857f at target\compiled\generic_tests\unique_dim_supplier_supp_key.sql
+16:14:49.515497 [debug]: Compiled SQL for node test.project.relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.4af3d41710 at target\compiled\generic_tests\relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.sql
+16:14:49.519752 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_net_revenue.6a7accd8a1 at target\compiled\generic_tests\not_null_int_lineitem_enriched_net_revenue.sql
+16:14:49.519902 [debug]: Compiled SQL for node test.project.relationships_fact_lineitem_838af132f82122980ff89c33e4368958.d5ca68c4a8 at target\compiled\generic_tests\relationships_fact_lineitem_838af132f82122980ff89c33e4368958.sql
+16:14:49.520196 [debug]: Compiled SQL for node test.project.not_null_dim_part_part_key.eca7d6f732 at target\compiled\generic_tests\not_null_dim_part_part_key.sql
+16:14:49.520511 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_customer_key.a574381044 at target\compiled\generic_tests\not_null_int_lineitem_enriched_customer_key.sql
+16:14:49.520661 [debug]: Compiled SQL for node test.project.not_null_fact_lineitem_lineitem_id.5d3ecc6922 at target\compiled\generic_tests\not_null_fact_lineitem_lineitem_id.sql
+16:14:49.521136 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_lineitem_id.01b850600f at target\compiled\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql
+16:14:49.521158 [debug]: Compiled SQL for node test.project.relationships_fact_lineitem_part_key__part_key__ref_dim_part_.3793d3ca24 at target\compiled\generic_tests\relationships_fact_lineitem_part_key__part_key__ref_dim_part_.sql
+16:14:49.521524 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_profit.8810732fea at target\compiled\generic_tests\not_null_int_lineitem_enriched_profit.sql
+16:14:49.521966 [debug]: Compiled SQL for node test.project.unique_int_lineitem_enriched_lineitem_id.92993ab92d at target\compiled\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql
+16:14:49.522033 [debug]: Compiled SQL for node test.project.relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.789f0f2f50 at target\compiled\generic_tests\relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.sql
+16:14:49.522184 [debug]: Compiled SQL for node test.project.relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.7bd182b962 at target\compiled\generic_tests\relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.sql
+16:14:49.525150 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+16:14:49.528785 [debug]: Compiled SQL for node test.project.unique_dim_customer_customer_key.7b0683cc6e at target\compiled\generic_tests\unique_dim_customer_customer_key.sql
+16:14:49.534608 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_order_key.0a98315aa4 at target\compiled\generic_tests\not_null_int_lineitem_enriched_order_key.sql
+16:14:49.535612 [debug]: Compiled SQL for node test.project.not_null_stg_orders_cust_key.9976429356 at target\compiled\generic_tests\not_null_stg_orders_cust_key.sql
+16:14:49.539504 [debug]: Compiled SQL for node test.project.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.d4c7c12981 at target\compiled\generic_tests\relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.sql
+16:14:49.501426 [debug]: Finished rendering [  0.03s] test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key [success]
+16:14:49.540625 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key
+16:14:49.540968 [debug]: Compiled SQL for node analysis.project.supplier_performance at target\compiled\analysis\supplier_performance.sql
+16:14:49.549533 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+16:14:49.551053 [debug]: Compiled SQL for node analysis.project.revenue_trend at target\compiled\analysis\revenue_trend.sql
+16:14:49.551778 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+16:14:49.551778 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+16:14:49.540697 [debug]: Finished rendering [  0.07s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost [success]
+16:14:49.552265 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost
+16:14:49.552321 [debug]: Finished rendering [  0.08s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_ [success]
+16:14:49.553599 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_
+16:14:49.561804 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+16:14:49.553669 [debug]: Finished rendering [  0.08s] model analytics_prod.dim_date [success]
+16:14:49.589750 [debug]: Started analyzing model analytics_prod.dim_date
+16:14:49.589829 [debug]: Finished rendering [  0.12s] model analytics_prod.stg_orders [success]
+16:14:49.601096 [debug]: Started analyzing model analytics_prod.stg_orders
+16:14:49.601176 [debug]: Finished rendering [  0.13s] model analytics_prod.stg_supplier [success]
+16:14:49.603445 [debug]: Started analyzing model analytics_prod.stg_supplier
+16:14:49.603521 [debug]: Finished rendering [  0.13s] model analytics_prod.stg_part [success]
+16:14:49.604909 [debug]: Started analyzing model analytics_prod.stg_part
+16:14:49.604986 [debug]: Finished rendering [  0.13s] model analytics_prod.dim_supplier [success]
+16:14:49.605662 [debug]: Started analyzing model analytics_prod.dim_supplier
+16:14:49.605720 [debug]: Finished rendering [  0.13s] model analytics_prod.dim_customer [success]
+16:14:49.606607 [debug]: Started analyzing model analytics_prod.dim_customer
+16:14:49.606671 [debug]: Finished rendering [  0.14s] model analytics_prod.stg_customer [success]
+16:14:49.607849 [debug]: Started analyzing model analytics_prod.stg_customer
+16:14:49.608639 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+16:14:49.607918 [debug]: Finished rendering [  0.14s] analysis analytics_prod.pricing_analysis [success]
+16:14:49.609919 [debug]: Started analyzing analysis analytics_prod.pricing_analysis
+16:14:49.609993 [debug]: Finished rendering [  0.14s] analysis analytics_prod.customer_value [success]
+16:14:49.610562 [debug]: Started analyzing analysis analytics_prod.customer_value
+16:14:49.610624 [debug]: Finished rendering [  0.14s] analysis analytics_prod.profitability [success]
+16:14:49.611170 [debug]: Started analyzing analysis analytics_prod.profitability
+16:14:49.611224 [debug]: Finished rendering [  0.14s] model analytics_prod.stg_partsupp [success]
+16:14:49.612493 [debug]: Started analyzing model analytics_prod.stg_partsupp
+16:14:49.612562 [debug]: Finished rendering [  0.14s] test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key [success]
+16:14:49.613357 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key
+16:14:49.613420 [debug]: Finished rendering [  0.14s] test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id [success]
+16:14:49.614113 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id
+16:14:49.614162 [debug]: Finished rendering [  0.14s] model analytics_prod.dim_location [success]
+16:14:49.614494 [debug]: Started analyzing model analytics_prod.dim_location
+16:14:49.614539 [debug]: Finished rendering [  0.14s] test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key [success]
+16:14:49.614763 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key
+16:14:49.614804 [debug]: Finished rendering [  0.14s] test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key [success]
+16:14:49.615255 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key
+16:14:49.615300 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.unique_dim_part_part_key [success]
+16:14:49.615431 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_dim_part_part_key
+16:14:49.615469 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_ [success]
+16:14:49.615586 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_
+16:14:49.615620 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue [success]
+16:14:49.615743 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue
+16:14:49.615781 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_dim_part_part_key [success]
+16:14:49.615897 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_dim_part_part_key
+16:14:49.615936 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key [success]
+16:14:49.616126 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key
+16:14:49.616162 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id [success]
+16:14:49.616268 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id
+16:14:49.616305 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_ [success]
+16:14:49.616397 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_
+16:14:49.616429 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_ [success]
+16:14:49.616530 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_
+16:14:49.616564 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id [success]
+16:14:49.616678 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id
+16:14:49.616716 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit [success]
+16:14:49.616736 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit
+16:14:49.616761 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id [success]
+16:14:49.617163 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id
+16:14:49.617204 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_ [success]
+16:14:49.617232 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_
+16:14:49.617257 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_ [success]
+16:14:49.617273 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_
+16:14:49.617311 [debug]: Finished rendering [  0.15s] model analytics_prod.int_lineitem_enriched [success]
+16:14:49.617327 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+16:14:49.617352 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key [success]
+16:14:49.617366 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key
+16:14:49.617383 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key [success]
+16:14:49.617397 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key
+16:14:49.617420 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key [success]
+16:14:49.617434 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key
+16:14:49.617451 [debug]: Finished rendering [  0.15s] test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_ [success]
+16:14:49.617468 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_
+16:14:49.617491 [info ]:  Succeeded [  0.14s] model analytics_prod.fact_lineitem (table)
+16:14:49.617517 [debug]: Finished analyzing [  0.12s] model analytics_prod.fact_lineitem [success]
+16:14:49.617784 [debug]: Finished rendering [  0.15s] analysis analytics_prod.supplier_performance [success]
+16:14:49.617996 [debug]: Started analyzing analysis analytics_prod.supplier_performance
+16:14:49.618037 [debug]: Finished rendering [  0.15s] analysis analytics_prod.revenue_trend [success]
+16:14:49.618057 [debug]: Started analyzing analysis analytics_prod.revenue_trend
+16:14:49.618085 [debug]: Finished rendering [  0.15s] model analytics_prod.dim_part [success]
+16:14:49.618103 [debug]: Started analyzing model analytics_prod.dim_part
+16:14:49.618135 [debug]: Finished rendering [  0.15s] model analytics_prod.stg_region [success]
+16:14:49.618152 [debug]: Started analyzing model analytics_prod.stg_region
+16:14:49.618179 [info ]:  Succeeded [  0.11s] test  analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key (models\s3_marts\_mart_tpch.yml:70:13)
+16:14:49.618206 [debug]: Finished analyzing [  0.08s] test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key [success]
+16:14:49.618646 [debug]: Finished rendering [  0.15s] model analytics_prod.stg_lineitem [success]
+16:14:49.618673 [debug]: Started analyzing model analytics_prod.stg_lineitem
+16:14:49.618709 [info ]:  Succeeded [  0.14s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost (models\s2_intermediate\_int_tpch.yml:33:13)
+16:14:49.618735 [debug]: Finished analyzing [  0.07s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost [success]
+16:14:49.618842 [debug]: Finished rendering [  0.15s] model analytics_prod.stg_nation [success]
+16:14:49.619118 [debug]: Started analyzing model analytics_prod.stg_nation
+16:14:49.619154 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_ (models\s1_staging\_stg_tpch.yml:32:13)
+16:14:49.619176 [debug]: Finished analyzing [  0.07s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_ [success]
+16:14:49.619434 [info ]:  Succeeded [  0.11s] model analytics_prod.dim_date (table)
+16:14:49.619453 [debug]: Finished analyzing [  0.03s] model analytics_prod.dim_date [success]
+16:14:49.619875 [info ]:  Succeeded [  0.14s] model analytics_prod.stg_orders (table)
+16:14:49.619892 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_orders [success]
+16:14:49.620290 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_supplier (table)
+16:14:49.620307 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_supplier [success]
+16:14:49.620717 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_part (table)
+16:14:49.620732 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_part [success]
+16:14:49.621138 [debug]: Finished rendering [  0.15s] model analytics_prod.dim_part_supplier [success]
+16:14:49.621415 [info ]: Finished rendering [  0.15s] (45 nodes, 0 skipped, 0 errors)
+16:14:49.622449 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+16:14:49.622507 [info ]:  Succeeded [  0.15s] model analytics_prod.dim_supplier (table)
+16:14:49.622531 [debug]: Finished analyzing [  0.02s] model analytics_prod.dim_supplier [success]
+16:14:49.622634 [info ]:  Succeeded [  0.15s] model analytics_prod.dim_customer (table)
+16:14:49.622647 [debug]: Finished analyzing [  0.02s] model analytics_prod.dim_customer [success]
+16:14:49.622732 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_customer (table)
+16:14:49.622744 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+16:14:49.622812 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_partsupp (table)
+16:14:49.622822 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+16:14:49.622879 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key (models\s3_marts\_mart_tpch.yml:50:13)
+16:14:49.622888 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key [success]
+16:14:49.622952 [info ]:  Succeeded [  0.15s] model analytics_prod.dim_location (table)
+16:14:49.622959 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_location [success]
+16:14:49.623012 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key (models\s1_staging\_stg_tpch.yml:23:13)
+16:14:49.623020 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key [success]
+16:14:49.623074 [info ]:  Succeeded [  0.15s] analysis analytics_prod.customer_value (analysis)
+16:14:49.623081 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.customer_value [success]
+16:14:49.623135 [info ]:  Succeeded [  0.15s] analysis analytics_prod.profitability (analysis)
+16:14:49.623143 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.profitability [success]
+16:14:49.623196 [info ]:  Succeeded [  0.15s] analysis analytics_prod.pricing_analysis (analysis)
+16:14:49.623203 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.pricing_analysis [success]
+16:14:49.623211 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue (models\s2_intermediate\_int_tpch.yml:28:13)
+16:14:49.623221 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue [success]
+16:14:49.623234 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_dim_part_part_key (models\s3_marts\_mart_tpch.yml:60:13)
+16:14:49.623240 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_dim_part_part_key [success]
+16:14:49.623247 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key (models\s2_intermediate\_int_tpch.yml:23:13)
+16:14:49.623256 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key [success]
+16:14:49.623264 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id (models\s3_marts\_mart_tpch.yml:13:13)
+16:14:49.623271 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id [success]
+16:14:49.623278 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_ (models\s1_staging\_stg_tpch.yml:24:13)
+16:14:49.623287 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_ [success]
+16:14:49.623295 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id (models\s2_intermediate\_int_tpch.yml:12:13)
+16:14:49.623300 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id [success]
+16:14:49.623307 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_ (models\s3_marts\_mart_tpch.yml:34:13)
+16:14:49.623313 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_ [success]
+16:14:49.623320 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit (models\s2_intermediate\_int_tpch.yml:38:13)
+16:14:49.623325 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit [success]
+16:14:49.623332 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_ (models\s3_marts\_mart_tpch.yml:26:13)
+16:14:49.623340 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_ [success]
+16:14:49.623348 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key (models\s2_intermediate\_int_tpch.yml:18:13)
+16:14:49.623354 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key [success]
+16:14:49.623364 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key (models\s1_staging\_stg_tpch.yml:11:13)
+16:14:49.623369 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key [success]
+16:14:49.623376 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_ (models\s1_staging\_stg_tpch.yml:40:13)
+16:14:49.623385 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_ [success]
+16:14:49.623391 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_ (models\s3_marts\_mart_tpch.yml:18:13)
+16:14:49.623397 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_ [success]
+16:14:49.623405 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_ (models\s1_staging\_stg_tpch.yml:12:13)
+16:14:49.623413 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_ [success]
+16:14:49.623420 [info ]:  Succeeded [  0.15s] model analytics_prod.dim_part (table)
+16:14:49.623429 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_part [success]
+16:14:49.623438 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.unique_dim_customer_customer_key (models\s3_marts\_mart_tpch.yml:49:13)
+16:14:49.623444 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key [success]
+16:14:49.623451 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id (models\s2_intermediate\_int_tpch.yml:13:13)
+16:14:49.623459 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id [success]
+16:14:49.623466 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.unique_dim_part_part_key (models\s3_marts\_mart_tpch.yml:59:13)
+16:14:49.623472 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_dim_part_part_key [success]
+16:14:49.623478 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key (models\s3_marts\_mart_tpch.yml:69:13)
+16:14:49.623483 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key [success]
+16:14:49.623490 [info ]:  Succeeded [  0.15s] test  analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id (models\s3_marts\_mart_tpch.yml:12:13)
+16:14:49.623498 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id [success]
+16:14:49.623506 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_region (table)
+16:14:49.623512 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+16:14:49.623519 [info ]:  Succeeded [  0.15s] analysis analytics_prod.supplier_performance (analysis)
+16:14:49.623525 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.supplier_performance [success]
+16:14:49.623532 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_lineitem (table)
+16:14:49.623539 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+16:14:49.623548 [info ]:  Succeeded [  0.15s] analysis analytics_prod.revenue_trend (analysis)
+16:14:49.623555 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.revenue_trend [success]
+16:14:49.623563 [info ]:  Succeeded [  0.15s] model analytics_prod.stg_nation (table)
+16:14:49.623571 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+16:14:49.623605 [info ]:  Succeeded [  0.15s] model analytics_prod.dim_part_supplier (table)
+16:14:49.623615 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+16:14:49.631352 [info ]:  Succeeded [  0.16s] model analytics_prod.int_lineitem_enriched (view)
+16:14:49.631408 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+16:14:49.631734 [info ]: Finished analyzing [  0.13s] (45 nodes, 0 skipped, 0 errors)
+16:14:49.697655 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+16:14:49.751166 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [766ms]
+Processed: 16 models | 24 tests | 5 analyses
+Summary: 45 total | 45 success
+==================== 2026-04-22T16:14:53.807976Z | 019db5f9-176d-7e01-b1a5-7d48b28ab871 ====================
+16:14:53.808158 [info ]: dbt-fusion 2.0.0-preview.171
+16:14:53.808746 [info ]: Started loading project
+16:14:53.812315 [info ]: Loading ~/.dbt/profiles.yml
+16:14:53.817463 [info ]: Loading packages.yml
+16:14:53.817825 [debug]:    Started loading packages
+16:14:53.826202 [debug]:     Loaded [  0.01s] packages
+16:14:53.827171 [info ]: Finished loading project [  0.02s]
+16:14:53.827791 [info ]: Started parsing
+16:14:53.871157 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+16:14:53.871659 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+16:14:53.872089 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+16:14:53.872530 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+16:14:53.876250 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+16:14:53.877264 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+16:14:53.877797 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+16:14:53.878306 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+16:14:53.878961 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+16:14:53.879506 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+16:14:53.879987 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+16:14:53.880430 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+16:14:53.880908 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+16:14:53.881288 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+16:14:53.881780 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+16:14:53.882284 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+16:14:53.882821 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+16:14:53.883321 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+16:14:53.883819 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+16:14:53.884414 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+16:14:53.907361 [debug]: Finished parsing analysis\customer_value.sql [  0.00s]
+16:14:53.908081 [debug]: Finished parsing analysis\pricing_analysis.sql [  0.00s]
+16:14:53.908720 [debug]: Finished parsing analysis\profitability.sql [  0.00s]
+16:14:53.909138 [debug]: Finished parsing analysis\revenue_trend.sql [  0.00s]
+16:14:53.909704 [debug]: Finished parsing analysis\supplier_performance.sql [  0.00s]
+16:14:53.913480 [debug]: Finished parsing target\generic_tests\unique_dim_customer_customer_key.sql [  0.00s]
+16:14:53.914450 [debug]: Finished parsing target\generic_tests\not_null_dim_customer_customer_key.sql [  0.00s]
+16:14:53.915350 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+16:14:53.916647 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+16:14:53.917601 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+16:14:53.918412 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+16:14:53.919215 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.sql [  0.00s]
+16:14:53.919768 [debug]: Finished parsing target\generic_tests\unique_fact_lineitem_lineitem_id.sql [  0.00s]
+16:14:53.920610 [debug]: Finished parsing target\generic_tests\not_null_fact_lineitem_lineitem_id.sql [  0.00s]
+16:14:53.921374 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_part_key__part_key__ref_dim_part_.sql [  0.00s]
+16:14:53.921902 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_838af132f82122980ff89c33e4368958.sql [  0.00s]
+16:14:53.922760 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_customer_key.sql [  0.00s]
+16:14:53.923524 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+16:14:53.924018 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+16:14:53.924831 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_net_revenue.sql [  0.00s]
+16:14:53.925690 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_order_key.sql [  0.00s]
+16:14:53.926760 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_profit.sql [  0.00s]
+16:14:53.927708 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_total_cost.sql [  0.00s]
+16:14:53.928459 [debug]: Finished parsing target\generic_tests\not_null_stg_lineitem_order_key.sql [  0.00s]
+16:14:53.929299 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.sql [  0.00s]
+16:14:53.930084 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_part_key__part_key__ref_stg_part_.sql [  0.00s]
+16:14:53.930628 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.sql [  0.00s]
+16:14:53.931436 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_cust_key.sql [  0.00s]
+16:14:53.932224 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.sql [  0.00s]
+16:14:53.939803 [info ]: Finished parsing [  0.11s]
+16:14:53.941551 [info ]: Started scheduling
+16:14:53.941957 [info ]: Finished scheduling [  0.00s]
+16:14:53.944753 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+16:14:53.944864 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+16:14:53.944882 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+16:14:53.944896 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+16:14:53.944925 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+16:14:53.944937 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+16:14:53.944947 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+16:14:53.944958 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+16:14:54.112932 [info ]: Started building task graph
+16:14:54.113607 [info ]: Finished building task graph [  0.00s]
+16:14:55.527345 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:14:55.527727 [info ]: Started rendering (16 nodes)
+16:14:55.527851 [info ]: Started model analytics_prod.stg_lineitem
+16:14:55.527866 [debug]: Started rendering model analytics_prod.stg_lineitem
+16:14:55.527897 [info ]: Started model analytics_prod.stg_supplier
+16:14:55.527903 [debug]: Started rendering model analytics_prod.stg_supplier
+16:14:55.527911 [info ]: Started model analytics_prod.stg_partsupp
+16:14:55.527914 [debug]: Started rendering model analytics_prod.stg_partsupp
+16:14:55.527920 [info ]: Started model analytics_prod.stg_part
+16:14:55.527924 [debug]: Started rendering model analytics_prod.stg_part
+16:14:55.527930 [info ]: Started model analytics_prod.stg_orders
+16:14:55.527934 [debug]: Started rendering model analytics_prod.stg_orders
+16:14:55.527941 [info ]: Started model analytics_prod.stg_region
+16:14:55.527944 [debug]: Started rendering model analytics_prod.stg_region
+16:14:55.527949 [info ]: Started model analytics_prod.stg_nation
+16:14:55.527953 [debug]: Started rendering model analytics_prod.stg_nation
+16:14:55.527959 [info ]: Started model analytics_prod.stg_customer
+16:14:55.527969 [debug]: Started rendering model analytics_prod.stg_customer
+16:14:55.531969 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+16:14:55.532271 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_orders [success]
+16:14:55.532667 [info ]: Started analyzing (16 nodes)
+16:14:55.532837 [debug]: Started analyzing model analytics_prod.stg_orders
+16:14:55.535856 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+16:14:55.535856 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+16:14:55.536119 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+16:14:55.536367 [debug]: Started analyzing model analytics_prod.stg_customer
+16:14:55.536558 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+16:14:55.536568 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+16:14:55.536901 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+16:14:55.537118 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+16:14:55.537252 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+16:14:55.536402 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+16:14:55.537472 [debug]: Started analyzing model analytics_prod.stg_part
+16:14:55.537510 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+16:14:55.538073 [debug]: Started analyzing model analytics_prod.stg_supplier
+16:14:55.538146 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+16:14:55.538394 [debug]: Started analyzing model analytics_prod.stg_lineitem
+16:14:55.538548 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+16:14:55.538747 [debug]: Started analyzing model analytics_prod.stg_region
+16:14:55.538774 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+16:14:55.539346 [debug]: Started analyzing model analytics_prod.stg_partsupp
+16:14:55.539395 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+16:14:55.539880 [debug]: Started analyzing model analytics_prod.stg_nation
+16:14:55.543694 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+16:14:55.543986 [info ]: Started running (16 nodes)
+16:14:55.544116 [info ]: Started running model analytics_prod.stg_part
+16:14:55.544148 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+16:14:55.544316 [info ]: Started running model analytics_prod.stg_customer
+16:14:55.544374 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+16:14:55.544701 [info ]: Started running model analytics_prod.stg_nation
+16:14:55.544724 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+16:14:55.545130 [info ]: Started running model analytics_prod.stg_region
+16:14:55.545158 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_supplier [success]
+16:14:55.545984 [info ]: Started running model analytics_prod.stg_supplier
+16:14:55.546026 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+16:14:55.546487 [info ]: Started running model analytics_prod.stg_partsupp
+16:14:55.546537 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_lineitem [success]
+16:14:55.546830 [info ]: Started running model analytics_prod.stg_lineitem
+16:14:55.546852 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+16:14:55.547280 [info ]: Started running model analytics_prod.stg_orders
+16:14:56.680890 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:14:56.683413 [debug]: Writing runtime sql for node "model.project.stg_region"
+16:14:57.769190 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:14:57.771106 [debug]: Writing runtime sql for node "model.project.stg_nation"
+16:14:57.950633 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+)
+
+, final as (
+    select
+        r_regionkey as region_key
+        , r_name as region_name
+        , r_comment as region_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:14:57.952157 [info ]:  Succeeded [  2.42s] model analytics_prod.stg_region (table)
+16:14:57.952603 [info ]: Finished running [  2.41s] model analytics_prod.stg_region [success]
+16:14:58.143432 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:14:58.145490 [debug]: Writing runtime sql for node "model.project.stg_customer"
+16:14:58.560901 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+)
+
+, final as (
+    select
+        n_nationkey as nation_key
+        , n_regionkey as region_key
+        , n_name as nation_name
+        , n_comment as nation_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:14:58.562319 [info ]:  Succeeded [  3.03s] model analytics_prod.stg_nation (table)
+16:14:58.563173 [info ]: Finished running [  3.02s] model analytics_prod.stg_nation [success]
+16:14:58.563509 [info ]: Started model analytics_prod.dim_location
+16:14:58.563527 [debug]: Started rendering model analytics_prod.dim_location
+16:14:58.566032 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+16:14:58.566140 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_location [success]
+16:14:58.566295 [debug]: Started analyzing model analytics_prod.dim_location
+16:14:58.569587 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+16:14:58.569677 [info ]: Started running model analytics_prod.dim_location
+16:14:58.571434 [debug]: Writing runtime sql for node "model.project.dim_location"
+16:14:59.130144 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:14:59.132542 [debug]: Writing runtime sql for node "model.project.stg_part"
+16:14:59.314802 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:14:59.316090 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+16:14:59.427898 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_account_balance
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:14:59.428890 [info ]:  Succeeded [  3.90s] model analytics_prod.stg_customer (table)
+16:14:59.429399 [info ]: Finished running [  3.89s] model analytics_prod.stg_customer [success]
+16:14:59.429611 [info ]: Started model analytics_prod.dim_customer
+16:14:59.429624 [debug]: Started rendering model analytics_prod.dim_customer
+16:14:59.432079 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+16:14:59.432204 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_customer [success]
+16:14:59.432299 [debug]: Started analyzing model analytics_prod.dim_customer
+16:14:59.433068 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+16:14:59.433130 [info ]: Started running model analytics_prod.dim_customer
+16:14:59.434919 [debug]: Writing runtime sql for node "model.project.dim_customer"
+16:14:59.472497 [debug]: Query executed on node model.project.dim_location:
+create or replace transient  table analytics.analytics_prod.dim_location
+    
+    
+    
+    as (with nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+
+        --primary key
+        n.nation_key
+
+        --attributes
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from nation n
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_location", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:14:59.473943 [info ]:  Succeeded [  0.91s] model analytics_prod.dim_location (table)
+16:14:59.474870 [info ]: Finished running [  0.91s] model analytics_prod.dim_location [success]
+16:15:00.207334 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+)
+
+, final as (
+    select
+        s_suppkey as supp_key
+        , s_nationkey as nation_key
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:00.209072 [info ]:  Succeeded [  4.68s] model analytics_prod.stg_supplier (table)
+16:15:00.209535 [info ]: Finished running [  4.66s] model analytics_prod.stg_supplier [success]
+16:15:00.209841 [info ]: Started model analytics_prod.dim_supplier
+16:15:00.209857 [debug]: Started rendering model analytics_prod.dim_supplier
+16:15:00.211733 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+16:15:00.211839 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+16:15:00.211937 [debug]: Started analyzing model analytics_prod.dim_supplier
+16:15:00.212601 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+16:15:00.212713 [info ]: Started running model analytics_prod.dim_supplier
+16:15:00.214573 [debug]: Writing runtime sql for node "model.project.dim_supplier"
+16:15:00.327742 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:15:00.328969 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+16:15:00.345888 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+)
+
+, final as (
+    select
+        p_partkey as part_key
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:00.347160 [info ]:  Succeeded [  4.82s] model analytics_prod.stg_part (table)
+16:15:00.347569 [info ]: Finished running [  4.80s] model analytics_prod.stg_part [success]
+16:15:00.347669 [info ]: Started model analytics_prod.dim_part
+16:15:00.347692 [debug]: Started rendering model analytics_prod.dim_part
+16:15:00.349658 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+16:15:00.349778 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+16:15:00.350009 [debug]: Started analyzing model analytics_prod.dim_part
+16:15:00.350434 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+16:15:00.350505 [info ]: Started running model analytics_prod.dim_part
+16:15:00.352228 [debug]: Writing runtime sql for node "model.project.dim_part"
+16:15:00.449530 [debug]: Query executed on node model.project.dim_customer:
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+        --primary key
+        c.cust_key as customer_key
+
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from customer c
+    
+    left join nation n
+        using(nation_key)
+    
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:00.451749 [info ]:  Succeeded [  1.02s] model analytics_prod.dim_customer (table)
+16:15:00.452316 [info ]: Finished running [  1.02s] model analytics_prod.dim_customer [success]
+16:15:01.078595 [debug]: Query executed on node model.project.dim_supplier:
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+    
+)
+
+, final as (
+    select
+
+        --primary key
+        s.supp_key
+
+        --attributes
+        , s.supp_name as supplier_name
+        , s.supp_address as supplier_address
+        , s.supp_phone as supplier_phone
+        , s.supp_acctbal as supplier_account_balance
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from supplier s
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:01.080104 [info ]:  Succeeded [  0.87s] model analytics_prod.dim_supplier (table)
+16:15:01.080525 [info ]: Finished running [  0.87s] model analytics_prod.dim_supplier [success]
+16:15:01.150472 [debug]: Query executed on node model.project.dim_part:
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
+
+    --primary key
+    part_key as part_key
+
+    --attributes
+    , part_name as part_name
+    , part_mfgr as manufacturer
+    , part_size as part_size
+    , part_type  as part_type
+    , part_container part_container
+
+    --reference price
+    , part_retail_price as retail_price
+
+from analytics.analytics_prod.stg_part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:01.151951 [info ]:  Succeeded [  0.80s] model analytics_prod.dim_part (table)
+16:15:01.152419 [info ]: Finished running [  0.80s] model analytics_prod.dim_part [success]
+16:15:01.198388 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:15:01.200402 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+16:15:01.775382 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+)
+
+, final as (
+    select
+        ps_partkey as part_key
+        , ps_suppkey as supp_key
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:01.777185 [info ]:  Succeeded [  6.25s] model analytics_prod.stg_partsupp (table)
+16:15:01.778341 [info ]: Finished running [  6.23s] model analytics_prod.stg_partsupp [success]
+16:15:01.778499 [info ]: Started model analytics_prod.dim_part_supplier
+16:15:01.778525 [debug]: Started rendering model analytics_prod.dim_part_supplier
+16:15:01.781221 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+16:15:01.781410 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part_supplier [success]
+16:15:01.781565 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+16:15:01.781956 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+16:15:01.782094 [info ]: Started running model analytics_prod.dim_part_supplier
+16:15:01.784166 [debug]: Writing runtime sql for node "model.project.dim_part_supplier"
+16:15:02.179785 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+16:15:02.181196 [debug]: Writing runtime sql for node "model.project.stg_orders"
+16:15:02.582172 [debug]: Query executed on node model.project.dim_part_supplier:
+create or replace transient  table analytics.analytics_prod.dim_part_supplier
+    
+    
+    
+    as (select
+    part_key
+    , supp_key
+    , part_supp_supply_cost as supply_cost
+from analytics.analytics_prod.stg_partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:02.583135 [info ]:  Succeeded [  0.80s] model analytics_prod.dim_part_supplier (table)
+16:15:02.583570 [info ]: Finished running [  0.80s] model analytics_prod.dim_part_supplier [success]
+16:15:04.017727 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+)
+
+, final as (
+    select
+        o_orderkey as order_key
+        , o_orderdate as order_date
+        , o_orderstatus as order_status
+        , o_orderpriority as order_priority
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
+        , o_custkey as cust_key
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:04.018820 [info ]:  Succeeded [  8.49s] model analytics_prod.stg_orders (table)
+16:15:04.019451 [info ]: Finished running [  8.47s] model analytics_prod.stg_orders [success]
+16:15:04.019729 [info ]: Started model analytics_prod.dim_date
+16:15:04.019752 [debug]: Started rendering model analytics_prod.dim_date
+16:15:04.021871 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+16:15:04.021989 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+16:15:04.022087 [debug]: Started analyzing model analytics_prod.dim_date
+16:15:04.025697 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_date [success]
+16:15:04.025846 [info ]: Started running model analytics_prod.dim_date
+16:15:04.027667 [debug]: Writing runtime sql for node "model.project.dim_date"
+16:15:04.290211 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+)
+
+, final as (
+    select
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
+        , l_orderkey as order_key
+        , l_partkey as part_key
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
+        , l_suppkey as supp_key
+        , l_tax as line_tax
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:04.291526 [info ]:  Succeeded [  8.76s] model analytics_prod.stg_lineitem (table)
+16:15:04.292236 [info ]: Finished running [  8.75s] model analytics_prod.stg_lineitem [success]
+16:15:04.292588 [info ]: Started model analytics_prod.int_lineitem_enriched
+16:15:04.292604 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+16:15:04.294666 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+16:15:04.294766 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+16:15:04.294846 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+16:15:04.301923 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+16:15:04.302034 [info ]: Started running model analytics_prod.int_lineitem_enriched
+16:15:04.303899 [debug]: Writing runtime sql for node "model.project.int_lineitem_enriched"
+16:15:04.696716 [debug]: Query executed on node model.project.int_lineitem_enriched:
+create or replace   view analytics.analytics_prod.int_lineitem_enriched
+  
+  
+  
+  
+  as (
+    with lineitem as (
+
+    select *
+    from analytics.analytics_prod.stg_lineitem
+
+)
+
+, orders as (
+
+    select *
+    from analytics.analytics_prod.stg_orders
+
+)
+
+, customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, part as (
+
+    select *
+    from analytics.analytics_prod.stg_part
+
+)
+
+, part_supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_partsupp
+
+)
+
+
+, final as (
+    select
+        --grain keys
+        concat(l.order_key, '-', l.line_number) as lineitem_id
+        , o.order_key as order_key
+        , l.line_number as line_number
+
+        --foreign keys
+        , l.part_key as part_key
+        , l.supp_key as supp_key
+        , o.cust_key as customer_key
+
+        --order info
+        , o.order_date as order_date
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+        --metrics
+        , l.line_quantity as quantity
+        , p.part_retail_price as retail_price
+        , l.line_extended_price as gross_revenue
+        , l.line_discount as discount
+        , l.line_tax as tax
+        , ps.part_supp_supply_cost as supply_cost
+
+        --derived metrics
+        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
+        , l.line_extended_price * (1 - l.line_discount) as net_revenue
+        , l.line_extended_price * l.line_discount as discount_amount
+        , p.part_retail_price * l.line_quantity as expected_revenue
+        , l.line_quantity * ps.part_supp_supply_cost as total_cost
+        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
+
+
+    from lineitem l
+
+    left join orders o
+        using (order_key)
+
+    left join customer c
+        using (cust_key)
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+    left join supplier s
+        using(supp_key)
+
+    left join part p
+        using(part_key)
+
+    left join part_supplier ps
+        using(part_key, supp_key)
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:04.698735 [info ]:  Succeeded [  0.41s] model analytics_prod.int_lineitem_enriched (view)
+16:15:04.699252 [info ]: Finished running [  0.40s] model analytics_prod.int_lineitem_enriched [success]
+16:15:04.699558 [info ]: Started model analytics_prod.fact_lineitem
+16:15:04.699575 [debug]: Started rendering model analytics_prod.fact_lineitem
+16:15:04.701678 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+16:15:04.701772 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+16:15:04.701876 [info ]: Finished rendering [  9.17s] (16 nodes, 0 skipped, 0 errors)
+16:15:04.702406 [debug]: Started analyzing model analytics_prod.fact_lineitem
+16:15:04.702676 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+16:15:04.702734 [info ]: Finished analyzing [  9.17s] (16 nodes, 0 skipped, 0 errors)
+16:15:04.703020 [info ]: Started running model analytics_prod.fact_lineitem
+16:15:04.705492 [debug]: Writing runtime sql for node "model.project.fact_lineitem"
+16:15:04.789389 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:04.791007 [info ]:  Succeeded [  0.77s] model analytics_prod.dim_date (table)
+16:15:04.791761 [info ]: Finished running [  0.77s] model analytics_prod.dim_date [success]
+16:15:09.916024 [debug]: Query executed on node model.project.fact_lineitem:
+create or replace transient  table analytics.analytics_prod.fact_lineitem
+    
+    
+    
+    as (select *
+from analytics.analytics_prod.int_lineitem_enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.fact_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+16:15:09.917691 [info ]:  Succeeded [  5.22s] model analytics_prod.fact_lineitem (table)
+16:15:09.918107 [info ]: Finished running [  5.22s] model analytics_prod.fact_lineitem [success]
+16:15:09.918278 [info ]: Finished running [ 14.37s] (16 nodes, 0 skipped, 0 errors)
+16:15:09.951898 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+16:15:10.003497 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [16.2s]
+Processed: 16 models
+Summary: 16 total | 16 success
+==================== 2026-04-22T16:16:17.380919Z | 019db5fa-5de1-7363-9116-d7a608441fe1 ====================
+16:16:17.381075 [info ]: dbt-fusion 2.0.0-preview.171
+16:16:17.381488 [info ]: Started loading project
+16:16:17.384438 [info ]: Loading ~/.dbt/profiles.yml
+16:16:17.392048 [info ]: Loading packages.yml
+16:16:17.392532 [debug]:    Started loading packages
+16:16:17.402079 [debug]:     Loaded [  0.01s] packages
+16:16:17.403104 [info ]: Finished loading project [  0.02s]
+16:16:17.403730 [info ]: Started parsing
+16:16:17.448336 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+16:16:17.448583 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+16:16:17.448804 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+16:16:17.449051 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+16:16:17.451276 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+16:16:17.451777 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+16:16:17.452372 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+16:16:17.453006 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+16:16:17.453449 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+16:16:17.453819 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+16:16:17.454169 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+16:16:17.454515 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+16:16:17.454999 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+16:16:17.455598 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+16:16:17.456003 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+16:16:17.456435 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+16:16:17.456990 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+16:16:17.457374 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+16:16:17.457834 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+16:16:17.458433 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+16:16:17.479423 [debug]: Finished parsing analysis\customer_value.sql [  0.00s]
+16:16:17.480287 [debug]: Finished parsing analysis\pricing_analysis.sql [  0.00s]
+16:16:17.480862 [debug]: Finished parsing analysis\profitability.sql [  0.00s]
+16:16:17.481390 [debug]: Finished parsing analysis\revenue_trend.sql [  0.00s]
+16:16:17.482009 [debug]: Finished parsing analysis\supplier_performance.sql [  0.00s]
+16:16:17.484147 [debug]: Finished parsing target\generic_tests\unique_dim_customer_customer_key.sql [  0.00s]
+16:16:17.484729 [debug]: Finished parsing target\generic_tests\not_null_dim_customer_customer_key.sql [  0.00s]
+16:16:17.485228 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+16:16:17.485720 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+16:16:17.486160 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+16:16:17.486631 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+16:16:17.487110 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.sql [  0.00s]
+16:16:17.487803 [debug]: Finished parsing target\generic_tests\unique_fact_lineitem_lineitem_id.sql [  0.00s]
+16:16:17.488560 [debug]: Finished parsing target\generic_tests\not_null_fact_lineitem_lineitem_id.sql [  0.00s]
+16:16:17.489147 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_part_key__part_key__ref_dim_part_.sql [  0.00s]
+16:16:17.489643 [debug]: Finished parsing target\generic_tests\relationships_fact_lineitem_838af132f82122980ff89c33e4368958.sql [  0.00s]
+16:16:17.490388 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_customer_key.sql [  0.00s]
+16:16:17.491447 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+16:16:17.492255 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+16:16:17.492793 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_net_revenue.sql [  0.00s]
+16:16:17.493247 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_order_key.sql [  0.00s]
+16:16:17.493943 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_profit.sql [  0.00s]
+16:16:17.494491 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_total_cost.sql [  0.00s]
+16:16:17.495032 [debug]: Finished parsing target\generic_tests\not_null_stg_lineitem_order_key.sql [  0.00s]
+16:16:17.495830 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.sql [  0.00s]
+16:16:17.496899 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_part_key__part_key__ref_stg_part_.sql [  0.00s]
+16:16:17.497553 [debug]: Finished parsing target\generic_tests\relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.sql [  0.00s]
+16:16:17.498282 [debug]: Finished parsing target\generic_tests\not_null_stg_orders_cust_key.sql [  0.00s]
+16:16:17.498821 [debug]: Finished parsing target\generic_tests\relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.sql [  0.00s]
+16:16:17.505962 [info ]: Finished parsing [  0.10s]
+16:16:17.507836 [info ]: Started scheduling
+16:16:17.508236 [info ]: Finished scheduling [  0.00s]
+16:16:17.510933 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+16:16:17.511034 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+16:16:17.511052 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+16:16:17.511064 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+16:16:17.511074 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+16:16:17.511084 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+16:16:17.511094 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+16:16:17.511106 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+16:16:17.689456 [info ]: Started building task graph
+16:16:17.690286 [info ]: Finished building task graph [  0.00s]
+16:16:17.690960 [info ]: Started rendering (45 nodes)
+16:16:17.691116 [info ]: Started test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id
+16:16:17.691133 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id
+16:16:17.691166 [info ]: Started test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id
+16:16:17.691174 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id
+16:16:17.691182 [info ]: Started test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key
+16:16:17.691186 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key
+16:16:17.691194 [info ]: Started test analytics_prod_dbt_test__audit.unique_dim_part_part_key
+16:16:17.691198 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_dim_part_part_key
+16:16:17.691205 [info ]: Started test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key
+16:16:17.691209 [debug]: Started rendering test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key
+16:16:17.691335 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_
+16:16:17.691362 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_
+16:16:17.691376 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_
+16:16:17.691391 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_
+16:16:17.691401 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_
+16:16:17.691405 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_
+16:16:17.691413 [info ]: Started test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_
+16:16:17.691416 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_
+16:16:17.691426 [info ]: Started test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_
+16:16:17.691432 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_
+16:16:17.691442 [info ]: Started test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_
+16:16:17.691448 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_
+16:16:17.691482 [info ]: Started test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_
+16:16:17.691510 [debug]: Started rendering test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_
+16:16:17.691535 [info ]: Started test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key
+16:16:17.691548 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key
+16:16:17.691567 [info ]: Started test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key
+16:16:17.691580 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key
+16:16:17.691600 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost
+16:16:17.691616 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost
+16:16:17.691682 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit
+16:16:17.691692 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit
+16:16:17.691728 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key
+16:16:17.691743 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key
+16:16:17.691819 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue
+16:16:17.691850 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue
+16:16:17.691874 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id
+16:16:17.691882 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id
+16:16:17.691893 [info ]: Started test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key
+16:16:17.691898 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key
+16:16:17.691908 [info ]: Started test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id
+16:16:17.691914 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id
+16:16:17.691926 [info ]: Started test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key
+16:16:17.691933 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key
+16:16:17.691944 [info ]: Started test analytics_prod_dbt_test__audit.not_null_dim_part_part_key
+16:16:17.691950 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_dim_part_part_key
+16:16:17.691962 [info ]: Started test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key
+16:16:17.691968 [debug]: Started rendering test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key
+16:16:17.691980 [info ]: Started model analytics_prod.dim_part_supplier
+16:16:17.691990 [debug]: Started rendering model analytics_prod.dim_part_supplier
+16:16:17.692011 [info ]: Started model analytics_prod.dim_location
+16:16:17.692022 [debug]: Started rendering model analytics_prod.dim_location
+16:16:17.692034 [info ]: Started model analytics_prod.dim_date
+16:16:17.692040 [debug]: Started rendering model analytics_prod.dim_date
+16:16:17.692053 [info ]: Started analysis analytics_prod.supplier_performance
+16:16:17.692063 [debug]: Started rendering analysis analytics_prod.supplier_performance
+16:16:17.692080 [info ]: Started model analytics_prod.dim_supplier
+16:16:17.692088 [debug]: Started rendering model analytics_prod.dim_supplier
+16:16:17.692105 [info ]: Started analysis analytics_prod.revenue_trend
+16:16:17.692112 [debug]: Started rendering analysis analytics_prod.revenue_trend
+16:16:17.692124 [info ]: Started analysis analytics_prod.profitability
+16:16:17.692133 [debug]: Started rendering analysis analytics_prod.profitability
+16:16:17.692198 [info ]: Started analysis analytics_prod.pricing_analysis
+16:16:17.692223 [debug]: Started rendering analysis analytics_prod.pricing_analysis
+16:16:17.692248 [info ]: Started model analytics_prod.dim_part
+16:16:17.692258 [debug]: Started rendering model analytics_prod.dim_part
+16:16:17.692275 [info ]: Started analysis analytics_prod.customer_value
+16:16:17.692283 [debug]: Started rendering analysis analytics_prod.customer_value
+16:16:17.692437 [info ]: Started model analytics_prod.fact_lineitem
+16:16:17.692497 [debug]: Started rendering model analytics_prod.fact_lineitem
+16:16:17.692825 [info ]: Started model analytics_prod.int_lineitem_enriched
+16:16:17.692856 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+16:16:17.692895 [info ]: Started model analytics_prod.stg_supplier
+16:16:17.692913 [debug]: Started rendering model analytics_prod.stg_supplier
+16:16:17.692933 [info ]: Started model analytics_prod.stg_partsupp
+16:16:17.692945 [debug]: Started rendering model analytics_prod.stg_partsupp
+16:16:17.693026 [info ]: Started model analytics_prod.stg_part
+16:16:17.693047 [debug]: Started rendering model analytics_prod.stg_part
+16:16:17.693082 [info ]: Started model analytics_prod.stg_orders
+16:16:17.693100 [debug]: Started rendering model analytics_prod.stg_orders
+16:16:17.693171 [info ]: Started model analytics_prod.stg_lineitem
+16:16:17.693200 [debug]: Started rendering model analytics_prod.stg_lineitem
+16:16:17.693216 [info ]: Started model analytics_prod.dim_customer
+16:16:17.693226 [debug]: Started rendering model analytics_prod.dim_customer
+16:16:17.693243 [info ]: Started model analytics_prod.stg_region
+16:16:17.693253 [debug]: Started rendering model analytics_prod.stg_region
+16:16:17.693270 [info ]: Started model analytics_prod.stg_nation
+16:16:17.693277 [debug]: Started rendering model analytics_prod.stg_nation
+16:16:17.693287 [info ]: Started model analytics_prod.stg_customer
+16:16:17.693292 [debug]: Started rendering model analytics_prod.stg_customer
+16:16:17.696554 [debug]: Compiled SQL for node test.project.relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.4af3d41710 at target\compiled\generic_tests\relationships_stg_lineitem_8f4e2696fc29b22bb96bca66e30753cc.sql
+16:16:17.696630 [debug]: Compiled SQL for node test.project.unique_dim_part_part_key.871035ca2b at target\compiled\generic_tests\unique_dim_part_part_key.sql
+16:16:17.698548 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+16:16:17.699201 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+16:16:17.699826 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+16:16:17.701373 [debug]: Compiled SQL for node analysis.project.revenue_trend at target\compiled\analysis\revenue_trend.sql
+16:16:17.697044 [debug]: Finished rendering [  0.01s] test analytics_prod_dbt_test__audit.unique_dim_part_part_key [success]
+16:16:17.702679 [info ]: Started analyzing (45 nodes)
+16:16:17.704509 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_dim_part_part_key
+16:16:17.705294 [debug]: Compiled SQL for node analysis.project.customer_value at target\compiled\analysis\customer_value.sql
+16:16:17.705915 [debug]: Compiled SQL for node test.project.relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.789f0f2f50 at target\compiled\generic_tests\relationships_fact_lineitem_5ef7a71d17c5b0f50a1ef20e9a273402.sql
+16:16:17.706864 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+16:16:17.707246 [debug]: Compiled SQL for node analysis.project.pricing_analysis at target\compiled\analysis\pricing_analysis.sql
+16:16:17.707276 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+16:16:17.707388 [debug]: Compiled SQL for node analysis.project.supplier_performance at target\compiled\analysis\supplier_performance.sql
+16:16:17.707499 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+16:16:17.707603 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+16:16:17.707952 [debug]: Compiled SQL for node test.project.not_null_stg_lineitem_order_key.992908a611 at target\compiled\generic_tests\not_null_stg_lineitem_order_key.sql
+16:16:17.708029 [debug]: Compiled SQL for node test.project.relationships_fact_lineitem_838af132f82122980ff89c33e4368958.d5ca68c4a8 at target\compiled\generic_tests\relationships_fact_lineitem_838af132f82122980ff89c33e4368958.sql
+16:16:17.708095 [debug]: Compiled SQL for node test.project.relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.7bd182b962 at target\compiled\generic_tests\relationships_stg_lineitem_aee97fe7de7fbfc71b2efacdb8bd2cb6.sql
+16:16:17.708117 [debug]: Compiled SQL for node test.project.unique_fact_lineitem_lineitem_id.999ad50b01 at target\compiled\generic_tests\unique_fact_lineitem_lineitem_id.sql
+16:16:17.708123 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_lineitem_id.01b850600f at target\compiled\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql
+16:16:17.708989 [debug]: Compiled SQL for node test.project.unique_dim_customer_customer_key.7b0683cc6e at target\compiled\generic_tests\unique_dim_customer_customer_key.sql
+16:16:17.709752 [debug]: Compiled SQL for node test.project.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.d4c7c12981 at target\compiled\generic_tests\relationships_stg_orders_cust_key__cust_key__ref_stg_customer_.sql
+16:16:17.709933 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_profit.8810732fea at target\compiled\generic_tests\not_null_int_lineitem_enriched_profit.sql
+16:16:17.709969 [debug]: Compiled SQL for node test.project.not_null_stg_orders_cust_key.9976429356 at target\compiled\generic_tests\not_null_stg_orders_cust_key.sql
+16:16:17.712185 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+16:16:17.713266 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+16:16:17.704572 [debug]: Finished rendering [  0.01s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_ [success]
+16:16:17.713880 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_
+16:16:17.714001 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+16:16:17.714024 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+16:16:17.713949 [debug]: Finished rendering [  0.02s] model analytics_prod.dim_part [success]
+16:16:17.714388 [debug]: Started analyzing model analytics_prod.dim_part
+16:16:17.714543 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+16:16:17.714418 [debug]: Finished rendering [  0.02s] model analytics_prod.fact_lineitem [success]
+16:16:17.715633 [debug]: Started analyzing model analytics_prod.fact_lineitem
+16:16:17.715956 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+16:16:17.715972 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+16:16:17.715697 [debug]: Finished rendering [  0.02s] model analytics_prod.stg_lineitem [success]
+16:16:17.716277 [debug]: Started analyzing model analytics_prod.stg_lineitem
+16:16:17.716321 [debug]: Finished rendering [  0.02s] analysis analytics_prod.revenue_trend [success]
+16:16:17.716571 [debug]: Started analyzing analysis analytics_prod.revenue_trend
+16:16:17.716672 [debug]: Finished rendering [  0.02s] analysis analytics_prod.customer_value [success]
+16:16:17.717634 [debug]: Started analyzing analysis analytics_prod.customer_value
+16:16:17.717693 [debug]: Finished rendering [  0.03s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_ [success]
+16:16:17.718472 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_
+16:16:17.718513 [debug]: Finished rendering [  0.03s] model analytics_prod.dim_date [success]
+16:16:17.721968 [debug]: Started analyzing model analytics_prod.dim_date
+16:16:17.722036 [debug]: Finished rendering [  0.03s] analysis analytics_prod.pricing_analysis [success]
+16:16:17.725235 [debug]: Started analyzing analysis analytics_prod.pricing_analysis
+16:16:17.725625 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_net_revenue.6a7accd8a1 at target\compiled\generic_tests\not_null_int_lineitem_enriched_net_revenue.sql
+16:16:17.725644 [debug]: Compiled SQL for node test.project.relationships_stg_lineitem_part_key__part_key__ref_stg_part_.e1f053329a at target\compiled\generic_tests\relationships_stg_lineitem_part_key__part_key__ref_stg_part_.sql
+16:16:17.725725 [debug]: Compiled SQL for node test.project.not_null_dim_customer_customer_key.c289fe4d1f at target\compiled\generic_tests\not_null_dim_customer_customer_key.sql
+16:16:17.725808 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+16:16:17.726060 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_order_key.0a98315aa4 at target\compiled\generic_tests\not_null_int_lineitem_enriched_order_key.sql
+16:16:17.726151 [debug]: Compiled SQL for node analysis.project.profitability at target\compiled\analysis\profitability.sql
+16:16:17.726669 [debug]: Compiled SQL for node test.project.not_null_dim_supplier_supp_key.467488707a at target\compiled\generic_tests\not_null_dim_supplier_supp_key.sql
+16:16:17.727551 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_customer_key.a574381044 at target\compiled\generic_tests\not_null_int_lineitem_enriched_customer_key.sql
+16:16:17.727551 [debug]: Compiled SQL for node test.project.not_null_dim_part_part_key.eca7d6f732 at target\compiled\generic_tests\not_null_dim_part_part_key.sql
+16:16:17.727551 [debug]: Compiled SQL for node test.project.not_null_fact_lineitem_lineitem_id.5d3ecc6922 at target\compiled\generic_tests\not_null_fact_lineitem_lineitem_id.sql
+16:16:17.729588 [debug]: Compiled SQL for node test.project.not_null_int_lineitem_enriched_total_cost.5147d7a5ac at target\compiled\generic_tests\not_null_int_lineitem_enriched_total_cost.sql
+16:16:17.725289 [debug]: Finished rendering [  0.03s] model analytics_prod.stg_customer [success]
+16:16:17.730409 [debug]: Started analyzing model analytics_prod.stg_customer
+16:16:17.730951 [debug]: Compiled SQL for node test.project.unique_dim_supplier_supp_key.eaeb41857f at target\compiled\generic_tests\unique_dim_supplier_supp_key.sql
+16:16:17.730463 [debug]: Finished rendering [  0.04s] analysis analytics_prod.supplier_performance [success]
+16:16:17.731125 [debug]: Started analyzing analysis analytics_prod.supplier_performance
+16:16:17.731492 [debug]: Compiled SQL for node test.project.unique_int_lineitem_enriched_lineitem_id.92993ab92d at target\compiled\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql
+16:16:17.731917 [debug]: Compiled SQL for node test.project.relationships_fact_lineitem_part_key__part_key__ref_dim_part_.3793d3ca24 at target\compiled\generic_tests\relationships_fact_lineitem_part_key__part_key__ref_dim_part_.sql
+16:16:17.731166 [debug]: Finished rendering [  0.04s] model analytics_prod.dim_customer [success]
+16:16:17.732102 [debug]: Started analyzing model analytics_prod.dim_customer
+16:16:17.732148 [debug]: Finished rendering [  0.04s] model analytics_prod.dim_part_supplier [success]
+16:16:17.734186 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+16:16:17.734254 [debug]: Finished rendering [  0.04s] test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key [success]
+16:16:17.734649 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key
+16:16:17.735076 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+16:16:17.734691 [debug]: Finished rendering [  0.04s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_ [success]
+16:16:17.735453 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_
+16:16:17.735508 [debug]: Finished rendering [  0.04s] test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id [success]
+16:16:17.736061 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id
+16:16:17.736117 [debug]: Finished rendering [  0.04s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id [success]
+16:16:17.736494 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id
+16:16:17.736535 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_ [success]
+16:16:17.736636 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_
+16:16:17.736667 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key [success]
+16:16:17.736740 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key
+16:16:17.736763 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key [success]
+16:16:17.736851 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key
+16:16:17.736875 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_ [success]
+16:16:17.736980 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_
+16:16:17.737024 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit [success]
+16:16:17.737442 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit
+16:16:17.737476 [debug]: Finished rendering [  0.04s] model analytics_prod.int_lineitem_enriched [success]
+16:16:17.737585 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+16:16:17.737619 [debug]: Finished rendering [  0.05s] model analytics_prod.dim_location [success]
+16:16:17.737699 [debug]: Started analyzing model analytics_prod.dim_location
+16:16:17.737716 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_supplier [success]
+16:16:17.737792 [debug]: Started analyzing model analytics_prod.stg_supplier
+16:16:17.737811 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_orders [success]
+16:16:17.737875 [debug]: Started analyzing model analytics_prod.stg_orders
+16:16:17.737892 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_region [success]
+16:16:17.737955 [debug]: Started analyzing model analytics_prod.stg_region
+16:16:17.737969 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_part [success]
+16:16:17.738043 [debug]: Started analyzing model analytics_prod.stg_part
+16:16:17.738068 [debug]: Finished rendering [  0.05s] model analytics_prod.stg_partsupp [success]
+16:16:17.738079 [debug]: Started analyzing model analytics_prod.stg_partsupp
+16:16:17.738096 [info ]:  Succeeded [  0.04s] model analytics_prod.fact_lineitem (table)
+16:16:17.738117 [debug]: Finished analyzing [  0.02s] model analytics_prod.fact_lineitem [success]
+16:16:17.738528 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_lineitem (table)
+16:16:17.738547 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_lineitem [success]
+16:16:17.738903 [info ]:  Succeeded [  0.05s] analysis analytics_prod.revenue_trend (analysis)
+16:16:17.738920 [debug]: Finished analyzing [  0.02s] analysis analytics_prod.revenue_trend [success]
+16:16:17.739313 [info ]:  Succeeded [  0.04s] test  analytics_prod_dbt_test__audit.unique_dim_part_part_key (models\s3_marts\_mart_tpch.yml:59:13)
+16:16:17.739333 [debug]: Finished analyzing [  0.03s] test analytics_prod_dbt_test__audit.unique_dim_part_part_key [success]
+16:16:17.739716 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_ (models\s3_marts\_mart_tpch.yml:18:13)
+16:16:17.739736 [debug]: Finished analyzing [  0.02s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_customer_key__customer_key__ref_dim_customer_ [success]
+16:16:17.739913 [info ]:  Succeeded [  0.04s] test  analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_ (models\s1_staging\_stg_tpch.yml:24:13)
+16:16:17.739934 [debug]: Finished analyzing [  0.03s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_order_key__order_key__ref_stg_orders_ [success]
+16:16:17.740028 [info ]:  Succeeded [  0.05s] analysis analytics_prod.customer_value (analysis)
+16:16:17.740047 [debug]: Finished analyzing [  0.02s] analysis analytics_prod.customer_value [success]
+16:16:17.740137 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue [success]
+16:16:17.740238 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue
+16:16:17.740271 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key [success]
+16:16:17.740333 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key
+16:16:17.740361 [debug]: Finished rendering [  0.05s] model analytics_prod.stg_nation [success]
+16:16:17.740376 [debug]: Started analyzing model analytics_prod.stg_nation
+16:16:17.740397 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key [success]
+16:16:17.740412 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key
+16:16:17.740426 [debug]: Finished rendering [  0.05s] analysis analytics_prod.profitability [success]
+16:16:17.740438 [debug]: Started analyzing analysis analytics_prod.profitability
+16:16:17.740455 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key [success]
+16:16:17.740467 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key
+16:16:17.740480 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_ [success]
+16:16:17.740492 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_
+16:16:17.740508 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id [success]
+16:16:17.740522 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id
+16:16:17.740544 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_dim_part_part_key [success]
+16:16:17.740560 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_dim_part_part_key
+16:16:17.740577 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key [success]
+16:16:17.740591 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key
+16:16:17.740614 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_part (table)
+16:16:17.740632 [debug]: Finished analyzing [  0.03s] model analytics_prod.dim_part [success]
+16:16:17.740742 [info ]:  Succeeded [  0.04s] model analytics_prod.dim_date (table)
+16:16:17.740776 [debug]: Finished analyzing [  0.02s] model analytics_prod.dim_date [success]
+16:16:17.740854 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost [success]
+16:16:17.740870 [debug]: Started analyzing test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost
+16:16:17.740894 [info ]:  Succeeded [  0.04s] analysis analytics_prod.pricing_analysis (analysis)
+16:16:17.740909 [debug]: Finished analyzing [  0.02s] analysis analytics_prod.pricing_analysis [success]
+16:16:17.741112 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key [success]
+16:16:17.741187 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key
+16:16:17.741214 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_customer (table)
+16:16:17.741230 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+16:16:17.741276 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id [success]
+16:16:17.741293 [debug]: Started analyzing test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id
+16:16:17.741314 [debug]: Finished rendering [  0.05s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_ [success]
+16:16:17.741331 [debug]: Started analyzing test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_
+16:16:17.741350 [info ]:  Succeeded [  0.05s] analysis analytics_prod.supplier_performance (analysis)
+16:16:17.741366 [debug]: Finished analyzing [  0.01s] analysis analytics_prod.supplier_performance [success]
+16:16:17.741410 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_part_supplier (table)
+16:16:17.741425 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_part_supplier [success]
+16:16:17.741467 [debug]: Finished rendering [  0.05s] model analytics_prod.dim_supplier [success]
+16:16:17.741479 [info ]: Finished rendering [  0.05s] (45 nodes, 0 skipped, 0 errors)
+16:16:17.741716 [debug]: Started analyzing model analytics_prod.dim_supplier
+16:16:17.741737 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_customer (table)
+16:16:17.741751 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_customer [success]
+16:16:17.741858 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key (models\s1_staging\_stg_tpch.yml:23:13)
+16:16:17.741877 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_stg_lineitem_order_key [success]
+16:16:17.741954 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_ (models\s3_marts\_mart_tpch.yml:34:13)
+16:16:17.741974 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_supp_key__supp_key__ref_dim_supplier_ [success]
+16:16:17.741989 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id (models\s2_intermediate\_int_tpch.yml:12:13)
+16:16:17.742005 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_lineitem_id [success]
+16:16:17.742020 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id (models\s3_marts\_mart_tpch.yml:12:13)
+16:16:17.742033 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_fact_lineitem_lineitem_id [success]
+16:16:17.742044 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key (models\s1_staging\_stg_tpch.yml:11:13)
+16:16:17.742057 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.not_null_stg_orders_cust_key [success]
+16:16:17.742070 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.unique_dim_customer_customer_key (models\s3_marts\_mart_tpch.yml:49:13)
+16:16:17.742081 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.unique_dim_customer_customer_key [success]
+16:16:17.742094 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_ (models\s1_staging\_stg_tpch.yml:40:13)
+16:16:17.742106 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_supp_key__supp_key__ref_stg_supplier_ [success]
+16:16:17.742119 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit (models\s2_intermediate\_int_tpch.yml:38:13)
+16:16:17.742128 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_profit [success]
+16:16:17.742144 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_ (models\s1_staging\_stg_tpch.yml:12:13)
+16:16:17.742160 [debug]: Finished analyzing [  0.01s] test analytics_prod_dbt_test__audit.relationships_stg_orders_cust_key__cust_key__ref_stg_customer_ [success]
+16:16:17.742223 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_supplier (table)
+16:16:17.742254 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+16:16:17.742277 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_orders (table)
+16:16:17.742293 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+16:16:17.742308 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_region (table)
+16:16:17.742318 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+16:16:17.742331 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_part (table)
+16:16:17.742347 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+16:16:17.742362 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_location (table)
+16:16:17.742377 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+16:16:17.742393 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_partsupp (table)
+16:16:17.742407 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+16:16:17.742426 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key (models\s3_marts\_mart_tpch.yml:50:13)
+16:16:17.742443 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_dim_customer_customer_key [success]
+16:16:17.742464 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue (models\s2_intermediate\_int_tpch.yml:28:13)
+16:16:17.742476 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_net_revenue [success]
+16:16:17.742490 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key (models\s2_intermediate\_int_tpch.yml:18:13)
+16:16:17.742506 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_order_key [success]
+16:16:17.742521 [info ]:  Succeeded [  0.05s] model analytics_prod.stg_nation (table)
+16:16:17.742532 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+16:16:17.742546 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key (models\s3_marts\_mart_tpch.yml:70:13)
+16:16:17.742559 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_dim_supplier_supp_key [success]
+16:16:17.742574 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id (models\s3_marts\_mart_tpch.yml:13:13)
+16:16:17.742584 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_fact_lineitem_lineitem_id [success]
+16:16:17.742598 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_dim_part_part_key (models\s3_marts\_mart_tpch.yml:60:13)
+16:16:17.742616 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_dim_part_part_key [success]
+16:16:17.742629 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key (models\s2_intermediate\_int_tpch.yml:23:13)
+16:16:17.742660 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_customer_key [success]
+16:16:17.742678 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost (models\s2_intermediate\_int_tpch.yml:33:13)
+16:16:17.742690 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.not_null_int_lineitem_enriched_total_cost [success]
+16:16:17.743045 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_ (models\s1_staging\_stg_tpch.yml:32:13)
+16:16:17.743064 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.relationships_stg_lineitem_part_key__part_key__ref_stg_part_ [success]
+16:16:17.743082 [info ]:  Succeeded [  0.05s] analysis analytics_prod.profitability (analysis)
+16:16:17.743092 [debug]: Finished analyzing [  0.00s] analysis analytics_prod.profitability [success]
+16:16:17.743111 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key (models\s3_marts\_mart_tpch.yml:69:13)
+16:16:17.743125 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.unique_dim_supplier_supp_key [success]
+16:16:17.743140 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id (models\s2_intermediate\_int_tpch.yml:13:13)
+16:16:17.743152 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.unique_int_lineitem_enriched_lineitem_id [success]
+16:16:17.743178 [info ]:  Succeeded [  0.05s] test  analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_ (models\s3_marts\_mart_tpch.yml:26:13)
+16:16:17.743196 [debug]: Finished analyzing [  0.00s] test analytics_prod_dbt_test__audit.relationships_fact_lineitem_part_key__part_key__ref_dim_part_ [success]
+16:16:17.743233 [info ]:  Succeeded [  0.05s] model analytics_prod.dim_supplier (table)
+16:16:17.743248 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+16:16:17.747716 [info ]:  Succeeded [  0.05s] model analytics_prod.int_lineitem_enriched (view)
+16:16:17.747761 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+16:16:17.748030 [info ]: Finished analyzing [  0.05s] (45 nodes, 0 skipped, 0 errors)
+16:16:18.011394 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+16:16:18.114196 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [733ms]
+Processed: 16 models | 24 tests | 5 analyses
+Summary: 45 total | 45 success

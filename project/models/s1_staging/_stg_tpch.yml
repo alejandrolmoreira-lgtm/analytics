@@ -3,8 +3,10 @@ version: 2
 models:
 
   - name: stg_orders
+    description: "Staging model for orders data. Cleans and standardizes raw TPCH orders table."
     columns:
       - name: cust_key
+        description: "Foreign key referencing the customer placing the order."
         tests:
           - not_null
           - relationships:
@@ -13,8 +15,10 @@ models:
                 field: cust_key
 
   - name: stg_lineitem
+    description: "Staging model for line items. Represents individual items within each order."
     columns:
       - name: order_key
+        description: "Foreign key linking each line item to its corresponding order."
         tests:
           - not_null
           - relationships:
@@ -23,6 +27,7 @@ models:
                 field: order_key
 
       - name: part_key
+        description: "Foreign key identifying the product associated with the line item."
         tests:
           - relationships:
               arguments:
@@ -30,6 +35,7 @@ models:
                 field: part_key
 
       - name: supp_key
+        description: "Foreign key identifying the supplier providing the product."
         tests:
           - relationships:
               arguments:
