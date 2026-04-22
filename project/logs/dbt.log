@@ -8186,3 +8186,3538 @@ from analytics.analytics_prod.int_lineitem_enriched
 Finished 'run' successfully for target 'dev' [14.0s]
 Processed: 13 models
 Summary: 13 total | 13 success
+==================== 2026-04-22T15:16:42.777621Z | 019db5c3-d296-7390-bab5-bdeed40d4fbe ====================
+15:16:42.777711 [info ]: dbt-fusion 2.0.0-preview.171
+15:16:42.778158 [info ]: Started loading project
+15:16:42.781889 [info ]: Loading ~/.dbt/profiles.yml
+15:16:42.787427 [info ]: Loading packages.yml
+15:16:42.787829 [debug]:    Started loading packages
+15:16:42.797895 [debug]:     Loaded [  0.01s] packages
+15:16:42.798534 [info ]: Finished loading project [  0.02s]
+15:16:42.799121 [info ]: Started parsing
+15:16:42.838720 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:16:42.838919 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:16:42.839125 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:16:42.839425 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:16:42.842239 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:16:42.842988 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:16:42.843616 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:16:42.844247 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:16:42.844796 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:16:42.845187 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:16:42.845623 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:16:42.845988 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:16:42.846452 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:16:42.847026 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:16:42.847423 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:16:42.847773 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:16:42.848129 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:16:42.848466 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:16:42.859117 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:16:42.859779 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:16:42.860604 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:16:42.861355 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:16:42.861903 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:16:42.862432 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:16:42.867325 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:16:42.867918 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:16:42.870916 [info ]: Finished parsing [  0.07s]
+15:16:42.872459 [info ]: Started scheduling
+15:16:42.872748 [info ]: Finished scheduling [  0.00s]
+15:16:43.039265 [info ]: Started building task graph
+15:16:43.039500 [info ]: Finished building task graph [  0.00s]
+15:16:44.398575 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:16:44.398965 [info ]: Started rendering (1 nodes)
+15:16:44.399079 [info ]: Started model analytics_prod.dim_date
+15:16:44.399094 [debug]: Started rendering model analytics_prod.dim_date
+15:16:44.400812 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:16:44.400964 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:16:44.401203 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:16:44.401484 [info ]: Started analyzing (1 nodes)
+15:16:44.401554 [debug]: Started analyzing model analytics_prod.dim_date
+15:16:44.407170 [warn ]: dbt0101: no viable alternative at input 'wxtract(week from'
+  --> models\s3_marts\dim_date.sql:11:20 (target\compiled\models\s3_marts\dim_date.sql:11:20)
+15:16:44.407277 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_date [success]
+15:16:44.407679 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+15:16:44.408011 [info ]: Started running (1 nodes)
+15:16:44.408087 [info ]: Started running model analytics_prod.dim_date
+15:16:45.547446 [debug]: Query executed on node model.project.dim_date:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:16:45.548723 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:16:45.660560 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , wxtract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from ref stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:16:46.661011 [error]: dbt1302: Database Error in model dim_date (models\s3_marts\dim_date.sql)
+  [Snowflake] 001003 (42000): SQL compilation error:
+  syntax error line 15 at position 19 unexpected 'from'.
+  syntax error line 15 at position 36 unexpected 'as'.
+  (in compiled\models\s3_marts\dim_date.sql:1:14)
+15:16:46.661102 [info ]:     Failed [  2.26s] model analytics_prod.dim_date (table)
+15:16:46.661604 [info ]: Finished running [  2.25s] model analytics_prod.dim_date [error]
+15:16:46.661785 [info ]: Finished running [  2.25s] (1 nodes, 0 skipped, 1 errors)
+15:16:46.680972 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:16:46.741455 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 warning and 1 error for target 'dev' [4.0s]
+Processed: 1 model
+Summary: 1 total | 1 error
+==================== 2026-04-22T15:17:32.292271Z | 019db5c4-9401-73f3-81b8-79287d188f23 ====================
+15:17:32.292392 [info ]: dbt-fusion 2.0.0-preview.171
+15:17:32.292759 [info ]: Started loading project
+15:17:32.295884 [info ]: Loading ~/.dbt/profiles.yml
+15:17:32.301004 [info ]: Loading packages.yml
+15:17:32.301350 [debug]:    Started loading packages
+15:17:32.312924 [debug]:     Loaded [  0.01s] packages
+15:17:32.313512 [info ]: Finished loading project [  0.02s]
+15:17:32.314035 [info ]: Started parsing
+15:17:32.357455 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:17:32.357761 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:17:32.357951 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:17:32.358092 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:17:32.360357 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:17:32.361100 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:17:32.361640 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:17:32.362056 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:17:32.362411 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:17:32.362779 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:17:32.363117 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:17:32.363448 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:17:32.363893 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:17:32.364232 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:17:32.364576 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:17:32.364922 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:17:32.365265 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:17:32.365598 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:17:32.375429 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:17:32.376058 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:17:32.376582 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:17:32.377145 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:17:32.377669 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:17:32.378166 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:17:32.378617 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:17:32.379075 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:17:32.382039 [info ]: Finished parsing [  0.07s]
+15:17:32.383587 [info ]: Started scheduling
+15:17:32.383851 [info ]: Finished scheduling [  0.00s]
+15:17:32.554333 [info ]: Started building task graph
+15:17:32.554766 [info ]: Finished building task graph [  0.00s]
+15:17:33.702376 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:17:33.702760 [info ]: Started rendering (1 nodes)
+15:17:33.702876 [info ]: Started model analytics_prod.dim_date
+15:17:33.702890 [debug]: Started rendering model analytics_prod.dim_date
+15:17:33.704460 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:17:33.704601 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:17:33.704760 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:17:33.705004 [info ]: Started analyzing (1 nodes)
+15:17:33.705068 [debug]: Started analyzing model analytics_prod.dim_date
+15:17:33.711875 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_date [success]
+15:17:33.712275 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+15:17:33.712513 [info ]: Started running (1 nodes)
+15:17:33.712723 [info ]: Started running model analytics_prod.dim_date
+15:17:34.845924 [debug]: Query executed on node model.project.dim_date:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:17:34.847968 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:17:34.960339 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from ref stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:17:35.961116 [error]: dbt1302: Database Error in model dim_date (models\s3_marts\dim_date.sql)
+  [Snowflake] 002003 (42S02): SQL compilation error:
+  Object 'REF' does not exist or not authorized. (SQLSTATE: 42S02, Vendor code: 2003)
+  (in compiled\models\s3_marts\dim_date.sql:1:14)
+15:17:35.961236 [info ]:     Failed [  2.25s] model analytics_prod.dim_date (table)
+15:17:35.962198 [info ]: Finished running [  2.25s] model analytics_prod.dim_date [error]
+15:17:35.962612 [info ]: Finished running [  2.25s] (1 nodes, 0 skipped, 1 errors)
+15:17:35.981847 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:17:36.036835 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [3.7s]
+Processed: 1 model
+Summary: 1 total | 1 error
+==================== 2026-04-22T15:19:23.613533Z | 019db5c6-46da-7441-82f2-3da76e73ff49 ====================
+15:19:23.613671 [info ]: dbt-fusion 2.0.0-preview.171
+15:19:23.613983 [info ]: Started loading project
+15:19:23.617608 [info ]: Loading ~/.dbt/profiles.yml
+15:19:23.623382 [info ]: Loading packages.yml
+15:19:23.623723 [debug]:    Started loading packages
+15:19:23.630885 [debug]:     Loaded [  0.01s] packages
+15:19:23.631451 [info ]: Finished loading project [  0.02s]
+15:19:23.631946 [info ]: Started parsing
+15:19:23.668440 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:19:23.668598 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:19:23.668835 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:19:23.668961 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:19:23.671680 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:19:23.672355 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:19:23.672839 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:19:23.673198 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:19:23.673584 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:19:23.674057 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:19:23.674659 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:19:23.675125 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:19:23.675621 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:19:23.675983 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:19:23.676521 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:19:23.677023 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:19:23.677589 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:19:23.678028 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:19:23.687590 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:19:23.688422 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:19:23.689307 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:19:23.690044 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:19:23.690683 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:19:23.691182 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:19:23.691668 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:19:23.692144 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:19:23.695105 [info ]: Finished parsing [  0.06s]
+15:19:23.696486 [info ]: Started scheduling
+15:19:23.696676 [info ]: Finished scheduling [  0.00s]
+15:19:23.699417 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "ANALYTICS_PROD", table: "STG_ORDERS" }) and interval: None
+15:19:23.860005 [info ]: Started building task graph
+15:19:23.860321 [info ]: Finished building task graph [  0.00s]
+15:19:25.042945 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:19:25.043384 [info ]: Started rendering (1 nodes)
+15:19:25.043686 [info ]: Started model analytics_prod.dim_date
+15:19:25.043709 [debug]: Started rendering model analytics_prod.dim_date
+15:19:25.045238 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:19:25.045433 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:19:25.045704 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:19:25.046187 [info ]: Started analyzing (1 nodes)
+15:19:25.046259 [debug]: Started analyzing model analytics_prod.dim_date
+15:19:25.054717 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_date [success]
+15:19:25.055157 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+15:19:25.055469 [info ]: Started running (1 nodes)
+15:19:25.055575 [info ]: Started running model analytics_prod.dim_date
+15:19:26.162847 [debug]: Query executed on node model.project.dim_date:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:19:26.164299 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:19:27.509559 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:19:27.510623 [info ]:  Succeeded [  2.46s] model analytics_prod.dim_date (table)
+15:19:27.511223 [info ]: Finished running [  2.46s] model analytics_prod.dim_date [success]
+15:19:27.511550 [info ]: Finished running [  2.46s] (1 nodes, 0 skipped, 0 errors)
+15:19:27.531785 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:19:27.585103 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [4.0s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2026-04-22T15:29:01.350356Z | 019db5cf-17a3-72c3-b28d-c0b5db27d834 ====================
+15:29:01.350503 [info ]: dbt-fusion 2.0.0-preview.171
+15:29:01.350913 [info ]: Started loading project
+15:29:01.354065 [info ]: Loading ~/.dbt/profiles.yml
+15:29:01.360290 [info ]: Loading packages.yml
+15:29:01.360726 [debug]:    Started loading packages
+15:29:01.369629 [debug]:     Loaded [  0.01s] packages
+15:29:01.370250 [info ]: Finished loading project [  0.02s]
+15:29:01.382561 [info ]: Started parsing
+15:29:01.425367 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:29:01.425555 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:29:01.425722 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:29:01.425908 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:29:01.428522 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:29:01.429920 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:29:01.430622 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:29:01.431272 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:29:01.431859 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:29:01.432420 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:29:01.432846 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:29:01.433212 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:29:01.433695 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:29:01.434061 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:29:01.434395 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:29:01.434786 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+15:29:01.435156 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:29:01.435505 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+15:29:01.435863 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:29:01.436174 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:29:01.454277 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.01s]
+15:29:01.455343 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:29:01.456180 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:29:01.456977 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:29:01.457712 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:29:01.458232 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:29:01.458643 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:29:01.459080 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:29:01.461874 [info ]: Finished parsing [  0.08s]
+15:29:01.464150 [info ]: Started scheduling
+15:29:01.464799 [info ]: Finished scheduling [  0.00s]
+15:29:01.468275 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+15:29:01.468371 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+15:29:01.468388 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:29:01.468408 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+15:29:01.468421 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+15:29:01.468434 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+15:29:01.468453 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+15:29:01.468463 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+15:29:01.643486 [info ]: Started building task graph
+15:29:01.643958 [info ]: Finished building task graph [  0.00s]
+15:29:02.964053 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:02.964469 [info ]: Started rendering (16 nodes)
+15:29:02.964743 [info ]: Started model analytics_prod.stg_lineitem
+15:29:02.964762 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:29:02.964814 [info ]: Started model analytics_prod.stg_supplier
+15:29:02.964847 [debug]: Started rendering model analytics_prod.stg_supplier
+15:29:02.964872 [info ]: Started model analytics_prod.stg_partsupp
+15:29:02.964889 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:29:02.964906 [info ]: Started model analytics_prod.stg_part
+15:29:02.964921 [debug]: Started rendering model analytics_prod.stg_part
+15:29:02.964939 [info ]: Started model analytics_prod.stg_orders
+15:29:02.964948 [debug]: Started rendering model analytics_prod.stg_orders
+15:29:02.964967 [info ]: Started model analytics_prod.stg_region
+15:29:02.964977 [debug]: Started rendering model analytics_prod.stg_region
+15:29:02.964993 [info ]: Started model analytics_prod.stg_nation
+15:29:02.965002 [debug]: Started rendering model analytics_prod.stg_nation
+15:29:02.965018 [info ]: Started model analytics_prod.stg_customer
+15:29:02.965028 [debug]: Started rendering model analytics_prod.stg_customer
+15:29:02.969618 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+15:29:02.969838 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+15:29:02.969959 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+15:29:02.970367 [info ]: Started analyzing (16 nodes)
+15:29:02.970510 [debug]: Started analyzing model analytics_prod.stg_part
+15:29:02.970548 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+15:29:02.971107 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:29:02.971604 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+15:29:02.971686 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+15:29:02.971896 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+15:29:02.972341 [debug]: Started analyzing model analytics_prod.stg_orders
+15:29:02.972405 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+15:29:02.972875 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:29:02.973293 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+15:29:02.973561 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+15:29:02.973821 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:29:02.973895 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+15:29:02.973440 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:29:02.974054 [debug]: Started analyzing model analytics_prod.stg_region
+15:29:02.974091 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+15:29:02.974409 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:29:02.974441 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:29:02.974762 [debug]: Started analyzing model analytics_prod.stg_nation
+15:29:02.974801 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+15:29:02.975047 [debug]: Started analyzing model analytics_prod.stg_customer
+15:29:02.984898 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+15:29:02.985279 [info ]: Started running (16 nodes)
+15:29:02.985572 [info ]: Started running model analytics_prod.stg_part
+15:29:02.985620 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+15:29:02.985857 [info ]: Started running model analytics_prod.stg_region
+15:29:02.985880 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_lineitem [success]
+15:29:02.986122 [info ]: Started running model analytics_prod.stg_lineitem
+15:29:02.986157 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_supplier [success]
+15:29:02.986590 [info ]: Started running model analytics_prod.stg_supplier
+15:29:02.986623 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+15:29:02.986824 [info ]: Started running model analytics_prod.stg_partsupp
+15:29:02.986852 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_nation [success]
+15:29:02.987258 [info ]: Started running model analytics_prod.stg_nation
+15:29:02.987288 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+15:29:02.987611 [info ]: Started running model analytics_prod.stg_orders
+15:29:02.987657 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+15:29:02.987923 [info ]: Started running model analytics_prod.stg_customer
+15:29:04.137277 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:04.138647 [debug]: Writing runtime sql for node "model.project.stg_part"
+15:29:05.011960 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:05.014201 [debug]: Writing runtime sql for node "model.project.stg_region"
+15:29:05.759770 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+)
+
+, final as (
+    select
+        r_regionkey as region_key
+        , r_name as region_name
+        , r_comment as region_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:05.761266 [info ]:  Succeeded [  2.79s] model analytics_prod.stg_region (table)
+15:29:05.762614 [info ]: Finished running [  2.78s] model analytics_prod.stg_region [success]
+15:29:05.964201 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+)
+
+, final as (
+    select
+        p_partkey as part_key
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:05.966211 [info ]:  Succeeded [  3.00s] model analytics_prod.stg_part (table)
+15:29:05.966756 [info ]: Finished running [  2.98s] model analytics_prod.stg_part [success]
+15:29:05.967155 [info ]: Started model analytics_prod.dim_part
+15:29:05.967169 [debug]: Started rendering model analytics_prod.dim_part
+15:29:05.969419 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+15:29:05.969524 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:29:05.969632 [debug]: Started analyzing model analytics_prod.dim_part
+15:29:05.970116 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:29:05.970250 [info ]: Started running model analytics_prod.dim_part
+15:29:05.972036 [debug]: Writing runtime sql for node "model.project.dim_part"
+15:29:06.003017 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:06.004328 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+15:29:07.357604 [debug]: Query executed on node model.project.dim_part:
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
+
+    --primary key
+    part_key as part_key
+
+    --attributes
+    , part_name as part_name
+    , part_mfgr as manufacturer
+    , part_size as part_size
+    , part_type  as part_type
+    , part_container part_container
+
+    --reference price
+    , part_retail_price as retail_price
+
+from analytics.analytics_prod.stg_part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:07.358992 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:07.359612 [info ]:  Succeeded [  1.39s] model analytics_prod.dim_part (table)
+15:29:07.360204 [info ]: Finished running [  1.39s] model analytics_prod.dim_part [success]
+15:29:07.360875 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+15:29:08.233089 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:08.234354 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+15:29:08.267986 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+)
+
+, final as (
+    select
+        s_suppkey as supp_key
+        , s_nationkey as nation_key
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:08.269532 [info ]:  Succeeded [  5.30s] model analytics_prod.stg_supplier (table)
+15:29:08.270056 [info ]: Finished running [  5.28s] model analytics_prod.stg_supplier [success]
+15:29:09.145225 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+)
+
+, final as (
+    select
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
+        , l_orderkey as order_key
+        , l_partkey as part_key
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
+        , l_suppkey as supp_key
+        , l_tax as line_tax
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:09.146464 [info ]:  Succeeded [  6.18s] model analytics_prod.stg_lineitem (table)
+15:29:09.147365 [info ]: Finished running [  6.16s] model analytics_prod.stg_lineitem [success]
+15:29:09.207068 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:09.208952 [debug]: Writing runtime sql for node "model.project.stg_nation"
+15:29:09.530497 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:09.532142 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:29:09.781866 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:29:09.783118 [debug]: Writing runtime sql for node "model.project.stg_orders"
+15:29:09.905864 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+)
+
+, final as (
+    select
+        n_nationkey as nation_key
+        , n_regionkey as region_key
+        , n_name as nation_name
+        , n_comment as nation_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:09.906504 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+)
+
+, final as (
+    select
+        ps_partkey as part_key
+        , ps_suppkey as supp_key
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:09.906918 [info ]:  Succeeded [  6.94s] model analytics_prod.stg_nation (table)
+15:29:09.907373 [info ]: Finished running [  6.92s] model analytics_prod.stg_nation [success]
+15:29:09.907608 [info ]: Started model analytics_prod.dim_supplier
+15:29:09.907627 [debug]: Started rendering model analytics_prod.dim_supplier
+15:29:09.907656 [info ]: Started model analytics_prod.dim_location
+15:29:09.907671 [debug]: Started rendering model analytics_prod.dim_location
+15:29:09.908169 [info ]:  Succeeded [  6.94s] model analytics_prod.stg_partsupp (table)
+15:29:09.908545 [info ]: Finished running [  6.92s] model analytics_prod.stg_partsupp [success]
+15:29:09.909146 [info ]: Started model analytics_prod.dim_part_supplier
+15:29:09.909164 [debug]: Started rendering model analytics_prod.dim_part_supplier
+15:29:09.909513 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+15:29:09.909604 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_location [success]
+15:29:09.909709 [debug]: Started analyzing model analytics_prod.dim_location
+15:29:09.910686 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+15:29:09.910859 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+15:29:09.910823 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+15:29:09.911012 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:29:09.911050 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:29:09.911198 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+15:29:09.911600 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:29:09.911915 [info ]: Started running model analytics_prod.dim_part_supplier
+15:29:09.913735 [warn ]: dbt0101: mismatched input '.' expecting one of ',', 'CONNECT', 'EXCEPT', 'FETCH', 'FROM', 'GROUP' ...
+  --> models\s3_marts\dim_location.sql:23:10 (target\compiled\models\s3_marts\dim_location.sql:23:10)
+15:29:09.913848 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+15:29:09.913999 [info ]: Started running model analytics_prod.dim_location
+15:29:09.914234 [debug]: Writing runtime sql for node "model.project.dim_part_supplier"
+15:29:09.914458 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:29:09.914591 [info ]: Started running model analytics_prod.dim_supplier
+15:29:09.915919 [debug]: Writing runtime sql for node "model.project.dim_location"
+15:29:09.916763 [debug]: Writing runtime sql for node "model.project.dim_supplier"
+15:29:10.029044 [debug]: Query executed on node model.project.dim_part_supplier:
+create or replace transient  table analytics.analytics_prod.dim_part_supplier
+    
+    
+    
+    as (select
+    part_key
+    , supp_key
+    , supply_cost
+from analytics.analytics_prod.stg_partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:10.118154 [debug]: Query executed on node model.project.dim_location:
+create or replace transient  table analytics.analytics_prod.dim_location
+    
+    
+    
+    as (with nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+
+        --primary key
+        n.nation_key
+
+        --attributes
+        n.nation_name as nation,
+        r.region_name as region
+
+    from nation n
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_location", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:10.465158 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_account_balance
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:10.466726 [info ]:  Succeeded [  7.50s] model analytics_prod.stg_customer (table)
+15:29:10.467250 [info ]: Finished running [  7.48s] model analytics_prod.stg_customer [success]
+15:29:10.467550 [info ]: Started model analytics_prod.dim_customer
+15:29:10.467575 [debug]: Started rendering model analytics_prod.dim_customer
+15:29:10.470185 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+15:29:10.470365 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_customer [success]
+15:29:10.470576 [debug]: Started analyzing model analytics_prod.dim_customer
+15:29:10.471352 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+15:29:10.471446 [info ]: Started running model analytics_prod.dim_customer
+15:29:10.473450 [debug]: Writing runtime sql for node "model.project.dim_customer"
+15:29:10.758707 [debug]: Query executed on node model.project.dim_supplier:
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+    
+)
+
+, final as (
+    select
+
+        --primary key
+        s.supp_key
+
+        --attributes
+        , s.supp_name as supplier_name
+        , s.supp_address as supplier_address
+        , s.supp_phone as supplier_phone
+        , s.supp_acctbal as supplier_account_balance
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from supplier s
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:10.759794 [info ]:  Succeeded [  0.85s] model analytics_prod.dim_supplier (table)
+15:29:10.760300 [info ]: Finished running [  0.85s] model analytics_prod.dim_supplier [success]
+15:29:11.029857 [error]: dbt1302: Database Error in model dim_part_supplier (models\s3_marts\dim_part_supplier.sql)
+  [Snowflake] 000904 (42000): SQL compilation error: error line 8 at position 6
+  invalid identifier 'SUPPLY_COST'
+  (in compiled\models\s3_marts\dim_part_supplier.sql:1:14)
+15:29:11.029940 [info ]:     Failed [  1.12s] model analytics_prod.dim_part_supplier (table)
+15:29:11.030489 [info ]: Finished running [  1.12s] model analytics_prod.dim_part_supplier [error]
+15:29:11.118992 [error]: dbt1302: Database Error in model dim_location (models\s3_marts\dim_location.sql)
+  [Snowflake] 001003 (42000): SQL compilation error:
+  syntax error line 27 at position 9 unexpected '.'.
+  syntax error line 28 at position 9 unexpected '.'.
+  syntax error line 33 at position 14 unexpected 'region_key'.
+  syntax error line 37 at position 0 unexpected 'select'.
+  (in compiled\models\s3_marts\dim_location.sql:1:14)
+15:29:11.119135 [info ]:     Failed [  1.21s] model analytics_prod.dim_location (table)
+15:29:11.120664 [info ]: Finished running [  1.21s] model analytics_prod.dim_location [error]
+15:29:11.134694 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+)
+
+, final as (
+    select
+        o_orderkey as order_key
+        , o_orderdate as order_date
+        , o_orderstatus as order_status
+        , o_orderpriority as order_priority
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
+        , o_custkey as cust_key
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:11.136080 [info ]:  Succeeded [  8.17s] model analytics_prod.stg_orders (table)
+15:29:11.136558 [info ]: Finished running [  8.15s] model analytics_prod.stg_orders [success]
+15:29:11.136665 [info ]: Started model analytics_prod.int_lineitem_enriched
+15:29:11.136686 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+15:29:11.136716 [info ]: Started model analytics_prod.dim_date
+15:29:11.136727 [debug]: Started rendering model analytics_prod.dim_date
+15:29:11.138084 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:29:11.138187 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:29:11.138321 [debug]: Started analyzing model analytics_prod.dim_date
+15:29:11.138992 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+15:29:11.139134 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+15:29:11.139327 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+15:29:11.142149 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_date [success]
+15:29:11.142257 [info ]: Started running model analytics_prod.dim_date
+15:29:11.144090 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:29:11.147766 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+15:29:11.147930 [info ]: Started running model analytics_prod.int_lineitem_enriched
+15:29:11.151246 [debug]: Writing runtime sql for node "model.project.int_lineitem_enriched"
+15:29:11.510320 [debug]: Query executed on node model.project.dim_customer:
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+        --primary key
+        c.cust_key as customer_key
+
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from customer c
+    
+    left join nation n
+        using(nation_key)
+    
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:11.511580 [info ]:  Succeeded [  1.04s] model analytics_prod.dim_customer (table)
+15:29:11.512107 [info ]: Finished running [  1.04s] model analytics_prod.dim_customer [success]
+15:29:11.648912 [debug]: Query executed on node model.project.int_lineitem_enriched:
+create or replace   view analytics.analytics_prod.int_lineitem_enriched
+  
+  
+  
+  
+  as (
+    with lineitem as (
+
+    select *
+    from analytics.analytics_prod.stg_lineitem
+
+)
+
+, orders as (
+
+    select *
+    from analytics.analytics_prod.stg_orders
+
+)
+
+, customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, part as (
+
+    select *
+    from analytics.analytics_prod.stg_part
+
+)
+
+, part_supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_partsupp
+
+)
+
+
+, final as (
+    select
+        --grain keys
+        concat(l.order_key, '-', l.line_number) as lineitem_id
+        , o.order_key as order_key
+        , l.line_number as line_number
+
+        --foreign keys
+        , l.part_key as part_key
+        , l.supp_key as supp_key
+        , o.cust_key as cust_key
+
+        --order info
+        , o.order_date as order_date
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+        --metrics
+        , l.line_quantity as quantity
+        , p.part_retail_price as retail_price
+        , l.line_extended_price as gross_revenue
+        , l.line_discount as discount
+        , l.line_tax as tax
+        , ps.part_supp_supply_cost as supply_cost
+
+        --derived metrics
+        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
+        , l.line_extended_price * (1 - l.line_discount) as net_revenue
+        , l.line_extended_price * l.line_discount as discount_amount
+        , p.part_retail_price * l.line_quantity as expected_revenue
+        , l.line_quantity * ps.part_supp_supply_cost as total_cost
+        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
+
+
+    from lineitem l
+
+    left join orders o
+        using (order_key)
+
+    left join customer c
+        using (cust_key)
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+    left join supplier s
+        using(supp_key)
+
+    left join part p
+        using(part_key)
+
+    left join part_supplier ps
+        using(part_key, supp_key)
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:11.650713 [info ]:  Succeeded [  0.51s] model analytics_prod.int_lineitem_enriched (view)
+15:29:11.651271 [info ]: Finished running [  0.50s] model analytics_prod.int_lineitem_enriched [success]
+15:29:11.651555 [info ]: Started model analytics_prod.fact_lineitem
+15:29:11.651570 [debug]: Started rendering model analytics_prod.fact_lineitem
+15:29:11.653209 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+15:29:11.653285 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+15:29:11.653565 [info ]: Finished rendering [  8.69s] (16 nodes, 0 skipped, 0 errors)
+15:29:11.654071 [debug]: Started analyzing model analytics_prod.fact_lineitem
+15:29:11.654324 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+15:29:11.654376 [info ]: Finished analyzing [  8.68s] (16 nodes, 0 skipped, 0 errors)
+15:29:11.654820 [info ]: Started running model analytics_prod.fact_lineitem
+15:29:11.656583 [debug]: Writing runtime sql for node "model.project.fact_lineitem"
+15:29:12.099685 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:12.100728 [info ]:  Succeeded [  0.96s] model analytics_prod.dim_date (table)
+15:29:12.101151 [info ]: Finished running [  0.96s] model analytics_prod.dim_date [success]
+15:29:16.449006 [debug]: Query executed on node model.project.fact_lineitem:
+create or replace transient  table analytics.analytics_prod.fact_lineitem
+    
+    
+    
+    as (select *
+from analytics.analytics_prod.int_lineitem_enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.fact_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:29:16.450061 [info ]:  Succeeded [  4.80s] model analytics_prod.fact_lineitem (table)
+15:29:16.450635 [info ]: Finished running [  4.80s] model analytics_prod.fact_lineitem [success]
+15:29:16.450778 [info ]: Finished running [ 13.47s] (16 nodes, 0 skipped, 2 errors)
+15:29:16.475091 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:29:16.537444 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 warning and 2 errors for target 'dev' [15.2s]
+Processed: 16 models
+Summary: 16 total | 14 success | 2 error
+==================== 2026-04-22T15:30:45.538322Z | 019db5d0-ae9f-7391-964f-f36b2f94483b ====================
+15:30:45.538425 [info ]: dbt-fusion 2.0.0-preview.171
+15:30:45.538830 [info ]: Started loading project
+15:30:45.541920 [info ]: Loading ~/.dbt/profiles.yml
+15:30:45.547375 [info ]: Loading packages.yml
+15:30:45.547843 [debug]:    Started loading packages
+15:30:45.556678 [debug]:     Loaded [  0.01s] packages
+15:30:45.557259 [info ]: Finished loading project [  0.02s]
+15:30:45.557781 [info ]: Started parsing
+15:30:45.600267 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:30:45.600445 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:30:45.600951 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:30:45.601386 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:30:45.603984 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:30:45.604482 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:30:45.604954 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:30:45.605328 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:30:45.605688 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:30:45.606058 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:30:45.606392 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:30:45.606739 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:30:45.607184 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:30:45.607550 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:30:45.607878 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:30:45.608225 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+15:30:45.608579 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:30:45.608896 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+15:30:45.609237 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:30:45.609542 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:30:45.621479 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:30:45.622075 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:30:45.622557 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:30:45.623040 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:30:45.623463 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:30:45.623949 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:30:45.624350 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:30:45.624808 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:30:45.628966 [info ]: Finished parsing [  0.07s]
+15:30:45.630878 [info ]: Started scheduling
+15:30:45.631135 [info ]: Finished scheduling [  0.00s]
+15:30:45.633843 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+15:30:45.633966 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+15:30:45.634032 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+15:30:45.634050 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+15:30:45.634067 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+15:30:45.634081 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+15:30:45.634091 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:30:45.634103 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+15:30:45.795002 [info ]: Started building task graph
+15:30:45.795891 [info ]: Finished building task graph [  0.00s]
+15:30:46.937018 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:46.937525 [info ]: Started rendering (16 nodes)
+15:30:46.937703 [info ]: Started model analytics_prod.stg_lineitem
+15:30:46.937719 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:30:46.937751 [info ]: Started model analytics_prod.stg_supplier
+15:30:46.937757 [debug]: Started rendering model analytics_prod.stg_supplier
+15:30:46.937765 [info ]: Started model analytics_prod.stg_partsupp
+15:30:46.937769 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:30:46.937776 [info ]: Started model analytics_prod.stg_part
+15:30:46.937780 [debug]: Started rendering model analytics_prod.stg_part
+15:30:46.937787 [info ]: Started model analytics_prod.stg_orders
+15:30:46.937791 [debug]: Started rendering model analytics_prod.stg_orders
+15:30:46.937798 [info ]: Started model analytics_prod.stg_region
+15:30:46.937821 [debug]: Started rendering model analytics_prod.stg_region
+15:30:46.937827 [info ]: Started model analytics_prod.stg_nation
+15:30:46.937831 [debug]: Started rendering model analytics_prod.stg_nation
+15:30:46.937837 [info ]: Started model analytics_prod.stg_customer
+15:30:46.937841 [debug]: Started rendering model analytics_prod.stg_customer
+15:30:46.941010 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:30:46.941464 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+15:30:46.941232 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_customer [success]
+15:30:46.941659 [info ]: Started analyzing (16 nodes)
+15:30:46.941782 [debug]: Started analyzing model analytics_prod.stg_customer
+15:30:46.941829 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_partsupp [success]
+15:30:46.942329 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:30:46.942992 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+15:30:46.943193 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+15:30:46.943283 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+15:30:46.943798 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:30:46.943863 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+15:30:46.944348 [debug]: Started analyzing model analytics_prod.stg_orders
+15:30:46.944729 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+15:30:46.944933 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:30:46.945341 [debug]: Started analyzing model analytics_prod.stg_region
+15:30:46.945653 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+15:30:46.945730 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+15:30:46.945958 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+15:30:46.946020 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+15:30:46.946650 [debug]: Started analyzing model analytics_prod.stg_part
+15:30:46.946699 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:30:46.948178 [debug]: Started analyzing model analytics_prod.stg_nation
+15:30:46.948264 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+15:30:46.948592 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:30:46.953738 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_supplier [success]
+15:30:46.954878 [info ]: Started running (16 nodes)
+15:30:46.955439 [info ]: Started running model analytics_prod.stg_supplier
+15:30:46.955487 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_lineitem [success]
+15:30:46.955722 [info ]: Started running model analytics_prod.stg_lineitem
+15:30:46.955743 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_nation [success]
+15:30:46.955891 [info ]: Started running model analytics_prod.stg_nation
+15:30:46.955911 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+15:30:46.956414 [info ]: Started running model analytics_prod.stg_region
+15:30:46.956456 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+15:30:46.956728 [info ]: Started running model analytics_prod.stg_orders
+15:30:46.956758 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+15:30:46.956882 [info ]: Started running model analytics_prod.stg_partsupp
+15:30:46.956916 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+15:30:46.956983 [info ]: Started running model analytics_prod.stg_part
+15:30:46.957002 [debug]: Finished analyzing [  0.02s] model analytics_prod.stg_customer [success]
+15:30:46.957076 [info ]: Started running model analytics_prod.stg_customer
+15:30:48.093077 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:48.094845 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+15:30:48.977770 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:48.979508 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+15:30:49.278492 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:49.280700 [debug]: Writing runtime sql for node "model.project.stg_nation"
+15:30:49.835729 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+)
+
+, final as (
+    select
+        s_suppkey as supp_key
+        , s_nationkey as nation_key
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:49.836834 [info ]:  Succeeded [  2.90s] model analytics_prod.stg_supplier (table)
+15:30:49.837215 [info ]: Finished running [  2.88s] model analytics_prod.stg_supplier [success]
+15:30:49.981263 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+)
+
+, final as (
+    select
+        n_nationkey as nation_key
+        , n_regionkey as region_key
+        , n_name as nation_name
+        , n_comment as nation_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:49.983011 [info ]:  Succeeded [  3.04s] model analytics_prod.stg_nation (table)
+15:30:49.983662 [info ]: Finished running [  3.03s] model analytics_prod.stg_nation [success]
+15:30:50.189771 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:50.191033 [debug]: Writing runtime sql for node "model.project.stg_region"
+15:30:50.937576 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+)
+
+, final as (
+    select
+        r_regionkey as region_key
+        , r_name as region_name
+        , r_comment as region_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:50.938110 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:50.939298 [info ]:  Succeeded [  4.00s] model analytics_prod.stg_region (table)
+15:30:50.939967 [debug]: Writing runtime sql for node "model.project.stg_orders"
+15:30:50.939741 [info ]: Finished running [  3.98s] model analytics_prod.stg_region [success]
+15:30:50.940039 [info ]: Started model analytics_prod.dim_location
+15:30:50.940053 [debug]: Started rendering model analytics_prod.dim_location
+15:30:50.940107 [info ]: Started model analytics_prod.dim_supplier
+15:30:50.940131 [debug]: Started rendering model analytics_prod.dim_supplier
+15:30:50.942309 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+15:30:50.942452 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+15:30:50.942428 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_location [success]
+15:30:50.943067 [debug]: Started analyzing model analytics_prod.dim_location
+15:30:50.943101 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+15:30:50.943150 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:30:50.946751 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+15:30:50.946886 [info ]: Started running model analytics_prod.dim_location
+15:30:50.946909 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:30:50.946982 [info ]: Started running model analytics_prod.dim_supplier
+15:30:50.949475 [debug]: Writing runtime sql for node "model.project.dim_location"
+15:30:50.950122 [debug]: Writing runtime sql for node "model.project.dim_supplier"
+15:30:51.014405 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+)
+
+, final as (
+    select
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
+        , l_orderkey as order_key
+        , l_partkey as part_key
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
+        , l_suppkey as supp_key
+        , l_tax as line_tax
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:51.015574 [info ]:  Succeeded [  4.08s] model analytics_prod.stg_lineitem (table)
+15:30:51.016281 [info ]: Finished running [  4.06s] model analytics_prod.stg_lineitem [success]
+15:30:51.640852 [debug]: Query executed on node model.project.dim_location:
+create or replace transient  table analytics.analytics_prod.dim_location
+    
+    
+    
+    as (with nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+
+        --primary key
+        n.nation_key
+
+        --attributes
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from nation n
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_location", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:51.642390 [info ]:  Succeeded [  0.70s] model analytics_prod.dim_location (table)
+15:30:51.642828 [info ]: Finished running [  0.70s] model analytics_prod.dim_location [success]
+15:30:51.648682 [debug]: Query executed on node model.project.dim_supplier:
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+    
+)
+
+, final as (
+    select
+
+        --primary key
+        s.supp_key
+
+        --attributes
+        , s.supp_name as supplier_name
+        , s.supp_address as supplier_address
+        , s.supp_phone as supplier_phone
+        , s.supp_acctbal as supplier_account_balance
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from supplier s
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:51.649791 [info ]:  Succeeded [  0.71s] model analytics_prod.dim_supplier (table)
+15:30:51.650182 [info ]: Finished running [  0.70s] model analytics_prod.dim_supplier [success]
+15:30:52.133746 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:52.135808 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:30:52.470011 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+)
+
+, final as (
+    select
+        o_orderkey as order_key
+        , o_orderdate as order_date
+        , o_orderstatus as order_status
+        , o_orderpriority as order_priority
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
+        , o_custkey as cust_key
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:52.471008 [info ]:  Succeeded [  5.53s] model analytics_prod.stg_orders (table)
+15:30:52.471404 [info ]: Finished running [  5.51s] model analytics_prod.stg_orders [success]
+15:30:52.471503 [info ]: Started model analytics_prod.dim_date
+15:30:52.471517 [debug]: Started rendering model analytics_prod.dim_date
+15:30:52.473436 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:30:52.473527 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:30:52.473627 [debug]: Started analyzing model analytics_prod.dim_date
+15:30:52.476538 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_date [success]
+15:30:52.476988 [info ]: Started running model analytics_prod.dim_date
+15:30:52.479845 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:30:52.983146 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:52.985002 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+15:30:53.095255 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_account_balance
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:53.096619 [info ]:  Succeeded [  6.16s] model analytics_prod.stg_customer (table)
+15:30:53.097309 [info ]: Finished running [  6.14s] model analytics_prod.stg_customer [success]
+15:30:53.097562 [info ]: Started model analytics_prod.dim_customer
+15:30:53.097583 [debug]: Started rendering model analytics_prod.dim_customer
+15:30:53.099717 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+15:30:53.099810 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_customer [success]
+15:30:53.100074 [debug]: Started analyzing model analytics_prod.dim_customer
+15:30:53.100802 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+15:30:53.100895 [info ]: Started running model analytics_prod.dim_customer
+15:30:53.102566 [debug]: Writing runtime sql for node "model.project.dim_customer"
+15:30:53.492288 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:53.494344 [info ]:  Succeeded [  1.02s] model analytics_prod.dim_date (table)
+15:30:53.495173 [info ]: Finished running [  1.02s] model analytics_prod.dim_date [success]
+15:30:54.080056 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+)
+
+, final as (
+    select
+        ps_partkey as part_key
+        , ps_suppkey as supp_key
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:54.081187 [info ]:  Succeeded [  7.14s] model analytics_prod.stg_partsupp (table)
+15:30:54.081922 [info ]: Finished running [  7.13s] model analytics_prod.stg_partsupp [success]
+15:30:54.082005 [info ]: Started model analytics_prod.dim_part_supplier
+15:30:54.082020 [debug]: Started rendering model analytics_prod.dim_part_supplier
+15:30:54.083857 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+15:30:54.083947 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:30:54.084056 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+15:30:54.084315 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:30:54.084385 [info ]: Started running model analytics_prod.dim_part_supplier
+15:30:54.086312 [debug]: Writing runtime sql for node "model.project.dim_part_supplier"
+15:30:54.171283 [debug]: Query executed on node model.project.dim_customer:
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+        --primary key
+        c.cust_key as customer_key
+
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from customer c
+    
+    left join nation n
+        using(nation_key)
+    
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:54.173283 [info ]:  Succeeded [  1.07s] model analytics_prod.dim_customer (table)
+15:30:54.173872 [info ]: Finished running [  1.07s] model analytics_prod.dim_customer [success]
+15:30:54.197017 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:30:54.199228 [debug]: Writing runtime sql for node "model.project.stg_part"
+15:30:54.265821 [debug]: Query executed on node model.project.dim_part_supplier:
+create or replace transient  table analytics.analytics_prod.dim_part_supplier
+    
+    
+    
+    as (select
+    part_key
+    , supp_key
+    , supp_supply_cost as supply_cost
+from analytics.analytics_prod.stg_partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:55.080877 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+)
+
+, final as (
+    select
+        p_partkey as part_key
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:55.081919 [info ]:  Succeeded [  8.14s] model analytics_prod.stg_part (table)
+15:30:55.082535 [info ]: Finished running [  8.13s] model analytics_prod.stg_part [success]
+15:30:55.082727 [info ]: Started model analytics_prod.int_lineitem_enriched
+15:30:55.082750 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+15:30:55.082790 [info ]: Started model analytics_prod.dim_part
+15:30:55.082819 [debug]: Started rendering model analytics_prod.dim_part
+15:30:55.086047 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+15:30:55.086230 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:30:55.086416 [debug]: Started analyzing model analytics_prod.dim_part
+15:30:55.086855 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+15:30:55.087071 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+15:30:55.087470 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+15:30:55.087516 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:30:55.087631 [info ]: Started running model analytics_prod.dim_part
+15:30:55.091194 [debug]: Writing runtime sql for node "model.project.dim_part"
+15:30:55.099365 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+15:30:55.099589 [info ]: Started running model analytics_prod.int_lineitem_enriched
+15:30:55.103329 [debug]: Writing runtime sql for node "model.project.int_lineitem_enriched"
+15:30:55.266456 [error]: dbt1302: Database Error in model dim_part_supplier (models\s3_marts\dim_part_supplier.sql)
+  [Snowflake] 000904 (42000): SQL compilation error: error line 8 at position 6
+  invalid identifier 'SUPP_SUPPLY_COST'
+  (in compiled\models\s3_marts\dim_part_supplier.sql:1:14)
+15:30:55.266572 [info ]:     Failed [  1.18s] model analytics_prod.dim_part_supplier (table)
+15:30:55.267557 [info ]: Finished running [  1.18s] model analytics_prod.dim_part_supplier [error]
+15:30:55.672673 [debug]: Query executed on node model.project.int_lineitem_enriched:
+create or replace   view analytics.analytics_prod.int_lineitem_enriched
+  
+  
+  
+  
+  as (
+    with lineitem as (
+
+    select *
+    from analytics.analytics_prod.stg_lineitem
+
+)
+
+, orders as (
+
+    select *
+    from analytics.analytics_prod.stg_orders
+
+)
+
+, customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, part as (
+
+    select *
+    from analytics.analytics_prod.stg_part
+
+)
+
+, part_supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_partsupp
+
+)
+
+
+, final as (
+    select
+        --grain keys
+        concat(l.order_key, '-', l.line_number) as lineitem_id
+        , o.order_key as order_key
+        , l.line_number as line_number
+
+        --foreign keys
+        , l.part_key as part_key
+        , l.supp_key as supp_key
+        , o.cust_key as cust_key
+
+        --order info
+        , o.order_date as order_date
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+        --metrics
+        , l.line_quantity as quantity
+        , p.part_retail_price as retail_price
+        , l.line_extended_price as gross_revenue
+        , l.line_discount as discount
+        , l.line_tax as tax
+        , ps.part_supp_supply_cost as supply_cost
+
+        --derived metrics
+        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
+        , l.line_extended_price * (1 - l.line_discount) as net_revenue
+        , l.line_extended_price * l.line_discount as discount_amount
+        , p.part_retail_price * l.line_quantity as expected_revenue
+        , l.line_quantity * ps.part_supp_supply_cost as total_cost
+        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
+
+
+    from lineitem l
+
+    left join orders o
+        using (order_key)
+
+    left join customer c
+        using (cust_key)
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+    left join supplier s
+        using(supp_key)
+
+    left join part p
+        using(part_key)
+
+    left join part_supplier ps
+        using(part_key, supp_key)
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:55.674665 [info ]:  Succeeded [  0.59s] model analytics_prod.int_lineitem_enriched (view)
+15:30:55.675635 [info ]: Finished running [  0.58s] model analytics_prod.int_lineitem_enriched [success]
+15:30:55.675755 [info ]: Started model analytics_prod.fact_lineitem
+15:30:55.675771 [debug]: Started rendering model analytics_prod.fact_lineitem
+15:30:55.678821 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+15:30:55.679229 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+15:30:55.679360 [info ]: Finished rendering [  8.74s] (16 nodes, 0 skipped, 0 errors)
+15:30:55.680118 [debug]: Started analyzing model analytics_prod.fact_lineitem
+15:30:55.680473 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+15:30:55.680606 [info ]: Finished analyzing [  8.74s] (16 nodes, 0 skipped, 0 errors)
+15:30:55.681091 [info ]: Started running model analytics_prod.fact_lineitem
+15:30:55.683014 [debug]: Writing runtime sql for node "model.project.fact_lineitem"
+15:30:56.335345 [debug]: Query executed on node model.project.dim_part:
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
+
+    --primary key
+    part_key as part_key
+
+    --attributes
+    , part_name as part_name
+    , part_mfgr as manufacturer
+    , part_size as part_size
+    , part_type  as part_type
+    , part_container part_container
+
+    --reference price
+    , part_retail_price as retail_price
+
+from analytics.analytics_prod.stg_part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:30:56.336923 [info ]:  Succeeded [  1.25s] model analytics_prod.dim_part (table)
+15:30:56.337178 [info ]: Finished running [  1.25s] model analytics_prod.dim_part [success]
+15:31:01.485338 [debug]: Query executed on node model.project.fact_lineitem:
+create or replace transient  table analytics.analytics_prod.fact_lineitem
+    
+    
+    
+    as (select *
+from analytics.analytics_prod.int_lineitem_enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.fact_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:31:01.486712 [info ]:  Succeeded [  5.81s] model analytics_prod.fact_lineitem (table)
+15:31:01.487217 [info ]: Finished running [  5.81s] model analytics_prod.fact_lineitem [success]
+15:31:01.487370 [info ]: Finished running [ 14.53s] (16 nodes, 0 skipped, 1 errors)
+15:31:01.518177 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:31:01.598931 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [16.1s]
+Processed: 16 models
+Summary: 16 total | 15 success | 1 error
+==================== 2026-04-22T15:32:12.881495Z | 019db5d2-03ce-7630-aac6-78dc2ca7014e ====================
+15:32:12.881627 [info ]: dbt-fusion 2.0.0-preview.171
+15:32:12.881932 [info ]: Started loading project
+15:32:12.884736 [info ]: Loading ~/.dbt/profiles.yml
+15:32:12.889450 [info ]: Loading packages.yml
+15:32:12.889819 [debug]:    Started loading packages
+15:32:12.903938 [debug]:     Loaded [  0.01s] packages
+15:32:12.904497 [info ]: Finished loading project [  0.02s]
+15:32:12.905007 [info ]: Started parsing
+15:32:12.948236 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:32:12.948546 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:32:12.948829 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:32:12.949078 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:32:12.951622 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:32:12.952156 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:32:12.952651 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:32:12.953024 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:32:12.953387 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:32:12.953768 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:32:12.954122 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:32:12.954516 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:32:12.954968 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:32:12.955340 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:32:12.955881 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:32:12.956435 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+15:32:12.956875 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:32:12.957225 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+15:32:12.957786 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:32:12.958316 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:32:12.970471 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:32:12.971338 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:32:12.972095 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:32:12.972919 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:32:12.973702 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:32:12.974458 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:32:12.975173 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:32:12.975943 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:32:12.980066 [info ]: Finished parsing [  0.08s]
+15:32:12.981623 [info ]: Started scheduling
+15:32:12.981929 [info ]: Finished scheduling [  0.00s]
+15:32:12.985621 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+15:32:12.985717 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:32:12.985785 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+15:32:12.985824 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+15:32:12.985841 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+15:32:12.985854 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+15:32:12.985867 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+15:32:12.985877 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+15:32:13.137171 [info ]: Started building task graph
+15:32:13.137547 [info ]: Finished building task graph [  0.00s]
+15:32:14.390942 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:14.391323 [info ]: Started rendering (16 nodes)
+15:32:14.391461 [info ]: Started model analytics_prod.stg_lineitem
+15:32:14.391479 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:32:14.391509 [info ]: Started model analytics_prod.stg_supplier
+15:32:14.391516 [debug]: Started rendering model analytics_prod.stg_supplier
+15:32:14.391526 [info ]: Started model analytics_prod.stg_partsupp
+15:32:14.391530 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:32:14.391537 [info ]: Started model analytics_prod.stg_part
+15:32:14.391543 [debug]: Started rendering model analytics_prod.stg_part
+15:32:14.391554 [info ]: Started model analytics_prod.stg_orders
+15:32:14.391559 [debug]: Started rendering model analytics_prod.stg_orders
+15:32:14.391584 [info ]: Started model analytics_prod.stg_region
+15:32:14.391590 [debug]: Started rendering model analytics_prod.stg_region
+15:32:14.391595 [info ]: Started model analytics_prod.stg_nation
+15:32:14.391600 [debug]: Started rendering model analytics_prod.stg_nation
+15:32:14.391605 [info ]: Started model analytics_prod.stg_customer
+15:32:14.391609 [debug]: Started rendering model analytics_prod.stg_customer
+15:32:14.398998 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+15:32:14.399274 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:32:14.399284 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+15:32:14.399365 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+15:32:14.399567 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+15:32:14.399685 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+15:32:14.399290 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+15:32:14.399847 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+15:32:14.399928 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+15:32:14.399816 [info ]: Started analyzing (16 nodes)
+15:32:14.400104 [debug]: Started analyzing model analytics_prod.stg_orders
+15:32:14.400171 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:32:14.400587 [debug]: Started analyzing model analytics_prod.stg_nation
+15:32:14.400624 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+15:32:14.400971 [debug]: Started analyzing model analytics_prod.stg_customer
+15:32:14.401014 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:32:14.401448 [debug]: Started analyzing model analytics_prod.stg_region
+15:32:14.401471 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+15:32:14.401752 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:32:14.401802 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+15:32:14.402160 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:32:14.402209 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+15:32:14.402481 [debug]: Started analyzing model analytics_prod.stg_part
+15:32:14.402502 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+15:32:14.403051 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:32:14.411727 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+15:32:14.412044 [info ]: Started running (16 nodes)
+15:32:14.412149 [info ]: Started running model analytics_prod.stg_region
+15:32:14.412185 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+15:32:14.412863 [info ]: Started running model analytics_prod.stg_customer
+15:32:14.412903 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_supplier [success]
+15:32:14.413239 [info ]: Started running model analytics_prod.stg_supplier
+15:32:14.413278 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+15:32:14.413851 [info ]: Started running model analytics_prod.stg_partsupp
+15:32:14.413890 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_lineitem [success]
+15:32:14.414250 [info ]: Started running model analytics_prod.stg_lineitem
+15:32:14.414289 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+15:32:14.414609 [info ]: Started running model analytics_prod.stg_orders
+15:32:14.414646 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_nation [success]
+15:32:14.414971 [info ]: Started running model analytics_prod.stg_nation
+15:32:14.415011 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+15:32:14.415285 [info ]: Started running model analytics_prod.stg_part
+15:32:15.497701 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:15.499693 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:32:16.455463 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:16.457522 [debug]: Writing runtime sql for node "model.project.stg_region"
+15:32:16.727490 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_account_balance
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:16.728684 [info ]:  Succeeded [  2.33s] model analytics_prod.stg_customer (table)
+15:32:16.729378 [info ]: Finished running [  2.32s] model analytics_prod.stg_customer [success]
+15:32:17.347654 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:17.349597 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+15:32:17.395106 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+)
+
+, final as (
+    select
+        r_regionkey as region_key
+        , r_name as region_name
+        , r_comment as region_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:17.396660 [info ]:  Succeeded [  3.00s] model analytics_prod.stg_region (table)
+15:32:17.397073 [info ]: Finished running [  2.98s] model analytics_prod.stg_region [success]
+15:32:18.115446 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+)
+
+, final as (
+    select
+        s_suppkey as supp_key
+        , s_nationkey as nation_key
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:18.116476 [info ]:  Succeeded [  3.72s] model analytics_prod.stg_supplier (table)
+15:32:18.116933 [info ]: Finished running [  3.70s] model analytics_prod.stg_supplier [success]
+15:32:18.307879 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:18.309803 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+15:32:19.302694 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:19.304596 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+15:32:19.638780 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:19.640060 [debug]: Writing runtime sql for node "model.project.stg_orders"
+15:32:19.939547 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:19.941850 [debug]: Writing runtime sql for node "model.project.stg_nation"
+15:32:20.157167 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:32:20.159272 [debug]: Writing runtime sql for node "model.project.stg_part"
+15:32:20.629633 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+)
+
+, final as (
+    select
+        n_nationkey as nation_key
+        , n_regionkey as region_key
+        , n_name as nation_name
+        , n_comment as nation_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:20.631384 [info ]:  Succeeded [  6.24s] model analytics_prod.stg_nation (table)
+15:32:20.631882 [info ]: Finished running [  6.22s] model analytics_prod.stg_nation [success]
+15:32:20.632159 [info ]: Started model analytics_prod.dim_supplier
+15:32:20.632174 [debug]: Started rendering model analytics_prod.dim_supplier
+15:32:20.632192 [info ]: Started model analytics_prod.dim_customer
+15:32:20.632197 [debug]: Started rendering model analytics_prod.dim_customer
+15:32:20.632204 [info ]: Started model analytics_prod.dim_location
+15:32:20.632210 [debug]: Started rendering model analytics_prod.dim_location
+15:32:20.634657 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+15:32:20.634904 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_location [success]
+15:32:20.635058 [debug]: Started analyzing model analytics_prod.dim_location
+15:32:20.635361 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+15:32:20.635497 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+15:32:20.635531 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_customer [success]
+15:32:20.635653 [debug]: Started analyzing model analytics_prod.dim_customer
+15:32:20.635671 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+15:32:20.635882 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:32:20.638192 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+15:32:20.638341 [info ]: Started running model analytics_prod.dim_location
+15:32:20.638371 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:32:20.638464 [info ]: Started running model analytics_prod.dim_supplier
+15:32:20.638479 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+15:32:20.638553 [info ]: Started running model analytics_prod.dim_customer
+15:32:20.640266 [debug]: Writing runtime sql for node "model.project.dim_supplier"
+15:32:20.640288 [debug]: Writing runtime sql for node "model.project.dim_location"
+15:32:20.640793 [debug]: Writing runtime sql for node "model.project.dim_customer"
+15:32:20.753125 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+)
+
+, final as (
+    select
+        ps_partkey as part_key
+        , ps_suppkey as supp_key
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:20.754200 [info ]:  Succeeded [  6.36s] model analytics_prod.stg_partsupp (table)
+15:32:20.754653 [info ]: Finished running [  6.34s] model analytics_prod.stg_partsupp [success]
+15:32:20.754964 [info ]: Started model analytics_prod.dim_part_supplier
+15:32:20.754980 [debug]: Started rendering model analytics_prod.dim_part_supplier
+15:32:20.756834 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+15:32:20.757006 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:32:20.757299 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+15:32:20.757552 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:32:20.757722 [info ]: Started running model analytics_prod.dim_part_supplier
+15:32:20.761011 [debug]: Writing runtime sql for node "model.project.dim_part_supplier"
+15:32:20.887152 [debug]: Query executed on node model.project.dim_part_supplier:
+create or replace transient  table analytics.analytics_prod.dim_part_supplier
+    
+    
+    
+    as (select
+    part_key
+    , part_supp_key
+    , part_supp_supply_cost as supply_cost
+from analytics.analytics_prod.stg_partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:21.271976 [debug]: Query executed on node model.project.dim_location:
+create or replace transient  table analytics.analytics_prod.dim_location
+    
+    
+    
+    as (with nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+
+        --primary key
+        n.nation_key
+
+        --attributes
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from nation n
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_location", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:21.273464 [info ]:  Succeeded [  0.64s] model analytics_prod.dim_location (table)
+15:32:21.273956 [info ]: Finished running [  0.64s] model analytics_prod.dim_location [success]
+15:32:21.386852 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+)
+
+, final as (
+    select
+        o_orderkey as order_key
+        , o_orderdate as order_date
+        , o_orderstatus as order_status
+        , o_orderpriority as order_priority
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
+        , o_custkey as cust_key
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:21.387981 [info ]:  Succeeded [  6.99s] model analytics_prod.stg_orders (table)
+15:32:21.389565 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+)
+
+, final as (
+    select
+        p_partkey as part_key
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:21.389048 [info ]: Finished running [  6.97s] model analytics_prod.stg_orders [success]
+15:32:21.389973 [info ]: Started model analytics_prod.dim_date
+15:32:21.390043 [debug]: Started rendering model analytics_prod.dim_date
+15:32:21.390553 [info ]:  Succeeded [  7.00s] model analytics_prod.stg_part (table)
+15:32:21.390958 [info ]: Finished running [  6.98s] model analytics_prod.stg_part [success]
+15:32:21.391030 [info ]: Started model analytics_prod.dim_part
+15:32:21.391045 [debug]: Started rendering model analytics_prod.dim_part
+15:32:21.392837 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:32:21.393000 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:32:21.393088 [debug]: Started analyzing model analytics_prod.dim_date
+15:32:21.393442 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+15:32:21.393615 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:32:21.393685 [debug]: Started analyzing model analytics_prod.dim_part
+15:32:21.394779 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:32:21.395047 [info ]: Started running model analytics_prod.dim_part
+15:32:21.398302 [debug]: Writing runtime sql for node "model.project.dim_part"
+15:32:21.398784 [debug]: Finished analyzing [  0.01s] model analytics_prod.dim_date [success]
+15:32:21.398916 [info ]: Started running model analytics_prod.dim_date
+15:32:21.400814 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:32:21.510472 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+)
+
+, final as (
+    select
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
+        , l_orderkey as order_key
+        , l_partkey as part_key
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
+        , l_suppkey as supp_key
+        , l_tax as line_tax
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:21.511996 [info ]:  Succeeded [  7.12s] model analytics_prod.stg_lineitem (table)
+15:32:21.512453 [info ]: Finished running [  7.10s] model analytics_prod.stg_lineitem [success]
+15:32:21.512810 [info ]: Started model analytics_prod.int_lineitem_enriched
+15:32:21.512827 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+15:32:21.514995 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+15:32:21.515096 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+15:32:21.515159 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+15:32:21.522493 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+15:32:21.522610 [info ]: Started running model analytics_prod.int_lineitem_enriched
+15:32:21.524389 [debug]: Writing runtime sql for node "model.project.int_lineitem_enriched"
+15:32:21.765942 [debug]: Query executed on node model.project.dim_supplier:
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+    
+)
+
+, final as (
+    select
+
+        --primary key
+        s.supp_key
+
+        --attributes
+        , s.supp_name as supplier_name
+        , s.supp_address as supplier_address
+        , s.supp_phone as supplier_phone
+        , s.supp_acctbal as supplier_account_balance
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from supplier s
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:21.767035 [info ]:  Succeeded [  1.13s] model analytics_prod.dim_supplier (table)
+15:32:21.767614 [info ]: Finished running [  1.13s] model analytics_prod.dim_supplier [success]
+15:32:21.887854 [error]: dbt1302: Database Error in model dim_part_supplier (models\s3_marts\dim_part_supplier.sql)
+  [Snowflake] 000904 (42000): SQL compilation error: error line 7 at position 6
+  invalid identifier 'PART_SUPP_KEY'
+  (in compiled\models\s3_marts\dim_part_supplier.sql:1:14)
+15:32:21.887960 [info ]:     Failed [  1.13s] model analytics_prod.dim_part_supplier (table)
+15:32:21.888807 [info ]: Finished running [  1.13s] model analytics_prod.dim_part_supplier [error]
+15:32:22.013670 [debug]: Query executed on node model.project.dim_customer:
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+        --primary key
+        c.cust_key as customer_key
+
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from customer c
+    
+    left join nation n
+        using(nation_key)
+    
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:22.014763 [info ]:  Succeeded [  1.38s] model analytics_prod.dim_customer (table)
+15:32:22.015413 [info ]: Finished running [  1.38s] model analytics_prod.dim_customer [success]
+15:32:22.034535 [debug]: Query executed on node model.project.int_lineitem_enriched:
+create or replace   view analytics.analytics_prod.int_lineitem_enriched
+  
+  
+  
+  
+  as (
+    with lineitem as (
+
+    select *
+    from analytics.analytics_prod.stg_lineitem
+
+)
+
+, orders as (
+
+    select *
+    from analytics.analytics_prod.stg_orders
+
+)
+
+, customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, part as (
+
+    select *
+    from analytics.analytics_prod.stg_part
+
+)
+
+, part_supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_partsupp
+
+)
+
+
+, final as (
+    select
+        --grain keys
+        concat(l.order_key, '-', l.line_number) as lineitem_id
+        , o.order_key as order_key
+        , l.line_number as line_number
+
+        --foreign keys
+        , l.part_key as part_key
+        , l.supp_key as supp_key
+        , o.cust_key as cust_key
+
+        --order info
+        , o.order_date as order_date
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+        --metrics
+        , l.line_quantity as quantity
+        , p.part_retail_price as retail_price
+        , l.line_extended_price as gross_revenue
+        , l.line_discount as discount
+        , l.line_tax as tax
+        , ps.part_supp_supply_cost as supply_cost
+
+        --derived metrics
+        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
+        , l.line_extended_price * (1 - l.line_discount) as net_revenue
+        , l.line_extended_price * l.line_discount as discount_amount
+        , p.part_retail_price * l.line_quantity as expected_revenue
+        , l.line_quantity * ps.part_supp_supply_cost as total_cost
+        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
+
+
+    from lineitem l
+
+    left join orders o
+        using (order_key)
+
+    left join customer c
+        using (cust_key)
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+    left join supplier s
+        using(supp_key)
+
+    left join part p
+        using(part_key)
+
+    left join part_supplier ps
+        using(part_key, supp_key)
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:22.035804 [info ]:  Succeeded [  0.52s] model analytics_prod.int_lineitem_enriched (view)
+15:32:22.036278 [info ]: Finished running [  0.51s] model analytics_prod.int_lineitem_enriched [success]
+15:32:22.036537 [info ]: Started model analytics_prod.fact_lineitem
+15:32:22.036556 [debug]: Started rendering model analytics_prod.fact_lineitem
+15:32:22.038149 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+15:32:22.038231 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+15:32:22.038294 [info ]: Finished rendering [  7.65s] (16 nodes, 0 skipped, 0 errors)
+15:32:22.038774 [debug]: Started analyzing model analytics_prod.fact_lineitem
+15:32:22.039021 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+15:32:22.039069 [info ]: Finished analyzing [  7.64s] (16 nodes, 0 skipped, 0 errors)
+15:32:22.039375 [info ]: Started running model analytics_prod.fact_lineitem
+15:32:22.041072 [debug]: Writing runtime sql for node "model.project.fact_lineitem"
+15:32:22.288371 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:22.289378 [info ]:  Succeeded [  0.90s] model analytics_prod.dim_date (table)
+15:32:22.289745 [info ]: Finished running [  0.89s] model analytics_prod.dim_date [success]
+15:32:22.535156 [debug]: Query executed on node model.project.dim_part:
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
+
+    --primary key
+    part_key as part_key
+
+    --attributes
+    , part_name as part_name
+    , part_mfgr as manufacturer
+    , part_size as part_size
+    , part_type  as part_type
+    , part_container part_container
+
+    --reference price
+    , part_retail_price as retail_price
+
+from analytics.analytics_prod.stg_part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:22.536277 [info ]:  Succeeded [  1.14s] model analytics_prod.dim_part (table)
+15:32:22.536636 [info ]: Finished running [  1.14s] model analytics_prod.dim_part [success]
+15:32:27.000057 [debug]: Query executed on node model.project.fact_lineitem:
+create or replace transient  table analytics.analytics_prod.fact_lineitem
+    
+    
+    
+    as (select *
+from analytics.analytics_prod.int_lineitem_enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.fact_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:32:27.001093 [info ]:  Succeeded [  4.96s] model analytics_prod.fact_lineitem (table)
+15:32:27.001528 [info ]: Finished running [  4.96s] model analytics_prod.fact_lineitem [success]
+15:32:27.001653 [info ]: Finished running [ 12.59s] (16 nodes, 0 skipped, 1 errors)
+15:32:27.024989 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:32:27.079997 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [14.2s]
+Processed: 16 models
+Summary: 16 total | 15 success | 1 error
+==================== 2026-04-22T15:33:00.268772Z | 019db5d2-bcea-7f91-bc18-7c4979d5c163 ====================
+15:33:00.268870 [info ]: dbt-fusion 2.0.0-preview.171
+15:33:00.269245 [info ]: Started loading project
+15:33:00.272068 [info ]: Loading ~/.dbt/profiles.yml
+15:33:00.277914 [info ]: Loading packages.yml
+15:33:00.278289 [debug]:    Started loading packages
+15:33:00.286019 [debug]:     Loaded [  0.01s] packages
+15:33:00.286627 [info ]: Finished loading project [  0.02s]
+15:33:00.287151 [info ]: Started parsing
+15:33:00.325975 [debug]: Finished parsing models\s1_staging\_scr_tpch.yml [  0.00s]
+15:33:00.326438 [debug]: Finished parsing models\s1_staging\_stg_tpch.yml [  0.00s]
+15:33:00.326826 [debug]: Finished parsing models\s2_intermediate\_int_tpch.yml [  0.00s]
+15:33:00.327312 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:33:00.329744 [debug]: Finished parsing models\s1_staging\stg_customer.sql [  0.00s]
+15:33:00.330220 [debug]: Finished parsing models\s1_staging\stg_lineitem.sql [  0.00s]
+15:33:00.330673 [debug]: Finished parsing models\s1_staging\stg_nation.sql [  0.00s]
+15:33:00.331124 [debug]: Finished parsing models\s1_staging\stg_orders.sql [  0.00s]
+15:33:00.331527 [debug]: Finished parsing models\s1_staging\stg_part.sql [  0.00s]
+15:33:00.331903 [debug]: Finished parsing models\s1_staging\stg_partsupp.sql [  0.00s]
+15:33:00.332276 [debug]: Finished parsing models\s1_staging\stg_region.sql [  0.00s]
+15:33:00.332644 [debug]: Finished parsing models\s1_staging\stg_supplier.sql [  0.00s]
+15:33:00.333078 [debug]: Finished parsing models\s2_intermediate\int_lineitem_enriched.sql [  0.00s]
+15:33:00.333463 [debug]: Finished parsing models\s3_marts\dim_customer.sql [  0.00s]
+15:33:00.333940 [debug]: Finished parsing models\s3_marts\dim_date.sql [  0.00s]
+15:33:00.334333 [debug]: Finished parsing models\s3_marts\dim_location.sql [  0.00s]
+15:33:00.334676 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:33:00.335238 [debug]: Finished parsing models\s3_marts\dim_part_supplier.sql [  0.00s]
+15:33:00.335750 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:33:00.336130 [debug]: Finished parsing models\s3_marts\fact_lineitem.sql [  0.00s]
+15:33:00.346258 [debug]: Finished parsing target\generic_tests\unique_dim_part_part_key.sql [  0.00s]
+15:33:00.347602 [debug]: Finished parsing target\generic_tests\not_null_dim_part_part_key.sql [  0.00s]
+15:33:00.348292 [debug]: Finished parsing target\generic_tests\unique_dim_supplier_supp_key.sql [  0.00s]
+15:33:00.348791 [debug]: Finished parsing target\generic_tests\not_null_dim_supplier_supp_key.sql [  0.00s]
+15:33:00.349199 [debug]: Finished parsing target\generic_tests\unique_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:33:00.350296 [debug]: Finished parsing target\generic_tests\not_null_int_lineitem_enriched_lineitem_id.sql [  0.00s]
+15:33:00.350899 [debug]: Finished parsing target\generic_tests\unique_stg_customer_cust_key.sql [  0.00s]
+15:33:00.351324 [debug]: Finished parsing target\generic_tests\not_null_stg_customer_cust_key.sql [  0.00s]
+15:33:00.356389 [info ]: Finished parsing [  0.07s]
+15:33:00.358446 [info ]: Started scheduling
+15:33:00.358702 [info ]: Finished scheduling [  0.00s]
+15:33:00.362699 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "ORDERS" }) and interval: None
+15:33:00.362783 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "CUSTOMER" }) and interval: None
+15:33:00.362802 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PARTSUPP" }) and interval: None
+15:33:00.362818 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "PART" }) and interval: None
+15:33:00.362834 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "LINEITEM" }) and interval: None
+15:33:00.362847 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "REGION" }) and interval: None
+15:33:00.362858 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "SUPPLIER" }) and interval: None
+15:33:00.362868 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SNOWFLAKE_SAMPLE_DATA", schema: "TPCH_SF1", table: "NATION" }) and interval: None
+15:33:00.535024 [info ]: Started building task graph
+15:33:00.535582 [info ]: Finished building task graph [  0.00s]
+15:33:01.651938 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:01.652374 [info ]: Started rendering (16 nodes)
+15:33:01.652607 [info ]: Started model analytics_prod.stg_lineitem
+15:33:01.652621 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:33:01.652648 [info ]: Started model analytics_prod.stg_supplier
+15:33:01.652653 [debug]: Started rendering model analytics_prod.stg_supplier
+15:33:01.652659 [info ]: Started model analytics_prod.stg_partsupp
+15:33:01.652664 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:33:01.652670 [info ]: Started model analytics_prod.stg_part
+15:33:01.652677 [debug]: Started rendering model analytics_prod.stg_part
+15:33:01.652684 [info ]: Started model analytics_prod.stg_orders
+15:33:01.652687 [debug]: Started rendering model analytics_prod.stg_orders
+15:33:01.652694 [info ]: Started model analytics_prod.stg_region
+15:33:01.652697 [debug]: Started rendering model analytics_prod.stg_region
+15:33:01.652704 [info ]: Started model analytics_prod.stg_nation
+15:33:01.652709 [debug]: Started rendering model analytics_prod.stg_nation
+15:33:01.652717 [info ]: Started model analytics_prod.stg_customer
+15:33:01.652720 [debug]: Started rendering model analytics_prod.stg_customer
+15:33:01.659899 [debug]: Compiled SQL for node model.project.stg_part at target\compiled\models\s1_staging\stg_part.sql
+15:33:01.660398 [debug]: Compiled SQL for node model.project.stg_lineitem at target\compiled\models\s1_staging\stg_lineitem.sql
+15:33:01.660576 [debug]: Compiled SQL for node model.project.stg_orders at target\compiled\models\s1_staging\stg_orders.sql
+15:33:01.660371 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_part [success]
+15:33:01.660895 [debug]: Compiled SQL for node model.project.stg_customer at target\compiled\models\s1_staging\stg_customer.sql
+15:33:01.661012 [debug]: Compiled SQL for node model.project.stg_nation at target\compiled\models\s1_staging\stg_nation.sql
+15:33:01.660989 [debug]: Compiled SQL for node model.project.stg_region at target\compiled\models\s1_staging\stg_region.sql
+15:33:01.661051 [debug]: Compiled SQL for node model.project.stg_partsupp at target\compiled\models\s1_staging\stg_partsupp.sql
+15:33:01.661161 [debug]: Compiled SQL for node model.project.stg_supplier at target\compiled\models\s1_staging\stg_supplier.sql
+15:33:01.660939 [info ]: Started analyzing (16 nodes)
+15:33:01.661795 [debug]: Started analyzing model analytics_prod.stg_part
+15:33:01.661858 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_lineitem [success]
+15:33:01.662155 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:33:01.662206 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_orders [success]
+15:33:01.662499 [debug]: Started analyzing model analytics_prod.stg_orders
+15:33:01.662522 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_customer [success]
+15:33:01.662770 [debug]: Started analyzing model analytics_prod.stg_customer
+15:33:01.662803 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:33:01.662967 [debug]: Started analyzing model analytics_prod.stg_nation
+15:33:01.662981 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_partsupp [success]
+15:33:01.663061 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:33:01.663072 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:33:01.663447 [debug]: Started analyzing model analytics_prod.stg_region
+15:33:01.663467 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_supplier [success]
+15:33:01.663966 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:33:01.671599 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_orders [success]
+15:33:01.671983 [info ]: Started running (16 nodes)
+15:33:01.672124 [info ]: Started running model analytics_prod.stg_orders
+15:33:01.672155 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_part [success]
+15:33:01.672433 [info ]: Started running model analytics_prod.stg_part
+15:33:01.672467 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_customer [success]
+15:33:01.672811 [info ]: Started running model analytics_prod.stg_customer
+15:33:01.672845 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_nation [success]
+15:33:01.673276 [info ]: Started running model analytics_prod.stg_nation
+15:33:01.673317 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_partsupp [success]
+15:33:01.673661 [info ]: Started running model analytics_prod.stg_partsupp
+15:33:01.673698 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_region [success]
+15:33:01.674064 [info ]: Started running model analytics_prod.stg_region
+15:33:01.674102 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_lineitem [success]
+15:33:01.674473 [info ]: Started running model analytics_prod.stg_lineitem
+15:33:01.674519 [debug]: Finished analyzing [  0.01s] model analytics_prod.stg_supplier [success]
+15:33:01.675137 [info ]: Started running model analytics_prod.stg_supplier
+15:33:02.121093 [debug]: Query executed on node model.project.stg_orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:02.122535 [debug]: Writing runtime sql for node "model.project.stg_orders"
+15:33:03.065455 [debug]: Query executed on node model.project.stg_part:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:03.066759 [debug]: Writing runtime sql for node "model.project.stg_part"
+15:33:03.407843 [debug]: Query executed on node model.project.stg_customer:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:03.410074 [debug]: Writing runtime sql for node "model.project.stg_customer"
+15:33:03.544594 [debug]: Query executed on node model.project.stg_orders:
+create or replace transient  table analytics.analytics_prod.stg_orders
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+)
+
+, final as (
+    select
+        o_orderkey as order_key
+        , o_orderdate as order_date
+        , o_orderstatus as order_status
+        , o_orderpriority as order_priority
+        , o_shippriority as order_ship_priority
+        , o_clerk as order_clerk
+        , o_custkey as cust_key
+        , o_totalprice as order_total_price
+        , o_comment as order_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_orders", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:03.545870 [info ]:  Succeeded [  1.89s] model analytics_prod.stg_orders (table)
+15:33:03.546898 [info ]: Finished running [  1.87s] model analytics_prod.stg_orders [success]
+15:33:03.547222 [info ]: Started model analytics_prod.dim_date
+15:33:03.547243 [debug]: Started rendering model analytics_prod.dim_date
+15:33:03.548925 [debug]: Compiled SQL for node model.project.dim_date at target\compiled\models\s3_marts\dim_date.sql
+15:33:03.549077 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_date [success]
+15:33:03.549301 [debug]: Started analyzing model analytics_prod.dim_date
+15:33:03.552584 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_date [success]
+15:33:03.552666 [info ]: Started running model analytics_prod.dim_date
+15:33:03.554495 [debug]: Writing runtime sql for node "model.project.dim_date"
+15:33:04.296168 [debug]: Query executed on node model.project.stg_part:
+create or replace transient  table analytics.analytics_prod.stg_part
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.part
+)
+
+, final as (
+    select
+        p_partkey as part_key
+        , p_size as part_size
+        , p_type as part_type
+        , p_mfgr as part_mfgr
+        , p_name as part_name
+        , p_container as part_container
+        , p_retailprice as part_retail_price
+        , p_comment as part_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:04.297637 [info ]:  Succeeded [  2.64s] model analytics_prod.stg_part (table)
+15:33:04.298088 [info ]: Finished running [  2.63s] model analytics_prod.stg_part [success]
+15:33:04.298339 [info ]: Started model analytics_prod.dim_part
+15:33:04.298359 [debug]: Started rendering model analytics_prod.dim_part
+15:33:04.300127 [debug]: Compiled SQL for node model.project.dim_part at target\compiled\models\s3_marts\dim_part.sql
+15:33:04.300208 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:33:04.300318 [debug]: Started analyzing model analytics_prod.dim_part
+15:33:04.300835 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:33:04.300904 [info ]: Started running model analytics_prod.dim_part
+15:33:04.302533 [debug]: Writing runtime sql for node "model.project.dim_part"
+15:33:04.382626 [debug]: Query executed on node model.project.dim_date:
+create or replace transient  table analytics.analytics_prod.dim_date
+    
+    
+    
+    as (select
+
+    order_date as date
+
+    --basics
+    , extract(year from order_date) as year
+    , extract(month from order_date) as month
+    , extract(day from order_date) as day
+
+    --week
+    , extract(week from order_date) as week
+    , extract(dayofweek from order_date) as day_of_week
+
+    --others
+    , date_trunc('month', order_date) as month_start
+    , date_trunc('year', order_date) as year_start
+
+from analytics.analytics_prod.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_date", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:04.384087 [info ]:  Succeeded [  0.83s] model analytics_prod.dim_date (table)
+15:33:04.384588 [info ]: Finished running [  0.83s] model analytics_prod.dim_date [success]
+15:33:04.414193 [debug]: Query executed on node model.project.stg_nation:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:04.415620 [debug]: Writing runtime sql for node "model.project.stg_nation"
+15:33:05.082491 [debug]: Query executed on node model.project.dim_part:
+create or replace transient  table analytics.analytics_prod.dim_part
+    
+    
+    
+    as (select
+
+    --primary key
+    part_key as part_key
+
+    --attributes
+    , part_name as part_name
+    , part_mfgr as manufacturer
+    , part_size as part_size
+    , part_type  as part_type
+    , part_container part_container
+
+    --reference price
+    , part_retail_price as retail_price
+
+from analytics.analytics_prod.stg_part
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:05.083561 [info ]:  Succeeded [  0.78s] model analytics_prod.dim_part (table)
+15:33:05.084017 [info ]: Finished running [  0.78s] model analytics_prod.dim_part [success]
+15:33:05.146008 [debug]: Query executed on node model.project.stg_nation:
+create or replace transient  table analytics.analytics_prod.stg_nation
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.nation
+)
+
+, final as (
+    select
+        n_nationkey as nation_key
+        , n_regionkey as region_key
+        , n_name as nation_name
+        , n_comment as nation_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_nation", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:05.147531 [info ]:  Succeeded [  3.49s] model analytics_prod.stg_nation (table)
+15:33:05.148165 [info ]: Finished running [  3.47s] model analytics_prod.stg_nation [success]
+15:33:05.312847 [debug]: Query executed on node model.project.stg_customer:
+create or replace transient  table analytics.analytics_prod.stg_customer
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer
+)
+
+, final as (
+    select
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_account_balance
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:05.314626 [info ]:  Succeeded [  3.66s] model analytics_prod.stg_customer (table)
+15:33:05.315261 [info ]: Finished running [  3.64s] model analytics_prod.stg_customer [success]
+15:33:05.362401 [debug]: Query executed on node model.project.stg_partsupp:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:05.364245 [debug]: Writing runtime sql for node "model.project.stg_partsupp"
+15:33:06.291187 [debug]: Query executed on node model.project.stg_region:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:06.292973 [debug]: Writing runtime sql for node "model.project.stg_region"
+15:33:07.054579 [debug]: Query executed on node model.project.stg_partsupp:
+create or replace transient  table analytics.analytics_prod.stg_partsupp
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.partsupp
+)
+
+, final as (
+    select
+        ps_partkey as part_key
+        , ps_suppkey as supp_key
+        , ps_availqty as part_supp_avail_qty
+        , ps_supplycost as part_supp_supply_cost
+        , ps_comment as part_supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_partsupp", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:07.056049 [info ]:  Succeeded [  5.40s] model analytics_prod.stg_partsupp (table)
+15:33:07.057188 [info ]: Finished running [  5.38s] model analytics_prod.stg_partsupp [success]
+15:33:07.057716 [info ]: Started model analytics_prod.dim_part_supplier
+15:33:07.057739 [debug]: Started rendering model analytics_prod.dim_part_supplier
+15:33:07.059873 [debug]: Compiled SQL for node model.project.dim_part_supplier at target\compiled\models\s3_marts\dim_part_supplier.sql
+15:33:07.059987 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:33:07.060107 [debug]: Started analyzing model analytics_prod.dim_part_supplier
+15:33:07.060369 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part_supplier [success]
+15:33:07.060431 [info ]: Started running model analytics_prod.dim_part_supplier
+15:33:07.062096 [debug]: Writing runtime sql for node "model.project.dim_part_supplier"
+15:33:07.130822 [debug]: Query executed on node model.project.stg_region:
+create or replace transient  table analytics.analytics_prod.stg_region
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.region
+)
+
+, final as (
+    select
+        r_regionkey as region_key
+        , r_name as region_name
+        , r_comment as region_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_region", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:07.132292 [info ]:  Succeeded [  5.48s] model analytics_prod.stg_region (table)
+15:33:07.133272 [info ]: Finished running [  5.46s] model analytics_prod.stg_region [success]
+15:33:07.133584 [info ]: Started model analytics_prod.dim_customer
+15:33:07.133613 [debug]: Started rendering model analytics_prod.dim_customer
+15:33:07.133656 [info ]: Started model analytics_prod.dim_location
+15:33:07.133679 [debug]: Started rendering model analytics_prod.dim_location
+15:33:07.135777 [debug]: Compiled SQL for node model.project.dim_location at target\compiled\models\s3_marts\dim_location.sql
+15:33:07.136031 [debug]: Compiled SQL for node model.project.dim_customer at target\compiled\models\s3_marts\dim_customer.sql
+15:33:07.135875 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_location [success]
+15:33:07.136235 [debug]: Started analyzing model analytics_prod.dim_location
+15:33:07.136262 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_customer [success]
+15:33:07.136454 [debug]: Started analyzing model analytics_prod.dim_customer
+15:33:07.139213 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_location [success]
+15:33:07.139397 [info ]: Started running model analytics_prod.dim_location
+15:33:07.139419 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+15:33:07.139768 [info ]: Started running model analytics_prod.dim_customer
+15:33:07.142059 [debug]: Writing runtime sql for node "model.project.dim_location"
+15:33:07.142281 [debug]: Writing runtime sql for node "model.project.dim_customer"
+15:33:07.233025 [debug]: Query executed on node model.project.stg_lineitem:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:07.235153 [debug]: Writing runtime sql for node "model.project.stg_lineitem"
+15:33:07.900243 [debug]: Query executed on node model.project.dim_location:
+create or replace transient  table analytics.analytics_prod.dim_location
+    
+    
+    
+    as (with nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+
+        --primary key
+        n.nation_key
+
+        --attributes
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from nation n
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_location", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:07.901223 [info ]:  Succeeded [  0.77s] model analytics_prod.dim_location (table)
+15:33:07.901589 [info ]: Finished running [  0.76s] model analytics_prod.dim_location [success]
+15:33:08.095538 [debug]: Query executed on node model.project.dim_customer:
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, final as (
+
+    select
+        --primary key
+        c.cust_key as customer_key
+
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
+        , c.cust_mktsegment as market_segment 
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from customer c
+    
+    left join nation n
+        using(nation_key)
+    
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:08.097029 [info ]:  Succeeded [  0.96s] model analytics_prod.dim_customer (table)
+15:33:08.097632 [info ]: Finished running [  0.96s] model analytics_prod.dim_customer [success]
+15:33:08.137587 [debug]: Query executed on node model.project.stg_supplier:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000
+15:33:08.139501 [debug]: Writing runtime sql for node "model.project.stg_supplier"
+15:33:08.239671 [debug]: Query executed on node model.project.dim_part_supplier:
+create or replace transient  table analytics.analytics_prod.dim_part_supplier
+    
+    
+    
+    as (select
+    part_key
+    , supp_key
+    , part_supp_supply_cost as supply_cost
+from analytics.analytics_prod.stg_partsupp
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_part_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:08.240931 [info ]:  Succeeded [  1.18s] model analytics_prod.dim_part_supplier (table)
+15:33:08.242372 [info ]: Finished running [  1.18s] model analytics_prod.dim_part_supplier [success]
+15:33:09.010597 [debug]: Query executed on node model.project.stg_supplier:
+create or replace transient  table analytics.analytics_prod.stg_supplier
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier
+)
+
+, final as (
+    select
+        s_suppkey as supp_key
+        , s_nationkey as nation_key
+        , s_acctbal as supp_acctbal
+        , s_name as supp_name
+        , s_address as supp_address
+        , s_phone as supp_phone
+        , s_comment as supp_comment
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:09.011794 [info ]:  Succeeded [  7.36s] model analytics_prod.stg_supplier (table)
+15:33:09.012511 [info ]: Finished running [  7.34s] model analytics_prod.stg_supplier [success]
+15:33:09.012590 [info ]: Started model analytics_prod.dim_supplier
+15:33:09.012605 [debug]: Started rendering model analytics_prod.dim_supplier
+15:33:09.014472 [debug]: Compiled SQL for node model.project.dim_supplier at target\compiled\models\s3_marts\dim_supplier.sql
+15:33:09.014592 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+15:33:09.014711 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:33:09.015422 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:33:09.015491 [info ]: Started running model analytics_prod.dim_supplier
+15:33:09.017300 [debug]: Writing runtime sql for node "model.project.dim_supplier"
+15:33:09.920671 [debug]: Query executed on node model.project.dim_supplier:
+create or replace transient  table analytics.analytics_prod.dim_supplier
+    
+    
+    
+    as (with supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+    
+)
+
+, final as (
+    select
+
+        --primary key
+        s.supp_key
+
+        --attributes
+        , s.supp_name as supplier_name
+        , s.supp_address as supplier_address
+        , s.supp_phone as supplier_phone
+        , s.supp_acctbal as supplier_account_balance
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+    from supplier s
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_supplier", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:09.922042 [info ]:  Succeeded [  0.91s] model analytics_prod.dim_supplier (table)
+15:33:09.922472 [info ]: Finished running [  0.91s] model analytics_prod.dim_supplier [success]
+15:33:10.253019 [debug]: Query executed on node model.project.stg_lineitem:
+create or replace transient  table analytics.analytics_prod.stg_lineitem
+    
+    
+    
+    as (with source as (
+    select *
+    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.lineitem
+)
+
+, final as (
+    select
+        l_receiptdate as line_receipt_date
+        , l_shipdate as line_ship_date
+        , l_linenumber as line_number
+        , l_linestatus as line_status
+        , l_orderkey as order_key
+        , l_partkey as part_key
+        , l_discount as line_discount
+        , l_extendedprice as line_extended_price
+        , l_quantity as line_quantity
+        , l_returnflag as line_return_flag
+        , l_shipmode as line_ship_mode
+        , l_suppkey as supp_key
+        , l_tax as line_tax
+    from source
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.stg_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:10.254229 [info ]:  Succeeded [  8.60s] model analytics_prod.stg_lineitem (table)
+15:33:10.254823 [info ]: Finished running [  8.58s] model analytics_prod.stg_lineitem [success]
+15:33:10.255169 [info ]: Started model analytics_prod.int_lineitem_enriched
+15:33:10.255186 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+15:33:10.257225 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+15:33:10.257336 [debug]: Finished rendering [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+15:33:10.257473 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+15:33:10.266549 [debug]: Finished analyzing [  0.01s] model analytics_prod.int_lineitem_enriched [success]
+15:33:10.266686 [info ]: Started running model analytics_prod.int_lineitem_enriched
+15:33:10.268732 [debug]: Writing runtime sql for node "model.project.int_lineitem_enriched"
+15:33:10.908094 [debug]: Query executed on node model.project.int_lineitem_enriched:
+create or replace   view analytics.analytics_prod.int_lineitem_enriched
+  
+  
+  
+  
+  as (
+    with lineitem as (
+
+    select *
+    from analytics.analytics_prod.stg_lineitem
+
+)
+
+, orders as (
+
+    select *
+    from analytics.analytics_prod.stg_orders
+
+)
+
+, customer as (
+
+    select *
+    from analytics.analytics_prod.stg_customer
+
+)
+
+, nation as (
+
+    select *
+    from analytics.analytics_prod.stg_nation
+
+)
+
+, region as (
+
+    select *
+    from analytics.analytics_prod.stg_region
+
+)
+
+, supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_supplier
+
+)
+
+, part as (
+
+    select *
+    from analytics.analytics_prod.stg_part
+
+)
+
+, part_supplier as (
+
+    select *
+    from analytics.analytics_prod.stg_partsupp
+
+)
+
+
+, final as (
+    select
+        --grain keys
+        concat(l.order_key, '-', l.line_number) as lineitem_id
+        , o.order_key as order_key
+        , l.line_number as line_number
+
+        --foreign keys
+        , l.part_key as part_key
+        , l.supp_key as supp_key
+        , o.cust_key as cust_key
+
+        --order info
+        , o.order_date as order_date
+
+        --geography
+        , n.nation_name as nation
+        , r.region_name as region
+
+        --metrics
+        , l.line_quantity as quantity
+        , p.part_retail_price as retail_price
+        , l.line_extended_price as gross_revenue
+        , l.line_discount as discount
+        , l.line_tax as tax
+        , ps.part_supp_supply_cost as supply_cost
+
+        --derived metrics
+        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
+        , l.line_extended_price * (1 - l.line_discount) as net_revenue
+        , l.line_extended_price * l.line_discount as discount_amount
+        , p.part_retail_price * l.line_quantity as expected_revenue
+        , l.line_quantity * ps.part_supp_supply_cost as total_cost
+        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
+
+
+    from lineitem l
+
+    left join orders o
+        using (order_key)
+
+    left join customer c
+        using (cust_key)
+
+    left join nation n
+        using(nation_key)
+
+    left join region r
+        using(region_key)
+
+    left join supplier s
+        using(supp_key)
+
+    left join part p
+        using(part_key)
+
+    left join part_supplier ps
+        using(part_key, supp_key)
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:10.910545 [info ]:  Succeeded [  0.65s] model analytics_prod.int_lineitem_enriched (view)
+15:33:10.911162 [info ]: Finished running [  0.64s] model analytics_prod.int_lineitem_enriched [success]
+15:33:10.911280 [info ]: Started model analytics_prod.fact_lineitem
+15:33:10.911295 [debug]: Started rendering model analytics_prod.fact_lineitem
+15:33:10.914035 [debug]: Compiled SQL for node model.project.fact_lineitem at target\compiled\models\s3_marts\fact_lineitem.sql
+15:33:10.914286 [debug]: Finished rendering [  0.00s] model analytics_prod.fact_lineitem [success]
+15:33:10.914495 [info ]: Finished rendering [  9.26s] (16 nodes, 0 skipped, 0 errors)
+15:33:10.915045 [debug]: Started analyzing model analytics_prod.fact_lineitem
+15:33:10.915345 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+15:33:10.915465 [info ]: Finished analyzing [  9.25s] (16 nodes, 0 skipped, 0 errors)
+15:33:10.916018 [info ]: Started running model analytics_prod.fact_lineitem
+15:33:10.918133 [debug]: Writing runtime sql for node "model.project.fact_lineitem"
+15:33:15.763394 [debug]: Query executed on node model.project.fact_lineitem:
+create or replace transient  table analytics.analytics_prod.fact_lineitem
+    
+    
+    
+    as (select *
+from analytics.analytics_prod.int_lineitem_enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.fact_lineitem", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */
+15:33:15.764698 [info ]:  Succeeded [  4.85s] model analytics_prod.fact_lineitem (table)
+15:33:15.765572 [info ]: Finished running [  4.85s] model analytics_prod.fact_lineitem [success]
+15:33:15.765670 [info ]: Finished running [ 14.09s] (16 nodes, 0 skipped, 0 errors)
+15:33:15.798286 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+15:33:15.884992 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [15.6s]
+Processed: 16 models
+Summary: 16 total | 16 success

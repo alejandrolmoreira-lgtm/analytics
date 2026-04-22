@@ -17514,3 +17514,377 @@ SELECT * FROM FINAL
 11:46:01.311397 [info ]: Finished loading project [  0.02s]
 11:46:01.311624 [info ]: Cached model count updated: 13 models (accurate)
 11:46:02.988532 [info ]: Cached model count updated: 13 models (accurate)
+15:06:47.326023 [info ]: Started loading project
+15:06:47.327027 [info ]: Loading ~/.dbt/profiles.yml
+15:06:47.353248 [info ]: Finished loading project [  0.03s]
+15:06:47.353498 [info ]: Cached model count updated: 13 models (accurate)
+15:06:49.012865 [info ]: Cached model count updated: 13 models (accurate)
+15:07:55.717360 [info ]: Started loading project
+15:07:55.718053 [info ]: Loading ~/.dbt/profiles.yml
+15:07:55.723008 [info ]: Started parsing
+15:07:55.738527 [info ]: Finished loading project [  0.02s]
+15:07:55.739219 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:07:55.740996 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:07:55.755334 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.01s]
+15:07:55.756449 [info ]: Finished parsing [  0.03s]
+15:07:55.758078 [info ]: Cached model count updated: 13 models (estimate)
+15:07:55.758090 [info ]: Cached model count updated: 13 models (accurate)
+15:07:55.758132 [info ]: Started scheduling
+15:07:55.758243 [info ]: Finished scheduling [  0.00s]
+15:07:55.758255 [debug]: Compilation - 4 nodes selected: {"model.project.dim_supplier", "model.project.stg_nation", "model.project.stg_region", "model.project.stg_supplier"}
+15:07:55.930363 [info ]: Started building task graph
+15:07:55.930447 [info ]: Finished building task graph [  0.00s]
+15:07:55.930596 [info ]: Started rendering (4 nodes)
+15:07:55.930615 [info ]: Started model analytics_prod.dim_supplier
+15:07:55.930628 [debug]: Started rendering model analytics_prod.dim_supplier
+15:07:55.930772 [info ]: Started model analytics_prod.stg_supplier
+15:07:55.930779 [debug]: Started rendering model analytics_prod.stg_supplier
+15:07:55.930789 [info ]: Started model analytics_prod.stg_region
+15:07:55.930793 [debug]: Started rendering model analytics_prod.stg_region
+15:07:55.930800 [info ]: Started model analytics_prod.stg_nation
+15:07:55.930804 [debug]: Started rendering model analytics_prod.stg_nation
+15:07:55.933989 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+15:07:55.934134 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_supplier [success]
+15:07:55.934200 [info ]: Started analyzing (4 nodes)
+15:07:55.934212 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:07:55.934696 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_supplier (table)
+15:07:55.934719 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+15:07:55.934733 [debug]: Compiled SQL for node model.project.dim_supplier at target\.lsp\compiled\models\s3_marts\dim_supplier.sql
+15:07:55.934832 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_supplier [success]
+15:07:55.934850 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:07:55.935497 [info ]:  Succeeded [  0.00s] model analytics_prod.dim_supplier (table)
+15:07:55.935510 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:07:55.942179 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+15:07:55.942216 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+15:07:55.942294 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_region [success]
+15:07:55.942323 [debug]: Started analyzing model analytics_prod.stg_region
+15:07:55.942341 [debug]: Finished rendering [  0.01s] model analytics_prod.stg_nation [success]
+15:07:55.942347 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:07:55.942352 [debug]: Started analyzing model analytics_prod.stg_nation
+15:07:55.942649 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_nation (table)
+15:07:55.942669 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+15:07:55.942782 [info ]:  Succeeded [  0.01s] model analytics_prod.stg_region (table)
+15:07:55.942796 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+15:07:55.942801 [info ]: Finished analyzing [  0.01s] (4 nodes, 0 skipped, 0 errors)
+15:07:55.945703 [info ]: Started scheduling
+15:07:55.945809 [info ]: Finished scheduling [  0.00s]
+15:07:55.946680 [info ]: Cached model count updated: 13 models (accurate)
+15:07:56.047035 [info ]: Waiting for lease on 'target' directory
+15:07:56.289574 [info ]: Started loading project
+15:07:56.290261 [info ]: Loading ~/.dbt/profiles.yml
+15:07:56.308832 [info ]: Finished loading project [  0.02s]
+15:07:56.309059 [info ]: Cached model count updated: 13 models (accurate)
+15:07:57.968874 [info ]: Cached model count updated: 13 models (accurate)
+15:08:23.245899 [info ]: Started loading project
+15:08:23.246883 [info ]: Loading ~/.dbt/profiles.yml
+15:08:23.252347 [info ]: Started parsing
+15:08:23.267254 [info ]: Finished loading project [  0.02s]
+15:08:23.268385 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:08:23.281740 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.01s]
+15:08:23.283469 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:08:23.284536 [info ]: Finished parsing [  0.03s]
+15:08:23.286077 [info ]: Cached model count updated: 13 models (estimate)
+15:08:23.286089 [info ]: Cached model count updated: 13 models (accurate)
+15:08:23.286125 [info ]: Started scheduling
+15:08:23.286216 [info ]: Finished scheduling [  0.00s]
+15:08:23.286226 [debug]: Compilation - 2 nodes selected: {"model.project.dim_part", "model.project.stg_part"}
+15:08:23.492909 [info ]: Started building task graph
+15:08:23.492972 [info ]: Finished building task graph [  0.00s]
+15:08:23.493112 [info ]: Started rendering (2 nodes)
+15:08:23.493127 [info ]: Started model analytics_prod.dim_part
+15:08:23.493135 [debug]: Started rendering model analytics_prod.dim_part
+15:08:23.493153 [info ]: Started model analytics_prod.stg_part
+15:08:23.493157 [debug]: Started rendering model analytics_prod.stg_part
+15:08:23.496829 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+15:08:23.496869 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+15:08:23.496912 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+15:08:23.496946 [info ]: Started analyzing (2 nodes)
+15:08:23.496957 [debug]: Started analyzing model analytics_prod.stg_part
+15:08:23.496989 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:08:23.496993 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:08:23.497001 [debug]: Started analyzing model analytics_prod.dim_part
+15:08:23.497309 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+15:08:23.497326 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+15:08:23.497542 [info ]:  Succeeded [  0.00s] model analytics_prod.dim_part (table)
+15:08:23.497571 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:08:23.497578 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:08:23.500702 [info ]: Started scheduling
+15:08:23.500815 [info ]: Finished scheduling [  0.00s]
+15:08:23.501726 [info ]: Cached model count updated: 13 models (accurate)
+15:08:23.580609 [info ]: Waiting for lease on 'target' directory
+15:08:23.809156 [info ]: Started loading project
+15:08:23.809808 [info ]: Loading ~/.dbt/profiles.yml
+15:08:23.830165 [info ]: Finished loading project [  0.02s]
+15:08:23.830398 [info ]: Cached model count updated: 13 models (accurate)
+15:08:25.485059 [info ]: Cached model count updated: 13 models (accurate)
+15:08:42.636867 [info ]: Started loading project
+15:08:42.637691 [info ]: Loading ~/.dbt/profiles.yml
+15:08:42.642229 [info ]: Started parsing
+15:08:42.657321 [info ]: Finished loading project [  0.02s]
+15:08:42.658169 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:08:42.660954 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:08:42.663170 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:08:42.664119 [info ]: Finished parsing [  0.02s]
+15:08:42.665614 [info ]: Cached model count updated: 13 models (estimate)
+15:08:42.665627 [info ]: Cached model count updated: 13 models (accurate)
+15:08:42.665661 [info ]: Started scheduling
+15:08:42.665745 [info ]: Finished scheduling [  0.00s]
+15:08:42.665756 [debug]: Compilation - 2 nodes selected: {"model.project.dim_part", "model.project.stg_part"}
+15:08:42.828747 [info ]: Started building task graph
+15:08:42.828822 [info ]: Finished building task graph [  0.00s]
+15:08:42.829013 [info ]: Started rendering (2 nodes)
+15:08:42.829041 [info ]: Started model analytics_prod.dim_part
+15:08:42.829056 [debug]: Started rendering model analytics_prod.dim_part
+15:08:42.829089 [info ]: Started model analytics_prod.stg_part
+15:08:42.829099 [debug]: Started rendering model analytics_prod.stg_part
+15:08:42.830649 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+15:08:42.830754 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+15:08:42.830798 [info ]: Started analyzing (2 nodes)
+15:08:42.830813 [debug]: Started analyzing model analytics_prod.stg_part
+15:08:42.831131 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+15:08:42.831152 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+15:08:42.831469 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+15:08:42.831621 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:08:42.831653 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:08:42.831676 [debug]: Started analyzing model analytics_prod.dim_part
+15:08:42.831959 [info ]:  Succeeded [  0.00s] model analytics_prod.dim_part (table)
+15:08:42.831989 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:08:42.831997 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:08:42.835286 [info ]: Started scheduling
+15:08:42.835390 [info ]: Finished scheduling [  0.00s]
+15:08:42.836242 [info ]: Cached model count updated: 13 models (accurate)
+15:08:42.963537 [info ]: Waiting for lease on 'target' directory
+15:08:43.205602 [info ]: Started loading project
+15:08:43.206218 [info ]: Loading ~/.dbt/profiles.yml
+15:08:43.230469 [info ]: Finished loading project [  0.02s]
+15:08:43.230801 [info ]: Cached model count updated: 13 models (accurate)
+15:08:44.885166 [info ]: Cached model count updated: 13 models (accurate)
+15:08:58.073245 [info ]: Started loading project
+15:08:58.084568 [info ]: Loading ~/.dbt/profiles.yml
+15:08:58.108698 [info ]: Started parsing
+15:08:58.123816 [info ]: Finished loading project [  0.05s]
+15:08:58.124624 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:08:58.138857 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.01s]
+15:08:58.150816 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.01s]
+15:08:58.151755 [info ]: Finished parsing [  0.04s]
+15:08:58.153247 [info ]: Cached model count updated: 13 models (estimate)
+15:08:58.153259 [info ]: Cached model count updated: 13 models (accurate)
+15:08:58.153292 [info ]: Started scheduling
+15:08:58.153374 [info ]: Finished scheduling [  0.00s]
+15:08:58.153384 [debug]: Compilation - 2 nodes selected: {"model.project.dim_part", "model.project.stg_part"}
+15:08:59.028155 [info ]: Started building task graph
+15:08:59.028217 [info ]: Finished building task graph [  0.00s]
+15:08:59.033506 [info ]: Cached model count updated: 13 models (accurate)
+15:08:59.034043 [info ]: Waiting for lease on 'target' directory
+15:08:59.153770 [info ]: Started loading project
+15:08:59.154417 [info ]: Loading ~/.dbt/profiles.yml
+15:08:59.159316 [info ]: Started parsing
+15:08:59.173831 [info ]: Finished loading project [  0.02s]
+15:08:59.174593 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:08:59.176108 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:08:59.177814 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:08:59.179680 [info ]: Finished parsing [  0.02s]
+15:08:59.181311 [info ]: Cached model count updated: 13 models (estimate)
+15:08:59.181326 [info ]: Cached model count updated: 13 models (accurate)
+15:08:59.181362 [info ]: Started scheduling
+15:08:59.181409 [info ]: Finished scheduling [  0.00s]
+15:08:59.181418 [debug]: Compilation - 0 nodes selected: {}
+15:08:59.181430 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+15:08:59.181436 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:08:59.357839 [info ]: Started building task graph
+15:08:59.357875 [info ]: Finished building task graph [  0.00s]
+15:08:59.360454 [info ]: Started scheduling
+15:08:59.360555 [info ]: Finished scheduling [  0.00s]
+15:08:59.364157 [info ]: Cached model count updated: 13 models (accurate)
+15:09:00.999171 [info ]: Started loading project
+15:09:00.999776 [info ]: Loading ~/.dbt/profiles.yml
+15:09:01.017415 [info ]: Cached model count updated: 13 models (estimate)
+15:09:01.017440 [info ]: Cached model count updated: 13 models (accurate)
+15:09:01.017482 [info ]: Started scheduling
+15:09:01.017602 [info ]: Finished scheduling [  0.00s]
+15:09:01.017618 [debug]: Compilation - 13 nodes selected: {"model.project.dim_customer", "model.project.dim_part", "model.project.dim_supplier", "model.project.fact_lineitem", "model.project.int_lineitem_enriched", "model.project.stg_customer", "model.project.stg_lineitem", "model.project.stg_nation", "model.project.stg_orders", "model.project.stg_part", "model.project.stg_partsupp", "model.project.stg_region", "model.project.stg_supplier"}
+15:09:01.193929 [info ]: Started building task graph
+15:09:01.194057 [info ]: Finished building task graph [  0.00s]
+15:09:01.194261 [info ]: Started rendering (13 nodes)
+15:09:01.194279 [info ]: Started model analytics_prod.fact_lineitem
+15:09:01.194288 [debug]: Started rendering model analytics_prod.fact_lineitem
+15:09:01.194308 [info ]: Started model analytics_prod.int_lineitem_enriched
+15:09:01.194315 [debug]: Started rendering model analytics_prod.int_lineitem_enriched
+15:09:01.194322 [info ]: Started model analytics_prod.stg_partsupp
+15:09:01.194325 [debug]: Started rendering model analytics_prod.stg_partsupp
+15:09:01.194331 [info ]: Started model analytics_prod.stg_orders
+15:09:01.194334 [debug]: Started rendering model analytics_prod.stg_orders
+15:09:01.194341 [info ]: Started model analytics_prod.stg_lineitem
+15:09:01.194345 [debug]: Started rendering model analytics_prod.stg_lineitem
+15:09:01.194350 [info ]: Started model analytics_prod.dim_supplier
+15:09:01.194353 [debug]: Started rendering model analytics_prod.dim_supplier
+15:09:01.194358 [info ]: Started model analytics_prod.stg_supplier
+15:09:01.194361 [debug]: Started rendering model analytics_prod.stg_supplier
+15:09:01.194366 [info ]: Started model analytics_prod.dim_part
+15:09:01.194370 [debug]: Started rendering model analytics_prod.dim_part
+15:09:01.194376 [info ]: Started model analytics_prod.stg_part
+15:09:01.194379 [debug]: Started rendering model analytics_prod.stg_part
+15:09:01.194383 [info ]: Started model analytics_prod.dim_customer
+15:09:01.194387 [debug]: Started rendering model analytics_prod.dim_customer
+15:09:01.194448 [info ]: Started model analytics_prod.stg_region
+15:09:01.194455 [debug]: Started rendering model analytics_prod.stg_region
+15:09:01.194463 [info ]: Started model analytics_prod.stg_nation
+15:09:01.194468 [debug]: Started rendering model analytics_prod.stg_nation
+15:09:01.194473 [info ]: Started model analytics_prod.stg_customer
+15:09:01.194478 [debug]: Started rendering model analytics_prod.stg_customer
+15:09:01.194513 [info ]: Finished loading project [  0.20s]
+15:09:01.198682 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+15:09:01.199407 [debug]: Finished rendering [  0.01s] model analytics_prod.dim_part [success]
+15:09:01.199665 [info ]: Started analyzing (13 nodes)
+15:09:01.199823 [debug]: Started analyzing model analytics_prod.dim_part
+15:09:01.201658 [info ]:  Succeeded [  0.01s] model analytics_prod.dim_part (table)
+15:09:01.201720 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:09:01.227742 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+15:09:01.227889 [debug]: Compiled SQL for node model.project.stg_partsupp at target\.lsp\compiled\models\s1_staging\stg_partsupp.sql
+15:09:01.227951 [debug]: Finished rendering [  0.03s] model analytics_prod.stg_part [success]
+15:09:01.227997 [debug]: Started analyzing model analytics_prod.stg_part
+15:09:01.228161 [debug]: Finished rendering [  0.03s] model analytics_prod.stg_partsupp [success]
+15:09:01.228200 [debug]: Started analyzing model analytics_prod.stg_partsupp
+15:09:01.228483 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_part (table)
+15:09:01.228510 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+15:09:01.228609 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_partsupp (table)
+15:09:01.228628 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_partsupp [success]
+15:09:01.228956 [debug]: Compiled SQL for node model.project.stg_supplier at target\.lsp\compiled\models\s1_staging\stg_supplier.sql
+15:09:01.229053 [debug]: Finished rendering [  0.03s] model analytics_prod.stg_supplier [success]
+15:09:01.229088 [debug]: Started analyzing model analytics_prod.stg_supplier
+15:09:01.229488 [info ]:  Succeeded [  0.03s] model analytics_prod.stg_supplier (table)
+15:09:01.229518 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_supplier [success]
+15:09:01.231774 [debug]: Compiled SQL for node model.project.fact_lineitem at target\.lsp\compiled\models\s3_marts\fact_lineitem.sql
+15:09:01.231910 [debug]: Finished rendering [  0.04s] model analytics_prod.fact_lineitem [success]
+15:09:01.231960 [debug]: Started analyzing model analytics_prod.fact_lineitem
+15:09:01.232225 [debug]: Compiled SQL for node model.project.stg_nation at target\.lsp\compiled\models\s1_staging\stg_nation.sql
+15:09:01.232228 [debug]: Compiled SQL for node model.project.stg_orders at target\.lsp\compiled\models\s1_staging\stg_orders.sql
+15:09:01.232295 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_nation [success]
+15:09:01.232311 [debug]: Compiled SQL for node model.project.stg_customer at target\.lsp\compiled\models\s1_staging\stg_customer.sql
+15:09:01.232330 [debug]: Started analyzing model analytics_prod.stg_nation
+15:09:01.232349 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_orders [success]
+15:09:01.232368 [debug]: Started analyzing model analytics_prod.stg_orders
+15:09:01.232393 [debug]: Compiled SQL for node model.project.dim_supplier at target\.lsp\compiled\models\s3_marts\dim_supplier.sql
+15:09:01.232389 [info ]:  Succeeded [  0.04s] model analytics_prod.fact_lineitem (table)
+15:09:01.232411 [debug]: Finished analyzing [  0.00s] model analytics_prod.fact_lineitem [success]
+15:09:01.232429 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_customer [success]
+15:09:01.232442 [debug]: Started analyzing model analytics_prod.stg_customer
+15:09:01.232459 [debug]: Finished rendering [  0.04s] model analytics_prod.dim_supplier [success]
+15:09:01.232469 [debug]: Started analyzing model analytics_prod.dim_supplier
+15:09:01.232650 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_orders (table)
+15:09:01.232670 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_orders [success]
+15:09:01.232681 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_nation (table)
+15:09:01.232688 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_nation [success]
+15:09:01.232695 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_customer (table)
+15:09:01.232703 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_customer [success]
+15:09:01.233384 [info ]:  Succeeded [  0.04s] model analytics_prod.dim_supplier (table)
+15:09:01.233406 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_supplier [success]
+15:09:01.234143 [debug]: Compiled SQL for node model.project.stg_region at target\.lsp\compiled\models\s1_staging\stg_region.sql
+15:09:01.234286 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_region [success]
+15:09:01.234311 [debug]: Started analyzing model analytics_prod.stg_region
+15:09:01.234505 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_region (table)
+15:09:01.234519 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_region [success]
+15:09:01.238506 [debug]: Compiled SQL for node model.project.dim_customer at target\.lsp\compiled\models\s3_marts\dim_customer.sql
+15:09:01.238549 [debug]: Compiled SQL for node model.project.stg_lineitem at target\.lsp\compiled\models\s1_staging\stg_lineitem.sql
+15:09:01.238593 [debug]: Finished rendering [  0.04s] model analytics_prod.dim_customer [success]
+15:09:01.238632 [debug]: Started analyzing model analytics_prod.dim_customer
+15:09:01.238674 [debug]: Finished rendering [  0.04s] model analytics_prod.stg_lineitem [success]
+15:09:01.238691 [debug]: Started analyzing model analytics_prod.stg_lineitem
+15:09:01.238786 [debug]: Compiled SQL for node model.project.int_lineitem_enriched at target\.lsp\compiled\models\s2_intermediate\int_lineitem_enriched.sql
+15:09:01.238874 [info ]:  Succeeded [  0.04s] model analytics_prod.stg_lineitem (table)
+15:09:01.238889 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_lineitem [success]
+15:09:01.238912 [debug]: Finished rendering [  0.04s] model analytics_prod.int_lineitem_enriched [success]
+15:09:01.238921 [info ]: Finished rendering [  0.04s] (13 nodes, 0 skipped, 0 errors)
+15:09:01.238930 [debug]: Started analyzing model analytics_prod.int_lineitem_enriched
+15:09:01.239625 [info ]:  Succeeded [  0.04s] model analytics_prod.dim_customer (table)
+15:09:01.239652 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_customer [success]
+15:09:01.240493 [info ]:  Succeeded [  0.04s] model analytics_prod.int_lineitem_enriched (view)
+15:09:01.240509 [debug]: Finished analyzing [  0.00s] model analytics_prod.int_lineitem_enriched [success]
+15:09:01.240514 [info ]: Finished analyzing [  0.04s] (13 nodes, 0 skipped, 0 errors)
+15:09:01.243132 [info ]: Started scheduling
+15:09:01.243189 [info ]: Finished scheduling [  0.00s]
+15:09:01.244372 [info ]: Cached model count updated: 13 models (accurate)
+15:10:19.990279 [info ]: Started loading project
+15:10:19.990863 [info ]: Loading ~/.dbt/profiles.yml
+15:10:19.996668 [info ]: Started parsing
+15:10:20.013045 [info ]: Finished loading project [  0.02s]
+15:10:20.013832 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:10:20.032803 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.02s]
+15:10:20.034542 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:10:20.035495 [info ]: Finished parsing [  0.04s]
+15:10:20.037253 [info ]: Cached model count updated: 13 models (estimate)
+15:10:20.037266 [info ]: Cached model count updated: 13 models (accurate)
+15:10:20.037304 [info ]: Started scheduling
+15:10:20.037388 [info ]: Finished scheduling [  0.00s]
+15:10:20.037399 [debug]: Compilation - 2 nodes selected: {"model.project.dim_part", "model.project.stg_part"}
+15:10:20.215452 [info ]: Started building task graph
+15:10:20.215515 [info ]: Finished building task graph [  0.00s]
+15:10:20.215634 [info ]: Started rendering (2 nodes)
+15:10:20.215649 [info ]: Started model analytics_prod.dim_part
+15:10:20.215660 [debug]: Started rendering model analytics_prod.dim_part
+15:10:20.215679 [info ]: Started model analytics_prod.stg_part
+15:10:20.215685 [debug]: Started rendering model analytics_prod.stg_part
+15:10:20.217393 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+15:10:20.217472 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+15:10:20.217505 [info ]: Started analyzing (2 nodes)
+15:10:20.217516 [debug]: Started analyzing model analytics_prod.stg_part
+15:10:20.217795 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+15:10:20.217810 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+15:10:20.218202 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+15:10:20.218390 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:10:20.218400 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:10:20.218413 [debug]: Started analyzing model analytics_prod.dim_part
+15:10:20.218622 [info ]:  Succeeded [  0.00s] model analytics_prod.dim_part (table)
+15:10:20.218636 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:10:20.218641 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:10:20.221459 [info ]: Started scheduling
+15:10:20.221564 [info ]: Finished scheduling [  0.00s]
+15:10:20.222476 [info ]: Cached model count updated: 13 models (accurate)
+15:10:20.320608 [info ]: Waiting for lease on 'target' directory
+15:10:20.546830 [info ]: Started loading project
+15:10:20.547865 [info ]: Loading ~/.dbt/profiles.yml
+15:10:20.568028 [info ]: Finished loading project [  0.02s]
+15:10:20.568259 [info ]: Cached model count updated: 13 models (accurate)
+15:10:22.233160 [info ]: Cached model count updated: 13 models (accurate)
+15:10:26.962595 [info ]: Started loading project
+15:10:26.963373 [info ]: Loading ~/.dbt/profiles.yml
+15:10:26.967678 [info ]: Started parsing
+15:10:26.982779 [info ]: Finished loading project [  0.02s]
+15:10:26.983385 [debug]: Finished parsing models\s3_marts\_mart_tpch.yml [  0.00s]
+15:10:26.985606 [debug]: Finished parsing models\s3_marts\dim_part.sql [  0.00s]
+15:10:26.987177 [debug]: Finished parsing models\s3_marts\dim_supplier.sql [  0.00s]
+15:10:26.988176 [info ]: Finished parsing [  0.02s]
+15:10:26.989629 [info ]: Cached model count updated: 13 models (estimate)
+15:10:26.989641 [info ]: Cached model count updated: 13 models (accurate)
+15:10:26.989677 [info ]: Started scheduling
+15:10:26.989765 [info ]: Finished scheduling [  0.00s]
+15:10:26.989776 [debug]: Compilation - 2 nodes selected: {"model.project.dim_part", "model.project.stg_part"}
+15:10:27.174108 [info ]: Started building task graph
+15:10:27.174172 [info ]: Finished building task graph [  0.00s]
+15:10:27.174302 [info ]: Started rendering (2 nodes)
+15:10:27.174321 [info ]: Started model analytics_prod.dim_part
+15:10:27.174332 [debug]: Started rendering model analytics_prod.dim_part
+15:10:27.174360 [info ]: Started model analytics_prod.stg_part
+15:10:27.174367 [debug]: Started rendering model analytics_prod.stg_part
+15:10:27.175848 [debug]: Compiled SQL for node model.project.stg_part at target\.lsp\compiled\models\s1_staging\stg_part.sql
+15:10:27.175947 [debug]: Finished rendering [  0.00s] model analytics_prod.stg_part [success]
+15:10:27.175990 [info ]: Started analyzing (2 nodes)
+15:10:27.176023 [debug]: Started analyzing model analytics_prod.stg_part
+15:10:27.176486 [info ]:  Succeeded [  0.00s] model analytics_prod.stg_part (table)
+15:10:27.176638 [debug]: Finished analyzing [  0.00s] model analytics_prod.stg_part [success]
+15:10:27.176988 [debug]: Compiled SQL for node model.project.dim_part at target\.lsp\compiled\models\s3_marts\dim_part.sql
+15:10:27.177124 [debug]: Finished rendering [  0.00s] model analytics_prod.dim_part [success]
+15:10:27.177149 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:10:27.177173 [debug]: Started analyzing model analytics_prod.dim_part
+15:10:27.177468 [info ]:  Succeeded [  0.00s] model analytics_prod.dim_part (table)
+15:10:27.177497 [debug]: Finished analyzing [  0.00s] model analytics_prod.dim_part [success]
+15:10:27.177508 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:10:27.180766 [info ]: Started scheduling
+15:10:27.180884 [info ]: Finished scheduling [  0.00s]
+15:10:27.181738 [info ]: Cached model count updated: 13 models (accurate)
+15:10:27.304711 [info ]: Waiting for lease on 'target' directory
+15:10:27.526026 [info ]: Started loading project
+15:10:27.526866 [info ]: Loading ~/.dbt/profiles.yml
+15:10:27.555572 [info ]: Finished loading project [  0.03s]
+15:10:27.555866 [info ]: Cached model count updated: 13 models (accurate)
+15:10:29.180324 [info ]: Cached model count updated: 13 models (accurate)
