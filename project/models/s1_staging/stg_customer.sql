@@ -5,14 +5,14 @@ with source as (
 
 , final as (
     select
-        c_custkey as c_custkey
-        , c_name as c_name
-        , c_address as c_address
-        , c_nationkey as c_nationkey
-        , c_phone as c_phone
-        , c_acctbal as c_acctbal
-        , c_mktsegment as c_mktsegment
-        , c_comment as c_comment
+        c_custkey as cust_key
+        , c_name as cust_name
+        , c_address as cust_address
+        , c_nationkey as nation_key
+        , c_phone as cust_phone
+        , c_acctbal as cust_acctbal
+        , c_mktsegment as cust_mktsegment
+        , c_comment as cust_comment
     from source
 )
 
