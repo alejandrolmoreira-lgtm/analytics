@@ -1,52 +1,36 @@
--- created_at: 2026-04-22T10:45:26.898563300+00:00
--- finished_at: 2026-04-22T10:45:27.009102400+00:00
--- elapsed: 110ms
+-- created_at: 2026-04-22T11:31:09.769186300+00:00
+-- finished_at: 2026-04-22T11:31:09.873064500+00:00
+-- elapsed: 103ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: not available
--- query_id: 01c3e0a5-0001-b501-0002-5ab60001c25e
+-- query_id: 01c3e0d3-0001-b3ec-0002-5ab60001b2a6
 -- desc: execute adapter call
 show terse schemas in database analytics
     limit 10000
 /* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */;
--- created_at: 2026-04-22T10:45:27.902976900+00:00
--- finished_at: 2026-04-22T10:45:28.051231400+00:00
--- elapsed: 148ms
+-- created_at: 2026-04-22T11:31:10.854170100+00:00
+-- finished_at: 2026-04-22T11:31:10.991626300+00:00
+-- elapsed: 137ms
 -- outcome: success
 -- dialect: snowflake
--- node_id: model.project.int_lineitem_enriched
--- query_id: 01c3e0a5-0001-b4ae-0002-5ab600014396
+-- node_id: model.project.dim_customer
+-- query_id: 01c3e0d3-0001-b501-0002-5ab60001c26a
 -- desc: get_relation > list_relations call
 SHOW OBJECTS IN SCHEMA "ANALYTICS"."ANALYTICS_PROD" LIMIT 10000;
--- created_at: 2026-04-22T10:45:28.054147900+00:00
--- finished_at: 2026-04-22T10:45:28.610791100+00:00
--- elapsed: 556ms
+-- created_at: 2026-04-22T11:31:10.995600700+00:00
+-- finished_at: 2026-04-22T11:31:11.724150900+00:00
+-- elapsed: 728ms
 -- outcome: success
 -- dialect: snowflake
--- node_id: model.project.int_lineitem_enriched
--- query_id: 01c3e0a5-0001-b46f-0000-00025ab69dbd
+-- node_id: model.project.dim_customer
+-- query_id: 01c3e0d3-0001-b518-0002-5ab60001e186
 -- desc: execute adapter call
-create or replace   view analytics.analytics_prod.int_lineitem_enriched
-  
-  
-  
-  
-  as (
-    with lineitem as (
-
-    select *
-    from analytics.analytics_prod.stg_lineitem
-
-)
-
-, orders as (
-
-    select *
-    from analytics.analytics_prod.stg_orders
-
-)
-
-, customer as (
+create or replace transient  table analytics.analytics_prod.dim_customer
+    
+    
+    
+    as (with customer as (
 
     select *
     from analytics.analytics_prod.stg_customer
@@ -67,88 +51,33 @@ create or replace   view analytics.analytics_prod.int_lineitem_enriched
 
 )
 
-, supplier as (
-
-    select *
-    from analytics.analytics_prod.stg_supplier
-
-)
-
-, part as (
-
-    select *
-    from analytics.analytics_prod.stg_part
-
-)
-
-, part_supplier as (
-
-    select *
-    from analytics.analytics_prod.stg_partsupp
-
-)
-
-
 , final as (
+
     select
-        --grain keys
-        concat(l.order_key, '-', l.line_number) as lineitem_id
-        , o.order_key as order_key
-        , l.line_number as line_number
+        --primary key
+        c.cust_key as customer_key
 
-        --foreign keys
-        , l.part_key as part_key
-        , l.supp_key as supp_key
-        , o.cust_key as cust_key
-
-        --order info
-        , o.order_date as order_date
+        --customer atributes
+        , c.cust_name as customer_name
+        , c.cust_address as customer_address
+        , c.cust_phone as customer_phone
+        , c.cust_account_balance as customer_account_balance
 
         --geography
         , n.nation_name as nation
         , r.region_name as region
 
-        --metrics
-        , l.line_quantity as quantity
-        , p.part_retail_price as retail_price
-        , l.line_extended_price as gross_revenue
-        , l.line_discount as discount
-        , l.line_tax as tax
-        , ps.part_supp_supply_cost as supply_cost
-
-        --derived metrics
-        , (p.part_retail_price * l.line_quantity) - l.line_extended_price as price_variance
-        , l.line_extended_price * (1 - l.line_discount) as net_revenue
-        , l.line_extended_price * l.line_discount as discount_amount
-        , p.part_retail_price * l.line_quantity as expected_revenue
-        , l.line_quantity * ps.part_supp_supply_cost as total_cost
-        , (l.line_extended_price * (1 - l.line_discount)) - (l.line_quantity * ps.part_supp_supply_cost) as profit
-
-
-    from lineitem l
-
-    left join orders o
-        using (order_key)
-
-    left join customer c
-        using (cust_key)
-
+    from customer c
+    
     left join nation n
         using(nation_key)
-
+    
     left join region r
         using(region_key)
 
-    left join supplier s
-        using(supp_key)
-
-    left join part p
-        using(part_key)
-
-    left join part_supplier ps
-        using(part_key, supp_key)
 )
 
 select * from final
-  )
-/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.int_lineitem_enriched", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */;
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.project.dim_customer", "profile_name": "mi_proyecto_dbt", "target_name": "dev"} */;

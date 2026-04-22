@@ -20,7 +20,7 @@ create or replace transient  table analytics.analytics_prod.stg_customer
         , c_address as cust_address
         , c_nationkey as nation_key
         , c_phone as cust_phone
-        , c_acctbal as cust_acctbal
+        , c_acctbal as cust_account_balance
         , c_mktsegment as cust_mktsegment
         , c_comment as cust_comment
     from source

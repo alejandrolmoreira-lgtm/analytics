@@ -1,0 +1,13 @@
+models:
+  - name: dim_part
+    columns:
+      - name: part_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_supplier
+    columns:
+      - name: supp_key
+        tests:
+          - unique
+          - not_null

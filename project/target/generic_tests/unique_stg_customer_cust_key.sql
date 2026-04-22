@@ -1,0 +1,1 @@
+{{ test_unique(column_name="cust_key", model=get_where_subquery(ref('stg_customer'))) }}
